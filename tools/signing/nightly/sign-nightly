@@ -1,0 +1,260 @@
+#!/usr/bin/perl -w
+use strict;
+use FindBin;
+use YAML::XS qw(LoadFile DumpFile);
+use POSIX qw(setlocale LC_ALL);
+use File::Path qw(make_path);
+use File::Temp;
+use File::Copy;
+use File::Basename;
+use LWP::Simple;
+use Path::Tiny;
+use DateTime;
+use Digest::SHA qw(sha256_hex);
+use JSON;
+
+# Set umask and locale to provide a consistent environment
+umask(0022);
+$ENV{"LC_ALL"} = "C";
+setlocale(LC_ALL, "C");
+
+sub exit_error {
+    print STDERR "Error: ", $_[0], "\n";
+    chdir '/';
+    unlink "$FindBin::Bin/lock";
+    exit (exists $_[1] ? $_[1] : 1);
+}
+
+exit_error "Missing config file: $FindBin::Bin/config.yml"
+           unless -f "$FindBin::Bin/config.yml";
+my $config = LoadFile("$FindBin::Bin/config.yml");
+my $topdir = "$FindBin::Bin/../../..";
+
+{
+    no warnings 'redefine';
+    sub LWP::UserAgent::get_basic_credentials {
+        if ($config->{builds_url_auth_basic_username}
+            && $config->{builds_url_auth_basic_password}) {
+            return ( $config->{builds_url_auth_basic_username},
+                     $config->{builds_url_auth_basic_password} );
+        }
+        return ();
+    }
+}
+
+sub run_alone {
+    my $pidfile = "$FindBin::Bin/lock";
+    if (-f $pidfile) {
+        my $pid = path($pidfile)->slurp_utf8;
+        if (kill(0, $pid)) {
+            print STDERR "Script is already running ($pid). Exiting.\n";
+            exit 0;
+        }
+    }
+    path($pidfile)->spew_utf8($$);
+}
+
+END {
+    unlink "$FindBin::Bin/lock";
+}
+
+sub get_tmpdir {
+    my ($config) = @_;
+    return File::Temp->newdir($config->{tmp_dir} ?
+                                (DIR => $config->{tmp_dir})
+                                : ());
+}
+
+sub basedir_path {
+    my ($path, $basedir) = @_;
+    return ( $path =~ m|^/| ) ? $path : "$basedir/$path";
+}
+
+sub get_last_build_version {
+    my ($config, $publish_dir) = @_;
+    my $today = 'tbb-nightly.' . DateTime->now->ymd('.');
+    my $dt_yesterday = DateTime->now - DateTime::Duration->new(days => 1);
+    my $yesterday = 'tbb-nightly.' . $dt_yesterday->ymd('.');
+    for my $version ($today, $yesterday) {
+        my $url = "$config->{builds_url}/$version/$publish_dir/sha256sums-unsigned-build.incrementals.txt";
+        return $version if get($url);
+    }
+    return undef;
+}
+
+sub get_current_version {
+    my ($publish_dir) = @_;
+    my $file = "$topdir/nightly/$publish_dir-current-version.txt";
+    return undef unless -f $file;
+    return path($file)->slurp_utf8;
+}
+
+sub set_current_version {
+    my ($publish_dir, $version) = @_;
+    my $file = "$topdir/nightly/$publish_dir-current-version.txt";
+    path($file)->spew_utf8($version);
+}
+
+sub get_new_version {
+    my ($config, $publish_dir) = @_;
+    my $today = 'tbb-nightly.' . DateTime->now->ymd('.');
+    my $current_ver = get_current_version($publish_dir);
+    my $last_ver = get_last_build_version($config, $publish_dir);
+    return $last_ver unless defined($current_ver);
+    return undef if $current_ver eq $today;
+    return undef unless defined($last_ver);
+    return undef if $current_ver eq $last_ver;
+    return $last_ver;
+}
+
+sub download_file {
+    my ($url, $file, $sha256sum) = @_;
+    my $retries = 5;
+    while ($retries > 0) {
+        $retries--;
+        print "Downloading $url\n";
+        next unless getstore("$url", "$file.tmp") == 200;
+        next unless $sha256sum eq sha256_hex(path("$file.tmp")->slurp_raw);
+        move("$file.tmp", $file);
+        return 1;
+    }
+    exit_error "Error downloading $url";
+}
+
+sub fetch_version {
+    my ($config, $publish_dir, $version) = @_;
+    my $tmpdir = get_tmpdir($config);
+    my $urldir = "$config->{builds_url}/$version/$publish_dir";
+    my $destdir = "$topdir/nightly/$publish_dir/$version";
+
+    return if -d $destdir;
+    my $gpg_keyring = basedir_path($config->{gpg_keyring}, $topdir);
+    for my $file (qw/sha256sums-unsigned-build.txt sha256sums-unsigned-build.incrementals.txt/) {
+        my $url = "$urldir/$file";
+        exit_error "Error downloading $url"
+                unless getstore($url, "$tmpdir/$file") == 200;
+        exit_error "Error downloading $url.asc"
+                unless getstore("$url.asc", "$tmpdir/$file.asc") == 200;
+        exit_error "Error checking gpg signature for $url"
+                if system('gpg', '--no-default-keyring', '--keyring', $gpg_keyring,
+                          '--verify', "$tmpdir/$file.asc",
+                          "$tmpdir/$file");
+    }
+    my %sums = map { chomp; reverse split '  ', $_ }
+        (
+            path("$tmpdir/sha256sums-unsigned-build.txt")->lines_utf8,
+            path("$tmpdir/sha256sums-unsigned-build.incrementals.txt")->lines_utf8,
+        );
+    my @build_infos_file = grep { $_ =~ m/build-infos-.*\.json/ } keys %sums;
+    exit_error "Missing build-infos.json in $urldir" unless @build_infos_file;
+    download_file("$urldir/$build_infos_file[0]",
+                  "$tmpdir/build-infos.json", $sums{$build_infos_file[0]});
+    foreach my $file (sort grep { $_ =~ m/\.mar$/ } keys %sums) {
+        download_file("$urldir/$file", "$tmpdir/$file", $sums{$file});
+    }
+    make_path("$topdir/nightly/$publish_dir");
+    move $tmpdir, $destdir;
+    chmod 0755, $destdir;
+}
+
+sub setup_martools {
+    my ($config) = @_;
+    my $martools_dir = "$FindBin::Bin/mar-tools-$config->{martools_version}";
+    if (! -d $martools_dir) {
+        my $file = "mar-tools-linux64.zip";
+        my $url = "$config->{martools_url}/$config->{martools_version}/$file";
+        my $tmpdir = get_tmpdir($config);
+        exit_error "Error downloading $url"
+                unless getstore($url, "$tmpdir/$file") == 200;
+        exit_error "Error downloading $url.asc"
+                unless getstore("$url.asc", "$tmpdir/$file.asc") == 200;
+        my $gpg_keyring = basedir_path($config->{martools_gpg_keyring}, $topdir);
+        exit_error "Error checking gpg signature for $url"
+                if system('gpg', '--no-default-keyring', '--keyring', $gpg_keyring,
+                          '--verify', "$tmpdir/$file.asc",
+                          "$tmpdir/$file");
+        exit_error "Error extracting martools"
+                unless system('unzip', '-d', $martools_dir, '-x',
+                                       "$tmpdir/$file") == 0;
+    }
+    $ENV{PATH} = "$martools_dir/mar-tools:$ENV{PATH}";
+    if ($ENV{LD_LIBRARY_PATH}) {
+        $ENV{LD_LIBRARY_PATH} = "$martools_dir/mar-tools:$ENV{LD_LIBRARY_PATH}";
+    } else {
+        $ENV{LD_LIBRARY_PATH} = "$martools_dir/mar-tools";
+    }
+}
+
+sub sign_version {
+    my ($config, $publish_dir, $version) = @_;
+    setup_martools($config);
+    my $nss_db_dir = basedir_path($config->{nss_db_dir}, $FindBin::Bin);
+    for my $marfile (path("$topdir/nightly/$publish_dir/$version")->children(qr/\.mar$/)) {
+        print "Signing $marfile\n";
+        exit_error "Error signing $marfile"
+          unless system('signmar', '-d', $nss_db_dir, '-n',
+                        $config->{nss_certname}, '-s', $marfile,
+                        "$marfile-signed") == 0;
+          move("$marfile-signed", $marfile);
+    }
+}
+
+sub get_buildinfos {
+    my ($filename) = @_;
+    exit_error "$filename does not exist" unless -f $filename;
+    return decode_json(path($filename)->slurp_utf8);
+}
+
+sub update_responses {
+    my ($config, $publish_dir, $version) = @_;
+    my $ur_config = LoadFile("$FindBin::Bin/update-responses-base-config.yml");
+    $ur_config->{download}{mars_url} .= "/$publish_dir";
+    $ur_config->{releases_dir} = "$topdir/nightly/$publish_dir";
+    $ur_config->{channels}->{nightly} = $version;
+    $ur_config->{versions}->{$version} = $ur_config->{versions}->{nightly_version};
+    my $buildinfos = get_buildinfos("$topdir/nightly/$publish_dir/$version/build-infos.json");
+    $ur_config->{versions}->{$version}{platformVersion} = $buildinfos->{firefox_platform_version};
+    $ur_config->{versions}->{$version}{buildID} = $buildinfos->{firefox_buildid};
+    DumpFile("$topdir/tools/update-responses/config.yml", $ur_config);
+    my $htdocsdir = "$topdir/tools/update-responses/htdocs/nightly";
+    path($htdocsdir)->remove_tree({ safe => 0 });
+    exit_error "Error running update_responses for $publish_dir" unless
+       system("$topdir/tools/update-responses/update_responses") == 0;
+    path("$topdir/nightly/updates/$publish_dir/nightly")->remove_tree({ safe => 0 });
+    make_path("$topdir/nightly/updates/$publish_dir");
+    move($htdocsdir, "$topdir/nightly/updates/$publish_dir/nightly");
+}
+
+sub remove_oldversions {
+    my ($config, $publish_dir, $version) = @_;
+    for my $dir (path("$topdir/nightly/$publish_dir")->children) {
+        my ($filename) = fileparse($dir);
+        next if $filename eq $version;
+        path($dir)->remove_tree({ safe => 0 });
+    }
+}
+
+sub sync_dest {
+    my ($config) = @_;
+    exit_error "Error running rsync"
+        if system('rsync', '-aH', '--delete-after',
+                  "$topdir/nightly/", "$config->{rsync_dest}/");
+    if ($config->{post_rsync_cmd}) {
+        exit_error "Error running $config->{post_rsync_cmd}"
+                if system($config->{post_rsync_cmd});
+    }
+}
+
+run_alone;
+my $some_updates = 0;
+foreach my $publish_dir (@{$config->{publish_dirs}}) {
+    my $new_version = get_new_version($config, $publish_dir);
+    next unless $new_version;
+    fetch_version($config, $publish_dir, $new_version);
+    sign_version($config, $publish_dir, $new_version);
+    update_responses($config, $publish_dir, $new_version);
+    set_current_version($publish_dir, $new_version);
+    remove_oldversions($config, $publish_dir, $new_version);
+    $some_updates = 1;
+}
+sync_dest($config) if $some_updates;

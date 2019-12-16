@@ -5,3 +5,6 @@ omitting specific paths and credential information.
 Additionally, when starting to used them for an own signing setup don't forget
 to adapt the locale list if needed. The entitlement files, however, are kept
 up-to-date.
+
+The scripts in the nightly/ directory are used to sign and publish the
+nightly updates.
