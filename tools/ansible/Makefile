@@ -6,3 +6,6 @@ fpcentral:
 
 boklm-tbb-nightly-build:
 	ansible-playbook --vault-password-file=~/ansible-vault/boklm-tbb-nightly -i inventory boklm-tbb-nightly-build.yml
+
+tbb-nightly-signing:
+	ANSIBLE_CONFIG='$(@D)/ansible.cfg' ansible-playbook -i inventory tbb-nightly-signing.yml
