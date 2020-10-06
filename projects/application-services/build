@@ -82,8 +82,6 @@ patch -p1 < $rootdir/no-git.patch
 # XXX: We don't build the code for Linux for now as this involves additional
 # complexity. That's needed for running unit tests later on, though.
 patch -p1 < $rootdir/target.patch
-patch -p1 < $rootdir/1651660.patch
-patch -p1 < $rootdir/1651662.patch
 [% IF c('var/fetch_gradle_dependencies') %]
   # XXX: `assemble` is still not enough to see all fetched dependencies via
   # Gradle's --debug. See: tor-browser-build#40056.
