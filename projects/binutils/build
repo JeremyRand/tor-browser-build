@@ -11,14 +11,6 @@ distdir=/var/tmp/dist/binutils
 [% END %]
 tar xf [% project %]-[% c("version") %].tar.xz
 cd [% project %]-[% c("version") %]
-[% IF c('var/windows') -%]
-  # Needed for the hardening... The upstream ticket is:
-  # https://sourceware.org/bugzilla/show_bug.cgi?id=17321
-  patch -p1 < ../enable-reloc-section-ld.patch
-[% END -%]
-[% IF c('var/windows-x86_64') -%]
-  patch -p1 < ../64bit-fixups.patch
-[% END -%]
 ./configure --prefix=$distdir [% c('var/configure_opt') %]
 make -j[% c("buildconf/num_procs") %]
 make install
