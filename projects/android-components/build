@@ -14,11 +14,10 @@ EOF
   [% pc('python', 'var/setup', { python_tarfile => c('input_files_by_name/python') }) %]
   tar -C $distdir -xf [% c('input_files_by_name/geckoview') %]
   gradle_repo=$rootdir/[% c('input_files_by_name/gradle-dependencies') %]
-  # This overwrites the release and beta geckoview .aar files in our
+  # This overwrites the release, beta, and nightly geckoview .aar files in our
   # gradle-dependencies directory to be sure that only the one we provide is
-  # getting used when building beta/release code. XXX: Find a way to make that
-  # work for nightly, too.
-  find $gradle_repo -type f \( -name geckoview-[^a-z]*.aar -o -name geckoview-beta*.aar \) -exec cp -f $distdir/geckoview/geckoview*.aar {} \;
+  # getting used when building beta/release code.
+  find $gradle_repo -type f -name geckoview*.aar -exec cp -f $distdir/geckoview/geckoview*.aar {} \;
   cp -r $gradle_repo/dl/android/maven2/* $gradle_repo
   cp -r $gradle_repo/maven2/* $gradle_repo
   cp -r $gradle_repo/m2/* $gradle_repo
@@ -38,7 +37,7 @@ patch -p1 < $rootdir/40085.patch
   # XXX: fetching deps for `assembleGeckoBeta -x lint` by using that same target
   # results in some missing dependencies for yet unknown reasons. Thus, we use
   # `assemble` instead for now.
-  gradle --debug -no-daemon assemble
+  gradle --debug --no-daemon assemble
 [% ELSE %]
   # Prepare Glean dependencies for offline build
   tar -xjf $rootdir/glean-parser-[% c('var/glean_parser') %].tar.bz2
@@ -55,8 +54,19 @@ patch -p1 < $rootdir/40085.patch
     exit 1
   fi
 
+  # We want to make sure only our code is built. Overwrite engine-gecko code we
+  # don't need. XXX: Take release into account.
+  cd components/browser
+  [% IF c("var/alpha") || c("var/nightly") %]
+    rm -rf engine-gecko/src/*
+    rm -rf engine-gecko-nightly/src/*
+    cp -rf engine-gecko-beta/src/* engine-gecko/src/
+    cp -rf engine-gecko-beta/src/* engine-gecko-nightly/src/
+  [% END %]
+  cd ../../
   gradle_args="--offline --no-daemon -Dmaven.repo.local=$gradle_repo"
 
+  # XXX: Take release into account
   gradle $gradle_args assembleGeckoBeta -x lint
   gradle $gradle_args publish
 

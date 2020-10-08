@@ -1,14 +1,14 @@
-From a77b847b6451c598176137b944edf27e6e7202a2 Mon Sep 17 00:00:00 2001
+From 96fc057633a96188e00a55a0abc28a19d9b1dcf9 Mon Sep 17 00:00:00 2001
 From: Georg Koppen <gk@torproject.org>
 Date: Sun, 19 Apr 2020 17:59:16 +0000
-Subject: [PATCH 1/5] git patch
+Subject: [PATCH] git patch
 
 
 diff --git a/components/support/base/build.gradle b/components/support/base/build.gradle
-index aa4c1b005..4318f1334 100644
+index 094c85e44..1b46c1b84 100644
 --- a/components/support/base/build.gradle
 +++ b/components/support/base/build.gradle
-@@ -37,7 +37,7 @@ android {
+@@ -38,7 +38,7 @@ android {
              minifyEnabled false
              proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
  
@@ -17,6 +17,19 @@ index aa4c1b005..4318f1334 100644
          }
      }
  
+diff --git a/publish.gradle b/publish.gradle
+index 09280f51f..14da5a6c0 100644
+--- a/publish.gradle
++++ b/publish.gradle
+@@ -61,7 +61,7 @@ ext.configurePublish = { groupIdArg, artifactIdArg, descriptionArg ->
+                         connection = libVcsUrl
+                         developerConnection = libVcsUrl
+                         url = libUrl
+-                        tag = getGitHash()
++                        tag = "release build"
+                     }
+                 }
+             }
 -- 
-2.27.0.rc0
+2.28.0
 
