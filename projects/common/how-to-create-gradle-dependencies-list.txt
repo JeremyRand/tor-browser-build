@@ -7,6 +7,17 @@ If the dependencies for `application-services`, `android-components`, or `fenix`
 are needed, set the `fetch_gradle_dependencies` flag in their `config` files to
 `1`.
 
+Note: `android-components` and `fenix` require modified `geckoview` and
+`android-components` artifacts to compile successfully. In order to generate the
+necessary dependencies for them you need to point to the respective
+`android-components` and `fenix` commits our patches are based upon, too, first.
+That way the code as Mozilla is shipping it is used for the Gradle dependencies
+fetching which should avoid issues caused by broken builds (it is not guaranteed
+that all the dependencies are already fetched at the point when the build
+breaks). For `fenix` dependencies there is still a manual processing required
+afterwards right now as e.g. our tor-android-service related artifacts are not
+picked up.
+
 For the firefox project, comment out the following line in the project's build file:
 
    export GRADLE_MAVEN_REPOSITORIES="file://$gradle_repo"
