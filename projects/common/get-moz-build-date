@@ -11,8 +11,10 @@ if ($version =~ m/^tbb-nightly\.([^\.]+)\.([^\.]+)\.([^\.]+)$/) {
 } elsif ($version eq 'testbuild') {
   # There is no need for an increasing build date in test builds. Just hardcode
   # it to a value that is compatible with the v1 versionCode scheme on Android,
-  # see: #34163.
-  $date = 20150801000000;
+  # see: #34163. We adjust the date to the new cutoff according to
+  # https://github.com/mozilla-mobile/fenix/pull/14952, following Mozilla.
+  # This should be unproblematic for test builds anyway.
+  $date = 20141228000000;
 } else {
   my @v = split(/[\.ab]/, $version);
   push @v, '0' if @v < 4;

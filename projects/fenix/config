@@ -8,13 +8,13 @@ gpg_keyring: torbutton.gpg
 variant: Beta
 
 var:
-  fenix_version: 81.1.2
+  fenix_version: 82.0.0b4
   torbrowser_branch: 10.0
   copyright_year: '[% exec("git show -s --format=%ci").remove("-.*") %]'
   container:
     use_container: 1
   # This should be updated when the list of gradle dependencies is changed.
-  gradle_dependencies_version: 7
+  gradle_dependencies_version: 8
   # Switch to make it easier to grab all dependencies during a dry-run.
   fetch_gradle_dependencies: 0
   # Overwrite `glean_parser` for now to fix #40085.
@@ -22,7 +22,7 @@ var:
 
 targets:
   nightly:
-    git_hash: 'tor-browser-[% c("var/fenix_version") %]-[% c("var/torbrowser_branch") %]-2'
+    git_hash: 'tor-browser-[% c("var/fenix_version") %]-[% c("var/torbrowser_branch") %]-1'
     tag_gpg_id: 0
     variant: Nightly
 
