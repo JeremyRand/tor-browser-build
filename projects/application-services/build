@@ -82,6 +82,9 @@ patch -p1 < $rootdir/no-git.patch
 # XXX: We don't build the code for Linux for now as this involves additional
 # complexity. That's needed for running unit tests later on, though.
 patch -p1 < $rootdir/target.patch
+# We need to pick up a newer glean_parser until an updated glean is used by
+# application-services.
+patch -p1 < $rootdir/40085.patch
 [% IF c('var/fetch_gradle_dependencies') %]
   # XXX: `assemble` is still not enough to see all fetched dependencies via
   # Gradle's --debug. See: tor-browser-build#40056.

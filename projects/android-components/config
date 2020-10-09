@@ -15,8 +15,6 @@ var:
   gradle_dependencies_version: 6
   # Switch to make it easier to grab all dependencies during a dry-run.
   fetch_gradle_dependencies: 0
-  # Overwrite `glean_parser` for now to fix #40085.
-  glean_parser: 1.28.6
 
 targets:
   nightly:
