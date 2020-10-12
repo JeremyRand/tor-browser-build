@@ -1,7 +1,7 @@
 # vim: filetype=yaml sw=2
 filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %].tar.gz'
-version: 61.0.13
-git_hash: 8faa8313bcec03775ddaa194438391c4731eb840 # v61.0.13
+version: 63.0.0
+git_hash: 8e63363359c3d20385ed55f5308d19e321816898
 git_url: https://github.com/mozilla/application-services
 
 var:
@@ -10,7 +10,7 @@ var:
   # This should be updated when the list of gradle dependencies is changed.
   gradle_dependencies_version: 2
   # This should be updated when the list of rust dependencies is changed.
-  rust_vendor_version: 1
+  rust_vendor_version: 2
   # For armv7 we need a different target than the default one we use for
   # GeckoView. We set this variable so the Rust project in the `input_files`
   # below can set the correct target when built for use in this project,
@@ -24,19 +24,19 @@ input_files:
   - project: '[% c("var/compiler") %]'
     name: '[% c("var/compiler") %]'
   # We need the torbrowser-* targets for Rust, see: #40094.
-  - project: fenix-rust
+  - project: fenix-as-rust
     name: rust-armv7
     target_prepend:
       - torbrowser-android-armv7
-  - project: fenix-rust
+  - project: fenix-as-rust
     name: rust-aarch64
     target_prepend:
       - torbrowser-android-aarch64
-  - project: fenix-rust
+  - project: fenix-as-rust
     name: rust-x86
     target_prepend:
       - torbrowser-android-x86
-  - project: fenix-rust
+  - project: fenix-as-rust
     name: rust-x86_64
     target_prepend:
       - torbrowser-android-x86_64
@@ -85,12 +85,8 @@ input_files:
   # `cargo vendor vendor` in the `application-services` directory has vendored
   # the sources.
   - URL: https://people.torproject.org/~gk/mirrors/sources/application-services-vendor-[% c('var/rust_vendor_version') %].tar.bz2
-    sha256sum: fd90572db453b5d83bc7dbb50b09d75c5019f09ee747054fdc12f42605d9da69
+    sha256sum: 70e02d587661e5d93dbe30ffa9265fb8b6b66ba8483f3268017ca919623688bc
   - filename: no-git.patch
   - filename: mavenLocal.patch
     enable: '[% !c("var/fetch_gradle_dependencies") %]'
   - filename: target.patch
-  - filename: 1651660.patch
-  - filename: 1651662.patch
-  - filename: lto.patch
-    enable: '[% !c("var/fetch_gradle_dependencies") %]'
