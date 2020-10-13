@@ -26,10 +26,6 @@ var:
     - pkg-config
   container:
     use_container: 1
-  # this should be updated when the list of gradle dependencies is changed
-  gradle_dependencies_version: 6
-  # used by projects/firefox-locale-bundle
-  l10n-changesets.json: '[% exec("cat mobile/locales/l10n-changesets.json") %]'
 
 steps:
   src-tarballs:
