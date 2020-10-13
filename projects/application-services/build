@@ -17,7 +17,7 @@ cd /var/tmp/dist
   tar -xf $rootdir/[% c('input_files_by_name/sqlcipher-' _ arch) %]
   mv sqlcipher sqlcipher-[% arch %]
 [% END -%]
-export PATH=/var/tmp/dist/fenix-rust/bin:$PATH
+export PATH=/var/tmp/dist/fenix-as-rust/bin:$PATH
 cd $rootdir
 
 # application-services uses a newer NDK, 21, than everything else...
