@@ -1,3 +1,22 @@
+Tor Browser 10.0.1 -- October 13 2020
+ * Windows + OS X + Linux
+   * Update NoScript to 11.1.1
+   * Bump OpenSSL to 1.1.1h
+   * Update Tor Launcher to 0.2.26
+   * Bug 31767: Avoid using intl.locale.requested preference directly
+   * Bug 40013: End of year 2020 Fundraising campaign [torbutton]
+   * Bug 40016: Fix onion pattern for LTR locales [torbutton]
+   * Bug 40139: Update Onboarding icon for 10.0 [tor-browser]
+   * Bug 40148: Disable Picture-in-Picture until we investigate and possibly fix it [tor-browser]
+   * Translations update
+ * Windows
+   * Bug 40140: Videos stop working with Tor Browser 10.0 on Windows
+ * Build System
+   * Windows + OS X + Linux
+     * Bump Go to 1.14.9
+   * Windows
+     * Bug 40051: Remove SOURCE_DATE_EPOCH patch for OpenSSL
+
 Tor Browser 10.0a8 -- October 8 2020
  * Android
    * Update Fenix to 81.1.2
