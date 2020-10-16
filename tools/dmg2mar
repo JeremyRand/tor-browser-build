@@ -143,6 +143,7 @@ sub convert_files {
         unlink $output;
         local $ENV{MOZ_PRODUCT_VERSION} = $file->{version};
         local $ENV{MAR_CHANNEL_ID} = "torbrowser-torproject-$channel";
+        local $ENV{TMPDIR} = $tmpdir;
         (undef, $err, $success) =  capture_exec('make_full_update.sh', '-q',
                                         $output, "$tmpdir/$appname.app");
         exit_error "Error updating $output: $err" unless $success;
