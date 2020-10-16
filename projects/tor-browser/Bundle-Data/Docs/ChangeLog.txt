@@ -10,12 +10,12 @@ Tor Browser 10.0.1 -- October 13 2020
    * Bug 40148: Disable Picture-in-Picture until we investigate and possibly fix it [tor-browser]
    * Translations update
  * Windows
-   * Bug 40140: Videos stop working with Tor Browser 10.0 on Windows
+   * Bug 40140: Videos stop working with Tor Browser 10.0 on Windows [tor-browser]
  * Build System
    * Windows + OS X + Linux
      * Bump Go to 1.14.9
    * Windows
-     * Bug 40051: Remove SOURCE_DATE_EPOCH patch for OpenSSL
+     * Bug 40051: Remove SOURCE_DATE_EPOCH patch for OpenSSL [tor-browser-build]
 
 Tor Browser 10.0a8 -- October 8 2020
  * Android
