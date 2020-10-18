@@ -13,9 +13,6 @@ export CC='gcc -m32'
   ln -s $clangdir/bin/clang $clangdir/bin/x86_64-apple-darwin-cc
   export CC="cc [% c("var/FLAGS") %]"
 [% END -%]
-[% IF c("var/windows") -%]
-  patch -p1 < $rootdir/use-SOURCE_DATE_EPOCH.patch
-[% END -%]
 export SOURCE_DATE_EPOCH='[% c("timestamp") %]'
 ./Configure [% c('var/configure_opts') %]
 make
