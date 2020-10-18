@@ -2,6 +2,7 @@ Tor Browser 10.5a2 -- October 20 2020
  * Windows + OS X + Linux
    * Update Firefox to 78.4.0esr
    * Update NoScript to 11.1.3
+   * Update OpenSSL to 1.1.1h
    * Update Tor Launcher to 0.2.26
      * Translations update
    * Bug 31767: Avoid using intl.locale.requested preference directly
@@ -20,7 +21,6 @@ Tor Browser 10.5a2 -- October 20 2020
  * Build System
    * Windows + OS X + Linux
      * Update Go to 1.14.10
-     * Update OpenSSL to 1.1.1h
      * Bug 40104: Use our TMPDIR when creating our .mar files [tor-browser-build]
    * Linux
      * Bug 40118: Add missing libdrm dev package to firefox container [tor-browser-build]
