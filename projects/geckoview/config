@@ -144,9 +144,9 @@ input_files:
     name: mozconfig
   - project: binutils
     name: binutils
-  - project: fenix-rust
+  - project: rust
     name: rust
-  - project: fenix-cbindgen
+  - project: cbindgen
     name: cbindgen
   - project: node
     name: node

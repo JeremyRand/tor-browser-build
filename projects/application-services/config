@@ -24,19 +24,19 @@ input_files:
   - project: '[% c("var/compiler") %]'
     name: '[% c("var/compiler") %]'
   # We need the torbrowser-* targets for Rust, see: #40094.
-  - project: fenix-as-rust
+  - project: rust
     name: rust-armv7
     target_prepend:
       - torbrowser-android-armv7
-  - project: fenix-as-rust
+  - project: rust
     name: rust-aarch64
     target_prepend:
       - torbrowser-android-aarch64
-  - project: fenix-as-rust
+  - project: rust
     name: rust-x86
     target_prepend:
       - torbrowser-android-x86
-  - project: fenix-as-rust
+  - project: rust
     name: rust-x86_64
     target_prepend:
       - torbrowser-android-x86_64

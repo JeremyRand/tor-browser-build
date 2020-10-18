@@ -4,8 +4,8 @@ distdir=/var/tmp/dist/[% project %]
 mkdir -p $distdir
 tar -C /var/tmp/dist -xf [% c('input_files_by_name/cmake') %]
 export PATH="/var/tmp/dist/cmake/bin:$PATH"
-tar -C /var/tmp/dist -xf [% c('input_files_by_name/prev_rust') %]
-cd /var/tmp/dist/rust-[% c('var/prev_version') %]-x86_64-unknown-linux-gnu
+tar -C /var/tmp/dist -xf [% c('input_files_by_name/previous_rust') %]
+cd /var/tmp/dist/rust-[% c('var/previous_version') %]-x86_64-unknown-linux-gnu
 ./install.sh --prefix=$distdir-rust-old
 export PATH="$distdir-rust-old/bin:$PATH"
 
@@ -39,7 +39,7 @@ cd /var/tmp/build/rustc-[% c('version') %]-src
 # LLVM has reproducibility issues when optimizing bitcode, which we need to
 # patch. See: #32053 for more details.
 cd src/llvm-project
-patch -p1 < $rootdir/43909.patch
+patch -p1 < $rootdir/[% c('input_files_by_name/43909') %]
 cd ../../
 
 [% IF c("var/windows-i686") %]
