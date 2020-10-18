@@ -1,3 +1,34 @@
+Tor Browser 10.5a2 -- October 20 2020
+ * Windows + OS X + Linux
+   * Update Firefox to 78.4.0esr
+   * Update NoScript to 11.1.3
+   * Update Tor Launcher to 0.2.26
+     * Translations update
+   * Bug 31767: Avoid using intl.locale.requested preference directly
+   * Bug 33954: Consider different approach for Bug 2176
+   * Bug 40011: Rename tor-browser-brand.ftl to brand.ftl [torbutton]
+   * Bug 40012: Fix about:tor not loading some images in 82 [torbutton]
+   * Bug 40013: End of year 2020 Fundraising campaign [torbutton]
+   * Bug 40016: Fix onion pattern for LTR locales [torbutton]
+   * Bug 40139: Update Onboarding icon for 10.0 [tor-browser]
+   * Bug 40148: Disable Picture-in-Picture until we investigate and possibly fix it [tor-browser]
+   * Bug 40166: Disable security.certerrors.mitm.auto_enable_enterprise_roots [tor-browser]
+   * Bug 40192: Backport Mozilla Bug 1658881 [tor-browser]
+   * Translations update
+ * Windows
+   * Bug 40140: Videos stop working with Tor Browser 10.0 on Windows [tor-browser]
+ * Build System
+   * Windows + OS X + Linux
+     * Update Go to 1.14.10
+     * Update OpenSSL to 1.1.1h
+     * Bug 40104: Use our TMPDIR when creating our .mar files [tor-browser-build]
+   * Linux
+     * Bug 40118: Add missing libdrm dev package to firefox container [tor-browser-build]
+   * Windows
+     * Bug 34360: Bump binutils to 2.35.1
+     * Bug 40051: Remove SOURCE_DATE_EPOCH patch [tor-browser-build]
+     * Bug 40131: Remove unused binutils patches [tor-browser-build]
+
 Tor Browser 10.0.1 -- October 13 2020
  * Windows + OS X + Linux
    * Update NoScript to 11.1.1
