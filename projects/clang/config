@@ -1,10 +1,16 @@
 # vim: filetype=yaml sw=2
-version: 9.0.1
+version: '[% c("var/llvm_version") %]'
 filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %].tar.gz'
 
 var:
+  llvm_version: '[% pc("clang-source", "version") %]'
   container:
     use_container: 1
+
+targets:
+  android:
+    var:
+      llvm_version: '[% pc("llvm-project", "version") %]'
 
 input_files:
   - project: container-image
@@ -13,8 +19,12 @@ input_files:
     enable: '[% c("var/linux") %]'
   - name: binutils
     project: binutils
-    enable: '[% c("var/linux") %]'
+    enable: '[% c("var/linux") %] || [% c("var/android") %]'
   - project: cmake
     name: cmake
   - project: clang-source
     name: clang-source
+    enable: '[% ! c("var/android") %]'
+  - project: llvm-project
+    name: clang-source
+    enable: '[% c("var/android") %]'

@@ -4,12 +4,14 @@ distdir=/var/tmp/dist/[% project %]
 mkdir -p /var/tmp/dist
 tar -C /var/tmp/dist -xf [% c('input_files_by_name/cmake') %]
 export PATH="/var/tmp/dist/cmake/bin:$PATH"
-[% IF c("var/linux") %]
-  # We need a link to our GCC, otherwise the system cc gets used which points to
-  # /usr/bin/gcc.
-  [% pc('gcc', 'var/setup', { compiler_tarfile => c('input_files_by_name/gcc'),
-                              hardened_gcc => 0 }) %]
-  ln -s gcc /var/tmp/dist/gcc/bin/cc
+[% IF c("var/linux") || c("var/android") %]
+  [% IF c("var/linux") %]
+    # We need a link to our GCC, otherwise the system cc gets used which points
+    # to /usr/bin/gcc.
+    [% pc('gcc', 'var/setup', { compiler_tarfile => c('input_files_by_name/gcc'),
+                                hardened_gcc => 0 }) %]
+    ln -s gcc /var/tmp/dist/gcc/bin/cc
+  [% END %]
   tar -C /var/tmp/dist -xf [% c('input_files_by_name/binutils') %]
   export PATH="/var/tmp/dist/binutils/bin:$PATH"
 [% END -%]
@@ -20,10 +22,19 @@ cd clang-source
 export LLVM_HOME=$(pwd)
 mkdir build
 cd build
-cmake .. -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=$distdir \
-                             -DCMAKE_BUILD_TYPE:STRING=Release \
-     [% IF c("var/rlbox") -%]-DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly \[% END -%]
-                             $LLVM_HOME
+# XXX: remove duplicated parts while fixing tor-browser-build#40048
+[% IF ! c("var/android") %]
+  cmake .. -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=$distdir \
+                               -DCMAKE_BUILD_TYPE:STRING=Release \
+       [% IF c("var/rlbox") -%]-DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly \[% END -%]
+                               $LLVM_HOME
+[% ELSE %]
+  cmake ../llvm -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=$distdir \
+                                    -DCMAKE_BUILD_TYPE=Release \
+                                    -DLLVM_TARGETS_TO_BUILD="X86;ARM;AArch64" \
+            [% IF c("var/rlbox") -%]-DLLVM_EXPERIMENTAL_TARGETS_TO_BUILD=WebAssembly \[% END -%]
+                                    -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra;compiler-rt;libcxx;libcxxabi;lld"
+[% END -%]
 make -j[% c("buildconf/num_procs") %]
 make install
 cd /var/tmp/dist
