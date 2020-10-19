@@ -5,8 +5,8 @@ version: '[% c("input_file_var/rust_version") %]'
 # Those values can be changed from the input_files section of other
 # projects. See bug 32436.
 input_file_var:
-  rust_version: 1.41.1
-  prev_version: 1.40.0
+  rust_version: 1.43.0
+  prev_version: 1.42.0
 
 var:
   prev_version: '[% c("input_file_var/prev_version") %]'
