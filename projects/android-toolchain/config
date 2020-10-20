@@ -1,6 +1,6 @@
 # vim: filetype=yaml sw=2
 filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %].tar.gz'
-version: 29.0.3
+version: 29.0.2
 version_old: 28.0.3
 var:
   container:
@@ -34,7 +34,7 @@ input_files:
   - project: container-image
   - URL: '[% c("var/google_repo") %]/build-tools_r[% c("version") %]-linux.zip'
     name: build_tools
-    sha256sum: 5652d8cd5eaaade0b853bfe0ae6cbfa0706a6f70a0ebb25ca24a6f484ec3d855
+    sha256sum: 1e9393cbfd4a4b82e30e7f55ab38db4a5a3259db93d5821c63597bc74522fa08
   - URL: '[% c("var/google_repo") %]/build-tools_r[% c("version_old") %]-linux.zip'
     name: build_tools_old
     sha256sum: 7954956a40633c88f693d638cbc23f68e9e2499dc7a4b7dfdaf6a3e91387749a
@@ -46,7 +46,7 @@ input_files:
   # SDK version/build-tools version.
   - URL: '[% c("var/google_repo") %]/platform-tools_r[% c("version") %]-linux.zip'
     name: platform_tools
-    sha256sum: 49e676ec90bff1f7d7dfe4fb7d0ab78e14fa8fb06a8dccca2ef57a1bc29497a0
+    sha256sum: 633b6dfa245f5dc58d15da9ead655bcd14de5784196ec0f0dc7e37a5acb61be4
   - URL: '[% c("var/google_repo") %]/sdk-tools-linux-4333796.zip'
     name: android_sdk_tools
     sha256sum: 92ffee5a1d98d856634e8b71132e8a95d96c83a63fde1099be3d86df3106def9

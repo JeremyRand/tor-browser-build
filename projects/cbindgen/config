@@ -14,9 +14,9 @@ var:
 targets:
   android:
     var:
-      cbindgen_version: 0.14.3
-      cbindgen_hash: cc2876f709808a52d132a5f84e53ca1964eb92db
-      cbindgen_vendor_hash: cc47db55a1c937e7bcd1cbd8664964656a4922bc35175d95c4015d452f2dcb2b
+      cbindgen_version: 0.15.0
+      cbindgen_hash: 83b3be9f884697a51f8717af8b5498866a81e62e
+      cbindgen_vendor_hash: e5b843e9f51d93bc7dafdc11492fe4f5645b7a2c2aba02c473c0a81da28b961c
 
 input_files:
   - project: container-image
