@@ -5,6 +5,7 @@ git_hash: '[% project %]-[% c("var/android_components_version") %]-[% c("var/tor
 git_url: https://gitlab.torproject.org/tpo/applications/android-components.git
 tag_gpg_id: 1
 gpg_keyring: torbutton.gpg
+variant: '[% IF c("var/release") %]Release[% ELSE %]Beta[% END %]'
 
 var:
   android_components_version: 60.0.5

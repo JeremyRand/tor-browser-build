@@ -54,9 +54,14 @@ patch -p1 < $rootdir/git.patch
   fi
 
   # We want to make sure only our code is built. Overwrite engine-gecko code we
-  # don't need. XXX: Take release into account.
+  # don't need.
   cd components/browser
-  [% IF c("var/alpha") || c("var/nightly") %]
+  [% IF c("var/release") %]
+    rm -rf engine-gecko-beta/src/*
+    rm -rf engine-gecko-nightly/src/*
+    cp -rf engine-gecko/src/* engine-gecko-beta/src/
+    cp -rf engine-gecko/src/* engine-gecko-nightly/src/
+  [% ELSE %]
     rm -rf engine-gecko/src/*
     rm -rf engine-gecko-nightly/src/*
     cp -rf engine-gecko-beta/src/* engine-gecko/src/
@@ -65,8 +70,7 @@ patch -p1 < $rootdir/git.patch
   cd ../../
   gradle_args="--offline --no-daemon -Dmaven.repo.local=$gradle_repo"
 
-  # XXX: Take release into account
-  gradle $gradle_args assembleGeckoBeta -x lint
+  gradle $gradle_args assembleGecko[% c('variant') %] -x lint
   gradle $gradle_args publish
 
   # We only need the archives and .pom files for now.
