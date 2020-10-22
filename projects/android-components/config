@@ -8,14 +8,15 @@ gpg_keyring: torbutton.gpg
 variant: '[% IF c("var/release") %]Release[% ELSE %]Beta[% END %]'
 
 var:
-  android_components_version: 60.0.5
-  torbrowser_branch: 10.0
+  android_components_version: 63.0.1
+  torbrowser_branch: 10.5
   container:
     use_container: 1
   # This should be updated when the list of gradle dependencies is changed.
-  gradle_dependencies_version: 7
+  gradle_dependencies_version: 8
   # Switch to make it easier to grab all dependencies during a dry-run.
   fetch_gradle_dependencies: 0
+  gradle_version: 6.6.1
 
 targets:
   nightly:
@@ -46,3 +47,6 @@ input_files:
   - URL: https://people.torproject.org/~gk/mirrors/sources/glean-parser-[% c('var/glean_parser') %].tar.bz2
     sha256sum: bdbb421fdcc9b66aebe8f41b33e254cab722355c59c0f43f10a8322d7d6da6a4
     enable: '[% !c("var/fetch_gradle_dependencies") %]'
+  - URL: https://services.gradle.org/distributions/gradle-[% c("var/gradle_version") %]-bin.zip
+    name: gradle
+    sha256sum: 7873ed5287f47ca03549ab8dcb6dc877ac7f0e3d7b1eb12685161d10080910ac
