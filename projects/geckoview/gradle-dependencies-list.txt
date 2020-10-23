@@ -330,6 +330,10 @@ e71c328ceef5c4a7d76f2d86df1b65d65fe2acf868b1a4efd84a3f34336186d8 | https://maven
 a000041f5a1f79283c5175e1bb60cf3683780f401c6a9d34fbe9751253fa6ff9 | https://maven.google.com/androidx/localbroadcastmanager/localbroadcastmanager/1.0.0/localbroadcastmanager-1.0.0.pom
 b23b527b2bac870c4a7451e6982d7132e413e88d7f27dbeb1fc7640a720cd9ee | https://maven.google.com/androidx/media/media/1.0.0/media-1.0.0.aar
 9cdfe5f7849069ad84dc4fb0407b3677fb8c22d3d66fd2b8fdb8dec8c5dc7411 | https://maven.google.com/androidx/media/media/1.0.0/media-1.0.0.pom
+fb8115694b1731c23c1bbb628f5baaee37a8f3b50d69a7733b55278e101e1488 | https://maven.google.com/androidx/multidex/multidex-instrumentation/2.0.0/multidex-instrumentation-2.0.0.aar
+5056524d08992ebe1b3654c5b0db125497b930f177fa385952450e3b74d49bf2 | https://maven.google.com/androidx/multidex/multidex-instrumentation/2.0.0/multidex-instrumentation-2.0.0.pom
+c01700091072e0ff5d8ec2d00eac6b8f96ea18646080425e9ce3c6a7b5f66e33 | https://maven.google.com/androidx/multidex/multidex/2.0.0/multidex-2.0.0.aar
+4298222d2a10cf6e82f32650b5a716a8714899f3ef7d05d58ddaafc32ae2d614 | https://maven.google.com/androidx/multidex/multidex/2.0.0/multidex-2.0.0.pom
 6054ee0184ba0ffd66dc825e060e8c9bf2f6c2ea54336cf3bef15c575037a743 | https://maven.google.com/androidx/palette/palette/1.0.0/palette-1.0.0.aar
 85c5599135a789cfd5f99656f9e8240c9a727f72b2caaab60943aa32bb842771 | https://maven.google.com/androidx/palette/palette/1.0.0/palette-1.0.0.pom
 ea9fde25606eb456210ffe9f7e51048abd776b55a34c0cc6608282b5699122d1 | https://maven.google.com/androidx/preference/preference/1.0.0/preference-1.0.0.aar
@@ -479,6 +483,14 @@ c7786e12c89c77e4daea2ebb991491821f90364cd5e06a02b56371a42084b3c0 | https://maven
 7031d2d09683996ac126074be3de6df9b3de80f7e0f10b80a6e8754f69c80028 | https://maven.google.com/com/android/tools/sdklib/26.2.1/sdklib-26.2.1.pom
 ebec9d8e0a140b376aade276b08572cb1f8cf954249b469bee6dce6fd5a45cd4 | https://maven.google.com/com/android/tools/sdklib/26.4.2/sdklib-26.4.2.jar
 768b365f2486e344d012d5b4b9b195fde8bfb442c23dca89d258a7766cdba5c8 | https://maven.google.com/com/android/tools/sdklib/26.4.2/sdklib-26.4.2.pom
+dd0980edf729e0d346e2b58e70801dc237c1aed0c7ab274fa3f1c8c8efc64cc7 | https://maven.google.com/com/google/android/gms/play-services-base/17.0.0/play-services-base-17.0.0.aar
+c30489d38be5d41e19272f6aa47d6c43de85034500bcb1864b79381c9634d924 | https://maven.google.com/com/google/android/gms/play-services-base/17.0.0/play-services-base-17.0.0.pom
+d324a1785bbc48bfe3639fc847cfd3cf43d49e967b5caf2794240a854557a39c | https://maven.google.com/com/google/android/gms/play-services-basement/17.0.0/play-services-basement-17.0.0.aar
+ffe9295d9eb2ec2d784bb4c3634f6a10175224d2111332fa2735320b52a24b66 | https://maven.google.com/com/google/android/gms/play-services-basement/17.0.0/play-services-basement-17.0.0.pom
+85ca0babd7fa3aa3454203105a32836615ac44c59c59e2452bb548c873c4ca44 | https://maven.google.com/com/google/android/gms/play-services-fido/18.1.0/play-services-fido-18.1.0.aar
+feb4ebb1ddb76dc18ee9e6028205ac226a70d40247fcccaca092303c68f8b59d | https://maven.google.com/com/google/android/gms/play-services-fido/18.1.0/play-services-fido-18.1.0.pom
+2e6d1738b73647f3fe7a038b9780b97717b3746eae258009197e36e7bf3112a5 | https://maven.google.com/com/google/android/gms/play-services-tasks/17.0.0/play-services-tasks-17.0.0.aar
+fdd93302c2eb94bbe6007caa28d072246d2875cda5cb774bb6299416b94d74a6 | https://maven.google.com/com/google/android/gms/play-services-tasks/17.0.0/play-services-tasks-17.0.0.pom
 7680e381a3c03798d999b2e441caadd8a56a0a808e108024a67af9fe26c11adc | https://maven.google.com/com/google/android/material/material/1.0.0/material-1.0.0.aar
 c9fff541d51c11195de305c50bbfe4d1dfc97841983d95f6d7101112603515ab | https://maven.google.com/com/google/android/material/material/1.0.0/material-1.0.0.pom
 ece749bdea04522b04a7b0cfd391026f88808c4d0103b3bede8b42baf0b7d677 | https://plugins.gradle.org/m2/org/mozilla/apilint/apilint/0.3.1/apilint-0.3.1.jar
