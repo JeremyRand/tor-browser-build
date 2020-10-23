@@ -11,7 +11,7 @@
 [% END -%]
 distdir=/var/tmp/dist/[% project %]
 tar -xf [% c('input_files_by_name/node') %]
-cd node-[% c('version') %]
+cd node-v[% c('version') %]
 
 ./configure --prefix=$distdir
 make -j[% c("buildconf/num_procs") %]

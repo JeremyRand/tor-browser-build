@@ -1,9 +1,17 @@
 # vim: filetype=yaml sw=2
-version: v10.21.0
+version: '[% c("var/node_version") %]'
 filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %].tar.gz'
 var:
+  node_version: 10.21.0
+  node_hash: 26b01fa28338cacaa8a66d7963ab2514e81678c268ab52ec55dcf937aadcb73b
   container:
     use_container: 1
+
+targets:
+  android:
+    var:
+      node_version: 10.22.1
+      node_hash: f47f4725dcae137b26f8e2a7d0ab2c2c7f1f47e4f96834e6a9242f157132255f
 
 input_files:
   - project: container-image
@@ -13,6 +21,6 @@ input_files:
   - project: '[% c("var/compiler") %]'
     name: '[% c("var/compiler") %]'
     enable: '[% c("var/linux") %]'
-  - URL: 'https://nodejs.org/download/release/[% c("version") %]/node-[% c("version") %].tar.xz'
-    sha256sum: 26b01fa28338cacaa8a66d7963ab2514e81678c268ab52ec55dcf937aadcb73b
+  - URL: 'https://nodejs.org/dist/v[% c("var/node_version") %]/node-v[% c("var/node_version") %].tar.xz'
+    sha256sum: '[% c("var/node_hash") %]'
     name: node
