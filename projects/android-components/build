@@ -32,7 +32,6 @@ cd $builddir-[% c('version') %]
 patch -p1 < $rootdir/git.patch
 # We need to pick up a newer glean_parser until an updates glean lands in
 # android-components.
-patch -p1 < $rootdir/40085.patch
 [% IF c("var/fetch_gradle_dependencies") %]
   # XXX: fetching deps for `assembleGeckoBeta -x lint` by using that same target
   # results in some missing dependencies for yet unknown reasons. Thus, we use
