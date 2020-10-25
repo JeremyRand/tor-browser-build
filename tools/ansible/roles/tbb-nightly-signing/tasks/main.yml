@@ -1,0 +1,54 @@
+---
+- name: Install dependencies
+  apt:
+      name: "{{ item }}"
+      state: present
+  with_items:
+      - git
+      - libdatetime-perl
+      - libfindbin-libs-perl
+      - libfile-slurp-perl
+      - libxml-writer-perl
+      - libio-captureoutput-perl
+      - libparallel-forkmanager-perl
+      - libxml-libxml-perl
+      - libwww-perl
+      - libjson-perl
+      - libyaml-libyaml-perl
+      - libyaml-perl
+      - libtemplate-perl
+      - libio-handle-util-perl
+      - libio-all-perl
+      - libio-captureoutput-perl
+      - libpath-tiny-perl
+      - libstring-shellquote-perl
+      - libsort-versions-perl
+      - libdigest-sha-perl
+      - libdata-uuid-perl
+      - libdata-dump-perl
+      - libfile-copy-recursive-perl
+      - libnss3-tools
+      - rsync
+
+- name: create nightly-signing user
+  user:
+      name: "{{ nightly_signing_user }}"
+      comment: "Tor Browser Nightly Signing"
+      createhome: yes
+      home: "/home/{{ nightly_signing_user }}"
+
+- name: clone tor-browser-build
+  become: yes
+  become_user: "{{ nightly_signing_user }}"
+  git:
+      repo: "{{ tor_browser_build_git_url }}"
+      dest: "{{ tor_browser_build_dir }}"
+      version: "{{ tor_browser_build_commit }}"
+
+- name: add cron to sign nighly build
+  cron:
+      name: tbb-sign-nightly-build
+      user: "{{ nightly_signing_user }}"
+      hour: "{{ nightly_signing_cron_hour }}"
+      minute: "{{ nightly_signing_cron_minute }}"
+      job: "torsocks /home/{{ nightly_signing_user }}/tor-browser-build/tools/signing/nightly/sign-nightly"

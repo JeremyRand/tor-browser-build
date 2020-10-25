@@ -25,6 +25,13 @@ boklm-tbb-nightly-build:
   For more details, see also this ticket:
   https://trac.torproject.org/projects/tor/ticket/33948
 
+tbb-nightly-signing:
+  This target is used to deploy a nightly signing machine. The
+  configuration of nightly signing is done in the following files:
+   tools/ansible/roles/tbb-nightly-signing/defaults/main.yml
+   tools/signing/nightly/config.yml
+   tools/signing/nightly/update-responses-base-config.yml
+
 
 Adding, removing, updating users on the Tor Browser team build machine
 ======================================================================

@@ -1,0 +1,7 @@
+---
+nightly_signing_user: nightly-signing
+nightly_signing_cron_hour: '*'
+nightly_signing_cron_minute: '0,30'
+tor_browser_build_dir: "/home/{{ nightly_signing_user }}/tor-browser-build"
+tor_browser_build_git_url: https://git.torproject.org/builders/tor-browser-build.git
+tor_browser_build_commit: 8d66414b7860751ffec6a83a6bc6dbfbd94f801a

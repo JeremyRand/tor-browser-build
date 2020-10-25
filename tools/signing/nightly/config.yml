@@ -1,0 +1,18 @@
+---
+martools_version: 9.0.2
+martools_url: https://archive.torproject.org/tor-package-archive/torbrowser/
+martools_gpg_keyring: keyring/torbrowser.gpg
+builds_url: http://f4amtbsowhix7rrf.onion/tor-browser-builds
+builds_url_auth_basic_username: tor-guest
+builds_url_auth_basic_password: tor-guest
+publish_dirs:
+    - nightly-linux-x86_64
+    - nightly-linux-i686
+    - nightly-windows-x86_64
+    - nightly-windows-i686
+    - nightly-osx-x86_64
+nss_db_dir: nssdb
+nss_certname: nightly-marsigner
+gpg_keyring: keyring/torbrowser-nightly.gpg
+rsync_dest: nightly-publish:nightly-updates/
+post_rsync_cmd: ssh nightly-publish-static-update true

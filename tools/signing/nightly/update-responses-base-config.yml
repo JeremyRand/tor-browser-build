@@ -1,0 +1,32 @@
+---
+download:
+    mars_url: https://nightlies.tbb.torproject.org/nightly-updates
+appname_marfile: tor-browser
+build_targets:
+    linux32: Linux_x86-gcc3
+    linux64: Linux_x86_64-gcc3
+    win32:
+        - WINNT_x86-gcc3
+        - WINNT_x86-gcc3-x86
+        - WINNT_x86-gcc3-x64
+    win64: WINNT_x86_64-gcc3-x64
+    osx32: Darwin_x86-gcc3
+    osx64: Darwin_x86_64-gcc3
+channels:
+    nightly: nightly_version
+versions:
+    nightly_version:
+        platformVersion: 68.2.0
+        detailsURL: http://f4amtbsowhix7rrf.onion/
+        migrate_langs:
+            pt-PT: pt-BR
+        minSupportedInstructionSet: SSE2
+        osx32:
+            minSupportedOSVersion: 13.0.0
+        osx64:
+            minSupportedOSVersion: 13.0.0
+        win32:
+            minSupportedOSVersion: 6.1
+        win64:
+            minSupportedOSVersion: 6.1
+mar_compression: xz
