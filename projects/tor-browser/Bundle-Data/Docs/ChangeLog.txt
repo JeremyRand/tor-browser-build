@@ -1,3 +1,53 @@
+Tor Browser 10.0a9 -- October 26 2020
+ * Android
+   * Update Fenix to 82.1.1
+   * Update NoScript to 11.1.3
+   * Update OpenSSL to 1.1.1h
+   * Bug 30605: Honor privacy.spoof_english
+   * Bug 40003: Block starting Tor when setup is not complete [tor-android-service]
+   * Bug 40004: "Tor Browser" string is used instead of "Alpha"/"Nightly" for non en-US locales [tor-android-service]
+   * Bug 40016: Allow inheriting from AddonCollectionProvider [android-components]
+   * Bug 40017: Rebase android-components patches to 60 [android-components]
+   * Bug 40019: Expose spoofEnglish pref [android-components]
+   * Bug 40020: Disable third-party cookies [android-components]
+   * Bug 40021: Force telemetry=false in Fennec settings migration [android-components]
+   * Bug 40022: Migrate tor security settings [android-components]
+   * Bug 40023: Stop Private Notification Service [android-components]
+   * Bug 40024: Disable tracking protection by default [android-components]
+   * Bug 40050: Rebase Fenix patches to Fenix 82 [fenix]
+   * Bug 40053: Select your security settings panel on start page is confusing [fenix]
+   * Bug 40058: Disabling/Enabling addon still shows option to disallow in private mode [fenix]
+   * Bug 40062: HTTPS Everywhere is not shown as installed [fenix]
+   * Bug 40068: Tor Service closes when changing theme [fenix]
+   * Bug 40071: Show only supported locales [fenix]
+   * Bug 40073: Use correct branding on About page [fenix]
+   * Bug 40076: "Explore privately" not visible [fenix]
+   * Bug 40078: Crash at Android startup from background service [fenix]
+   * Bug 40082: Security level is reset when the app is killed [fenix]
+   * Bug 40083: Locale ordering in BuildConfig is non-deterministic [fenix]
+   * Bug 40087: Implement a switch for english locale spoofing [fenix]
+   * Bug 40088: Use Tor Browser logo in migration screen [fenix]
+   * Bug 40094: Do not use MasterPasswordTipProvider in HomeFragment [fenix]
+   * Bug 40095: Hide "Sign in to sync" in bookmarks [fenix]
+   * Bug 40097: Bump allowed_addons.json [fenix]
+   * Bug 40133: Rebase tor-browser patches to 82.0b1 [tor-browser]
+   * Bug 40166: Disable security.certerrors.mitm.auto_enable_enterprise_roots [tor-browser]
+   * Bug 40198: Expose privacy.spoof_english pref [tor-browser]
+   * Bug 40199: Avoid using system locale for intl.accept_languages [tor-browser]
+   * Translations update
+ * Build System
+   * Android
+     * Update Go to 1.14.10
+     * Bug 34360: Bump binutils version to 2.35.1
+     * Bug 40097: Update toolchain for Fenix 82 [tor-browser-build]
+     * Bug 40108: Package tooling-glean-gradle archive, too [tor-browser-build]
+     * Bug 40115: Update components for switch to mozilla82-based Fenix [tor-browser-build]
+     * Bug 40121: Use updated glean_parser for application-services as well [tor-browser-build]
+     * Bug 40124: Remove unused torbrowser-android-all (and related) targets [tor-browser-build]
+     * Bug 40125: Remove fenix-* projects [tor-browser-build]
+     * Bug 40129: application-services is missing rustc in PATH [tor-browser-build]
+     * Bug 40130: More mobile clean-up [tor-browser-build]
+
 Tor Browser 10.5a2 -- October 20 2020
  * Windows + OS X + Linux
    * Update Firefox to 78.4.0esr
