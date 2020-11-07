@@ -47,6 +47,7 @@ targets:
     var:
       arch_deps:
         - apksigner
+      verify_allowed_addons: 1
 
 input_files:
   - project: container-image
@@ -115,3 +116,7 @@ input_files:
     enable: '[% c("var/namecoin") %]'
   - filename: namecoin.patch
     enable: '[% c("var/namecoin") %]'
+  - filename: allowed_addons.json
+    enable: '[% c("var/android") %]'
+  - filename: verify_allowed_addons.py
+    enable: '[% c("var/android") && c("var/verify_allowed_addons") %]'
