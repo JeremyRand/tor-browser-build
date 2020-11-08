@@ -23,6 +23,7 @@ ac_add_options --disable-elf-hack
 ac_add_options --with-clang-path=/var/tmp/dist/clang/bin/clang
 
 ac_add_options --enable-optimize
+ac_add_options --enable-rust-simd
 ac_add_options --enable-official-branding
 
 # Let's support GTK3 for ESR60

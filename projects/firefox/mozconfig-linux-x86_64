@@ -15,6 +15,7 @@ HOST_CXX=$CXX
 export BINDGEN_CFLAGS='--gcc-toolchain=/var/tmp/dist/gcc'
 
 ac_add_options --enable-optimize
+ac_add_options --enable-rust-simd
 ac_add_options --enable-official-branding
 
 # Let's support GTK3 for ESR60
