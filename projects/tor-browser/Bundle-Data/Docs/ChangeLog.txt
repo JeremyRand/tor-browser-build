@@ -1,3 +1,22 @@
+Tor Browser 10.5a3 -- November 10 2020
+ * All Platforms
+   * Update NoScript to 11.1.5
+   * Bug 40022: EOY November Update - Matching [torbutton]
+   * Bug 40064: Bump libevent to 2.1.12 [tor-browser-build]
+   * Translations update
+ * Windows + OS X + Linux
+   * Bug 27002: (Mozilla 1673237) Always allow SVGs on about: pages
+   * Bug 40021: Keep page shown after Tor Browser update purple [torbutton]
+   * Bug 40137: Migrate https-everywhere storage to idb [tor-browser]
+   * Bug 40219: Backport Mozilla Bug 1675905 [tor-browser]
+ * Android
+   * Bug 40106: EOY November Update - Matching [fenix]
+ * Build System
+   * All Platforms
+     * Bug 40079: Bump Go to 1.15.4 [tor-browser-build]
+   * Windows + OS X + Linux
+     * Bug 40133: Bump Rust version for ESR 78 to 1.43.0 [tor-browser-build]
+
 Tor Browser 10.0.3 -- November 2 2020
  * Android
    * Update Fenix to 82.1.1
