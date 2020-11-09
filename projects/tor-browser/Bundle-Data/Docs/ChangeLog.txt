@@ -1,3 +1,194 @@
+Tor Browser 10.0.3 -- November 2 2020
+ * Android
+   * Update Fenix to 82.1.1
+   * Update NoScript to 11.1.4
+   * Update OpenSSL to 1.1.1h
+   * Update Tor to 0.4.4.5
+   * Bug 10394: Let Tor Browser update HTTPS Everywhere
+   * Bug 11154: Disable TLS 1.0 (and 1.1) by default
+   * Bug 16931: Sanitize the add-on blocklist update URL
+   * Bug 17374: Disable 1024-DH Encryption by default
+   * Bug 21601: Remove unused media.webaudio.enabled pref
+   * Bug 30682: Disable Intermediate CA Preloading
+   * Bug 30812: Exempt about: pages from Resist Fingerprinting
+   * Bug 32886: Separate treatment of @media interaction features for desktop and android
+   * Bug 33534: Review FF release notes from FF69 to latest (FF78)
+   * Bug 33594: Disable telemetry collection (Glean)
+   * Bug 33851: Patch out Parental Controls detection and logging
+   * Bug 33856: Set browser.privatebrowsing.forceMediaMemoryCache to True
+   * Bug 33862: Fix usages of createTransport API
+   * Bug 33962: Uplift patch for bug 5741 (dns leak protection)
+   * Bug 34125: API change in protocolProxyService.registerChannelFilter
+   * Bug 34338: Disable the crash reporter
+   * Bug 34377: Port padlock states for .onion services
+   * Bug 34378: Port external helper app prompting
+   * Bug 34401: Re-design Connect screen on Android
+   * Bug 34402: Re-design Network Settings Screen on Android
+   * Bug 34403: UI changes for "Only Private Browsing Mode" on Android
+   * Bug 34405: Re-design about:tor on Android
+   * Bug 34406: Re-design onion indicators for Android
+   * Bug 34407: Review all Fenix menu items
+   * Bug 30605: Honor privacy.spoof_english
+   * Bug 40001: Start Tor as part of the Fenix initialization [fenix]
+   * Bug 40001: Generate tor-browser-brand.ftl when importing translations [torbutton]
+   * Bug 40002: Ensure system download manager is not used [android-components]
+   * Bug 40002: Fix generateNSGetFactory being moved to ComponentUtils [torbutton]
+   * Bug 40003: Adapt code for L10nRegistry API changes [torbutton]
+   * Bug 40003: Block starting Tor when setup is not complete [tor-android-service]
+   * Bug 40004: "Tor Browser" string is used instead of "Alpha"/"Nightly" for non en-US locales [tor-android-service]
+   * Bug 40004: Fix noscript message passing for Firefox 79 [torbutton]
+   * Bug 40005: Modify WebExtensions Menu [android-components]
+   * Bug 40006: "Only Private Browsing Mode" on Android [fenix]
+   * Bug 40006: Add Security Level plumbing [android-components]
+   * Bug 40007: Port external helper app prompting [android-components]
+   * Bug 40007: Move SecurityPrefs initialization to the StartupObserver component [torbutton]
+   * Bug 40008: Style fixes for 78 [torbutton]
+   * Bug 40009: Change the default search engines [android-components]
+   * Bug 40010: Verify Sentry is disabled [fenix]
+   * Bug 40011: Verify Leanplum is disabled [fenix]
+   * Bug 40011: Hide option for disallowing addons in private mode [android-components]
+   * Bug 40012: Verify Adjust is disabled [fenix]
+   * Bug 40013: Timestamp is embedded in extension manifest files [android-components]
+   * Bug 40013: Verify InstallReferrer is disabled [fenix]
+   * Bug 40014: Verify Google Ads ID is disabled [fenix]
+   * Bug 40014: Set correct default Security Level [android-components]
+   * Bug 40015: Modify Fenix Home Menu [fenix]
+   * Bug 40016: Modify Fenix Settings Menu [fenix]
+   * Bug 40016: Allow inheriting from AddonCollectionProvider [android-components]
+   * Bug 40017: Rebase android-components patches to 60 [android-components]
+   * Bug 40017: Audit Firefox 68-78 diff for proxy issues [tor-browser]
+   * Bug 40018: Disable Push functionality [fenix]
+   * Bug 40019: Ensure missing Adjust token does not throw an exception [fenix]
+   * Bug 40019: Expose spoofEnglish pref [android-components]
+   * Bug 40020: Disable third-party cookies [android-components]
+   * Bug 40021: Force telemetry=false in Fennec settings migration [android-components]
+   * Bug 40022: Migrate tor security settings [android-components]
+   * Bug 40023: Stop Private Notification Service [android-components]
+   * Bug 40023: Rebase Tor Browser esr78 patches onto 80 beta [tor-browser]
+   * Bug 40024: Disable tracking protection by default [android-components]
+   * Bug 40026: Implement Security Level settings [fenix]
+   * Bug 40028: Implement bootstrapping and about:tor [fenix]
+   * Bug 40029: Rebase Fenix patches to 81.1.0b1 [fenix]
+   * Bug 40030: Install https-everywhere and noscript addons [fenix]
+   * Bug 40031: Hide Mozilla-specific items on About page [fenix]
+   * Bug 40032: Disallow Cleartext Traffic [fenix]
+   * Bug 40034: Disable PWA [fenix]
+   * Bug 40035: Maybe hide Quick Start in release [fenix]
+   * Bug 40038: Review RemoteSettings for ESR 78 [tor-browser]
+   * Bug 40039: Implement Bridge configuration from Connect screen [fenix]
+   * Bug 40040: Investigate why bootstrapping fails [fenix]
+   * Bug 40041: Implement Network settings [fenix]
+   * Bug 40042: Timestamp is embedded in extension manifest files [fenix]
+   * Bug 40044: Fixup Connect, Onboarding, and Home screens [fenix]
+   * Bug 40048: Disable various ESR78 features via prefs [tor-browser]
+   * Bug 40050: Rebase Fenix patches to Fenix 82 [fenix]
+   * Bug 40053: Select your security settings panel on start page is confusing [fenix]
+   * Bug 40054: Search engines on mobile Tor Browser don't match the desktop ones [fenix]
+   * Bug 40058: Disabling/Enabling addon still shows option to disallow in private mode [fenix]
+   * Bug 40058: Hide option for disallowing addon in private mode [fenix]
+   * Bug 40061: Do not show "Send to device" in sharing menu [fenix]
+   * Bug 40062: HTTPS Everywhere is not shown as installed [fenix]
+   * Bug 40063: Do not sort search engines alphabetically [fenix]
+   * Bug 40064: Modify Nighty (and Debug) build variants [fenix]
+   * Bug 40066: Remove default bridge 37.218.240.34 [tor-browser-build]
+   * Bug 40066: Update existing prefs for ESR 78 [tor-browser]
+   * Bug 40067: Make date on Fenix about page reproducible [fenix]
+   * Bug 40068: Tor Service closes when changing theme [fenix]
+   * Bug 40069: Add helpers for message passing with extensions [tor-browser]
+   * Bug 40071: Show only supported locales [fenix]
+   * Bug 40072: Bug 40072: Disable Tracking Protection [fenix]
+   * Bug 40073: Use correct branding on About page [fenix]
+   * Bug 40073: Repack omni.ja to include builtin HTTPS Everywhere [tor-browser-build]
+   * Bug 40073: Disable remote Public Suffix List fetching [tor-browser]
+   * Bug 40076: "Explore privately" not visible [fenix]
+   * Bug 40078: Crash at Android startup from background service [fenix]
+   * Bug 40082: Security level is reset when the app is killed [fenix]
+   * Bug 40082: Let JavaScript on safest setting handled by NoScript again [tor-browser]
+   * Bug 40083: Locale ordering in BuildConfig is non-deterministic [fenix]
+   * Bug 40087: Implement a switch for english locale spoofing [fenix]
+   * Bug 40088: Use Tor Browser logo in migration screen [fenix]
+   * Bug 40091: Load HTTPS Everywhere as a builtin addon [tor-browser]
+   * Bug 40093: Enable Quit menu button [fenix]
+   * Bug 40094: Do not use MasterPasswordTipProvider in HomeFragment [fenix]
+   * Bug 40095: Hide "Sign in to sync" in bookmarks [fenix]
+   * Bug 40095: Review Mozilla developer notes for 79-81 (including) [tor-browser]
+   * Bug 40096: Review closed Mozilla bugs between 79-81 (inclusive) for GeckoView [tor-browser]
+   * Bug 40097: Rebase browser patches to 81.0b1 [tor-browser]
+   * Bug 40097: Bump allowed_addons.json [fenix]
+   * Bug 40098: Implement EOY home screen [fenix]
+   * Bug 40100: Resolve startup crashes in debug build [fenix]
+   * Bug 40112: Check that caching stylesheets per document group adheres to FPI [tor-browser]
+   * Bug 40119: Update Fenix dependencies for 81.1.2 [fenix]
+   * Bug 40125: Geckoview: Expose security level interface [tor-browser]
+   * Bug 40133: Rebase tor-browser patches to 82.0b1 [tor-browser]
+   * Bug 40166: Disable security.certerrors.mitm.auto_enable_enterprise_roots [tor-browser]
+   * Bug 40172: Security UI not updated for non-https .onion pages in Fenix [tor-browser]
+   * Bug 40173: Initialize security_slider in GeckoView at 4 [tor-browser]
+   * Bug 40198: Expose privacy.spoof_english pref [tor-browser]
+   * Bug 40199: Avoid using system locale for intl.accept_languages [tor-browser]
+   * Translations update
+ * Build System
+   * Android
+     * Update Go to 1.14.10
+     * Bug 33556: Add TBB project for android-components
+     * Bug 33557: Update Android toolchain for Fenix
+     * Bug 33558: Update tor-onion-proxy-library to use toolchain for Fenix
+     * Bug 33559: Update tor-android-service to use toolchain for Fenix
+     * Bug 33561: Update OpenSSL to use Android NDK 20
+     * Bug 33563: Update Tor to use Android NDK 20
+     * Bug 33564: Update ZSTD to use Android NDK 20
+     * Bug 33626: Add project for GeckoView
+     * Bug 33670: Update rbm.conf to match NDK 20
+     * Bug 33801: Update Go project to use new Android toolchain
+     * Bug 33833: Update Rust project to use Android NDK 20
+     * Bug 33927: Add tor-browser-build project for fenix
+     * Bug 33935: Fenix's classes5.dex files are not reproducible
+     * Bug 33973: Create fat .aar for GeckoView
+     * Bug 34011: Bump clang to 9.0.1
+     * Bug 34012: Bump cbindgen to 0.14.3
+     * Bug 34013: Bump Node to 10.21.0
+     * Bug 34014: Enable sqlite3 support in Python
+     * Bug 34101: Add tor-browser-build project for application-services
+     * Bug 34163: testbuild target is broken for Tor Browser 64 bit
+     * Bug 34187: Update zlib to use Android NDK 20
+     * Bug 34360: Bump binutils version to 2.35.1
+     * Bug 40010: Add nss project for application-services [tor-browser-build]
+     * Bug 40011: Add sqlcipher for application-services [tor-browser-build]
+     * Bug 40029: Clean-up all projects to remove fennec bits we don't need for fenix [tor-browser-build]
+     * Bug 40031: Add licenses for kcp-go and smux. [tor-browser-build]
+     * Bug 40039: Remove version_path in nss project [tor-browser-build]
+     * Bug 40040: Wire geckoview, application-services, android-components, and fenix together [tor-browser-build]
+     * Bug 40054: Adapt build.android script in tor-browser project for fenix [tor-browser-build]
+     * Bug 40055: Integrate building Glean in offline mode [tor-browser-build]
+     * Bug 40057: Include translations into build process in the fenix world [tor-browser-build]
+     * Bug 40058: Build Fenix with tor-android-service and tor-onion-proxy-library [tor-browser-build]
+     * Bug 40060: Set Fenix Version Name in build [tor-browser-build]
+     * Bug 40061: Remove Android SDK 28 [tor-browser-build]
+     * Bug 40065: Bump debootstrap-image ubuntu_version to 20.04.1 [tor-browser-build]
+     * Bug 40068: Bump versions for Fenix 81.1.0b1 dependencies [tor-browser-build]
+     * Bug 40072: Tor libraries are missing in final .apk after switch to 81.1.0b1 [tor-browser-build]
+     * Bug 40076: Use our android-components repo on GitLab [tor-browser-build]
+     * Bug 40078: Bump Gradle version for Fenix to 6.5.1 [tor-browser-build]
+     * Bug 40084: Generation of AndroidManifest.xml is not reproducible [tor-browser-build]
+     * Bug 40085+40086: classes.dex files are not reproducible in Fenix [tor-browser-build]
+     * Bug 40087: Deterministically add HTTPS Everywhere into omni.ja [tor-browser-build]
+     * Bug 40088+40117: Use MOZ_BUILD_DATE for extension manifest timestamps [tor-browser-build]
+     * Bug 40093: Ensure application-services libs do not include libc networking symbols [tor-browser-build]
+     * Bug 40094: Aarch64 fenix rust cross-compilation fails [tor-browser-build]
+     * Bug 40095: The pattern for the apk variable in build.android is matching too much [tor-browser-build]
+     * Bug 40097: Update toolchain for Fenix 82 [tor-browser-build]
+     * Bug 40101: Pick up Fenix 81.1.1 [tor-browser-build]
+     * Bug 40105: Enhance Gradle dependency script (sort deterministically and exclude .module files) [tor-browser-build]
+     * Bug 40106: Support using geckoview as well [tor-browser-build]
+     * Bug 40108: android-components does not bundle tooling-glean-gradle archive, only .pom file [tor-browser-build]
+     * Bug 40113: Nightly Android should use Nightly branding [tor-browser-build]
+     * Bug 40115: Update components for switch to mozilla82-based Fenix [tor-browser-build]
+     * Bug 40121: Use updated glean_parser for application-services as well [tor-browser-build]
+     * Bug 40124: Remove unused torbrowser-android-all (and related) targets [tor-browser-build]
+     * Bug 40125: Remove fenix-* projects [tor-browser-build]
+     * Bug 40129: application-services is missing rustc in PATH [tor-browser-build]
+     * Bug 40130: More mobile clean-up [tor-browser-build]
+
 Tor Browser 10.0a9 -- October 26 2020
  * Android
    * Update Fenix to 82.1.1
