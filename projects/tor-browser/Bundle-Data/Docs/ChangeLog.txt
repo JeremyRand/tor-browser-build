@@ -8,8 +8,9 @@ Tor Browser 10.5a3 -- November 10 2020
    * Bug 27002: (Mozilla 1673237) Always allow SVGs on about: pages
    * Bug 40021: Keep page shown after Tor Browser update purple [torbutton]
    * Bug 40137: Migrate https-everywhere storage to idb [tor-browser]
-   * Bug 40219: Backport Mozilla Bug 1675905 [tor-browser]
+   * Bug 40219: Backport fix for Mozilla's bug 1675905 [tor-browser]
  * Android
+   * Pick up fix for Mozilla's bug 1675905
    * Bug 40106: EOY November Update - Matching [fenix]
  * Build System
    * All Platforms
