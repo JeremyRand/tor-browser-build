@@ -10,7 +10,7 @@ Tor Browser 10.5a3 -- November 10 2020
    * Bug 40137: Migrate https-everywhere storage to idb [tor-browser]
    * Bug 40219: Backport fix for Mozilla's bug 1675905 [tor-browser]
  * Android
-   * Pick up fix for Mozilla's bug 1675905
+   * Pick up fix for Mozilla's bug 1675905 (with GeckoView 82.0.3)
    * Bug 40106: EOY November Update - Matching [fenix]
  * Build System
    * All Platforms
