@@ -1,7 +1,7 @@
 # vim: filetype=yaml sw=2
 version: '[% c("abbrev") %]'
 filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %]'
-git_hash: 900054eacd0706a0c8df96bf96c7b3c1704b854a
+git_hash: 242f9828ef8f7570a0494e6f805554300b770965
 git_url: https://git.torproject.org/tor-android-service.git
 git_submodule: 1
 
