@@ -1,3 +1,26 @@
+Tor Browser 10.5a4 -- November 17 2020
+ * All Platforms
+   * Update Tor to 0.4.5.1-alpha
+   * Bug 40212: Add new default bridge "PraxedisGuerrero" [tor-browser]
+ * Windows + OS X + Linux
+   * Update Firefox to 78.5.0esr
+ * Android
+   * Update Fenix to 83.1.0
+   * Bug 27002: (Mozilla 1673237) Always allow SVGs on about: pages
+   * Bug 40137: Built-in https-everywhere storage is not migrated to idb [tor-browser]
+   * Bug 40152: Top Crash: android.database.sqlite.SQLiteConstraintException [tor-browser-build]
+   * Bug 40171: Make WebRequest and GeckoWebExecutor First-Party aware [tor-browser]
+   * Bug 40205: Replace occurrence of EmptyCString with 0-length _ns literal [tor-browser]
+   * Bug 40206: Disable the /etc/hosts parser
+   * Translations update
+ * Build System
+   * OS X
+     * Bug 40139: Set RANLIB in macOS tor build [tor-browser-build]
+   * Android
+     * Bug 40211: Lower required build-tools version to 29.0.2 [tor-browser]
+     * Bug 40126: Bump Node to 10.22.1 for mozilla83 [tor-browser-build]
+     * Bug 40127: Update components for switch to mozilla83-based Fenix [tor-browser-build]
+
 Tor Browser 10.5a3 -- November 10 2020
  * All Platforms
    * Update NoScript to 11.1.5
