@@ -11,7 +11,7 @@ Tor Browser 10.5a4 -- November 17 2020
    * Bug 40152: Top Crash: android.database.sqlite.SQLiteConstraintException [tor-browser-build]
    * Bug 40171: Make WebRequest and GeckoWebExecutor First-Party aware [tor-browser]
    * Bug 40205: Replace occurrence of EmptyCString with 0-length _ns literal [tor-browser]
-   * Bug 40206: Disable the /etc/hosts parser
+   * Bug 40206: Disable the /etc/hosts parser [tor-browser]
    * Translations update
  * Build System
    * OS X
