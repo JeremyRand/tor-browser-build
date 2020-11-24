@@ -1,0 +1,15 @@
+# vim: filetype=yaml sw=2
+filename: '[% project %]-[% c("var/gradle_version") %].tar.gz'
+
+var:
+  container:
+    use_container: 1
+  deps:
+    - unzip
+  gradle_version: 6.5
+
+input_files:
+  - project: container-image
+  - URL: https://services.gradle.org/distributions/gradle-[% c("var/gradle_version") %]-bin.zip
+    name: gradle
+    sha256sum: 23e7d37e9bb4f8dabb8a3ea7fdee9dd0428b9b1a71d298aefd65b11dccea220f
