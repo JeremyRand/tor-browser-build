@@ -3,9 +3,13 @@
 [% pc(c('var/compiler'), 'var/setup', { compiler_tarfile => c('input_files_by_name/' _ c('var/compiler')) }) %]
 distdir=/var/tmp/dist
 builddir=/var/tmp/build/[% project %]
-gradle_path=$GRADLE_HOME/gradle-[% c("var/gradle_version") %]/bin
 mkdir $distdir/[% project %]
 mkdir /var/tmp/build
+
+tar -C $GRADLE_HOME -xf $rootdir/[% c('input_files_by_name/gradle') %]
+# XXX: Not needed once we are done with moving Gradle out of our toolchain
+# project.
+export PATH=$GRADLE_HOME/gradle/bin:$PATH
 
 cat > get-moz-build-date << "EOF"
 [% INCLUDE "get-moz-build-date" %]
@@ -27,7 +31,6 @@ EOF
   # according to the Gradle dependencies list.
   cp -rf $distdir/application-services/maven/org $gradle_repo
 [% END %]
-unzip -d $GRADLE_HOME [% c('input_files_by_name/gradle') %]
 tar -C /var/tmp/build -xf [% project %]-[% c('version') %].tar.gz
 
 cd $builddir-[% c('version') %]
@@ -36,7 +39,7 @@ patch -p1 < $rootdir/git.patch
   # XXX: fetching deps for `assembleGeckoBeta -x lint` by using that same target
   # results in some missing dependencies for yet unknown reasons. Thus, we use
   # `assemble` instead for now.
-  $gradle_path/gradle --debug --no-daemon assemble
+  gradle --debug --no-daemon assemble
 [% ELSE %]
   # Prepare Glean dependencies for offline build
   tar -xjf $rootdir/glean-parser-[% c('var/glean_parser') %].tar.bz2
@@ -70,8 +73,8 @@ patch -p1 < $rootdir/git.patch
   cd ../../
   gradle_args="--offline --no-daemon -Dmaven.repo.local=$gradle_repo"
 
-  $gradle_path/gradle $gradle_args assembleGecko[% c('variant') %] -x lint
-  $gradle_path/gradle $gradle_args publish
+  gradle $gradle_args assembleGecko[% c('variant') %] -x lint
+  gradle $gradle_args publish
 
   # We only need the archives and .pom files for now.
   find components -regex '.*[% c('var/android_components_version') %].\(aar\|jar\|pom\)' -exec cp --parents {} $distdir \;

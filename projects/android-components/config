@@ -16,7 +16,6 @@ var:
   gradle_dependencies_version: 9
   # Switch to make it easier to grab all dependencies during a dry-run.
   fetch_gradle_dependencies: 0
-  gradle_version: 6.6.1
 
 targets:
   nightly:
@@ -27,6 +26,8 @@ input_files:
   - project: container-image
   - name: '[% c("var/compiler") %]'
     project: '[% c("var/compiler") %]'
+  - project: gradle
+    name: gradle
   - name: geckoview
     project: geckoview
     pkg_type: merge_aars
@@ -47,6 +48,3 @@ input_files:
   - URL: https://people.torproject.org/~gk/mirrors/sources/glean-parser-[% c('var/glean_parser') %].tar.bz2
     sha256sum: bdbb421fdcc9b66aebe8f41b33e254cab722355c59c0f43f10a8322d7d6da6a4
     enable: '[% !c("var/fetch_gradle_dependencies") %]'
-  - URL: https://services.gradle.org/distributions/gradle-[% c("var/gradle_version") %]-bin.zip
-    name: gradle
-    sha256sum: 7873ed5287f47ca03549ab8dcb6dc877ac7f0e3d7b1eb12685161d10080910ac
