@@ -8,13 +8,14 @@ gpg_keyring: torbutton.gpg
 variant: '[% IF c("var/release") %]Release[% ELSE %]Beta[% END %]'
 
 var:
-  android_components_version: 63.0.8
+  android_components_version: 67.0.3
   torbrowser_branch: 10.5
   container:
     use_container: 1
   # This should be updated when the list of gradle dependencies is changed.
-  gradle_dependencies_version: 9
+  gradle_dependencies_version: 11
   # Switch to make it easier to grab all dependencies during a dry-run.
+  # Note: Use the commit before support for new GeckoView interfaces gets added.
   fetch_gradle_dependencies: 0
 
 targets:
