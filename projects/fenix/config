@@ -8,14 +8,15 @@ gpg_keyring: torbutton.gpg
 variant: Beta
 
 var:
-  fenix_version: 83.1.0
+  fenix_version: 84.0.0b2
   torbrowser_branch: 10.5
   copyright_year: '[% exec("git show -s --format=%ci").remove("-.*") %]'
   container:
     use_container: 1
   # This should be updated when the list of gradle dependencies is changed.
-  gradle_dependencies_version: 11
+  gradle_dependencies_version: 13
   # Switch to make it easier to grab all dependencies during a dry-run.
+  # Note: Use the commit that integrates Tor.
   fetch_gradle_dependencies: 0
 
 targets:
