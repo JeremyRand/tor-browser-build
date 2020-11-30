@@ -1,5 +1,5 @@
 # vim: filetype=yaml sw=2
-version: 1.15.4
+version: 1.15.5
 filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %].tar.gz'
 
 var:
@@ -118,7 +118,7 @@ input_files:
     enable: '[% ! c("var/linux") %]'
   - URL: 'https://golang.org/dl/go[% c("version") %].src.tar.gz'
     name: go
-    sha256sum: 063da6a9a4186b8118a0e584532c8c94e65582e2cd951ed078bfd595d27d2367
+    sha256sum: c1076b90cf94b73ebed62a81d802cd84d43d02dea8c07abdc922c57a071c84f1
   - URL: 'https://golang.org/dl/go[% c("var/go14_version") %].src.tar.gz'
     name: go14
     sha256sum: 9947fc705b0b841b5938c48b22dc33e9647ec0752bae66e50278df4f23f64959
