@@ -1,16 +1,17 @@
 # vim: filetype=yaml sw=2
 filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %].tar.gz'
-version: 63.0.0
-git_hash: 8e63363359c3d20385ed55f5308d19e321816898
+version: 67.0.0
+git_hash: 6a234c2b1e1972f11e585551d4cf2e40e84bf16f
 git_url: https://github.com/mozilla/application-services
+git_submodule: 1
 
 var:
   container:
     use_container: 1
   # This should be updated when the list of gradle dependencies is changed.
-  gradle_dependencies_version: 3
+  gradle_dependencies_version: 4
   # This should be updated when the list of rust dependencies is changed.
-  rust_vendor_version: 2
+  rust_vendor_version: 3
   # For armv7 we need a different target than the default one we use for
   # GeckoView. We set this variable so the Rust project in the `input_files`
   # below can set the correct target when built for use in this project,
@@ -23,6 +24,8 @@ input_files:
   - project: container-image
   - project: '[% c("var/compiler") %]'
     name: '[% c("var/compiler") %]'
+  - project: gradle
+    name: gradle
   # We need the torbrowser-* targets for Rust, see: #40094.
   - project: rust
     name: rust-armv7
@@ -72,6 +75,8 @@ input_files:
     name: sqlcipher-x86_64
     target_prepend:
       - android-x86_64
+  - name: uniffi-rs
+    project: uniffi-rs
   - name: python
     project: python
     enable: '[% !c("var/fetch_gradle_dependencies") %]'
@@ -85,9 +90,11 @@ input_files:
   # `cargo vendor vendor` in the `application-services` directory has vendored
   # the sources.
   - URL: https://people.torproject.org/~gk/mirrors/sources/application-services-vendor-[% c('var/rust_vendor_version') %].tar.bz2
-    sha256sum: 70e02d587661e5d93dbe30ffa9265fb8b6b66ba8483f3268017ca919623688bc
+    sha256sum: f2d08275920c6e163617d5f102abc0665fd0f74550a400b1970b5b25bcabd3ef
   - filename: no-git.patch
   - filename: mavenLocal.patch
     enable: '[% !c("var/fetch_gradle_dependencies") %]'
   - filename: target.patch
-  - filename: 40085.patch
+  - filename: viaduct-workaround.patch
+  - filename: viaduct-workaround2.patch
+  - filename: update-cargo-lock.patch

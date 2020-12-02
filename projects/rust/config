@@ -11,8 +11,8 @@ var:
 targets:
   android:
     var:
-      current_version: '[% IF pc(c("origin_project"), "var/application_services") %]1.45.2[% ELSE %]1.43.0[% END %]'
-      previous_version: '[% IF pc(c("origin_project"), "var/application_services") %]1.44.1[% ELSE %]1.42.0[% END %]'
+      current_version: 1.47.0
+      previous_version: 1.46.0
       arch_deps:
         - libssl-dev
         - pkg-config
@@ -99,7 +99,4 @@ input_files:
     enable: '[% c("var/windows-i686") %]'
   - filename: 43909.patch
     name: 43909
-    enable: '[% ! pc(c("origin_project"), "var/application_services") %]'
-  - filename: 43909_145.patch
-    name: 43909
-    enable: '[% pc(c("origin_project"), "var/application_services") %]'
+    enable: '[% ! c("var/android") %]'

@@ -8,7 +8,7 @@ git_submodule: 1
 gpg_keyring: torbutton.gpg
 
 var:
-  geckoview_version: 83.0
+  geckoview_version: 84.0b1
   torbrowser_branch: 10.5
   copyright_year: '[% exec("git show -s --format=%ci").remove("-.*") %]'
   deps:
@@ -25,7 +25,7 @@ var:
   container:
     use_container: 1
   # this should be updated when the list of gradle dependencies is changed
-  gradle_dependencies_version: 4
+  gradle_dependencies_version: 5
 
 steps:
   merge_aars:
@@ -72,6 +72,7 @@ steps:
           exit 1
       fi
 
+      export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
       gradle_repo=/var/tmp/dist/gradle-dependencies
       export GRADLE_MAVEN_REPOSITORIES="file://$gradle_repo"
       export GRADLE_FLAGS="--no-daemon --offline"

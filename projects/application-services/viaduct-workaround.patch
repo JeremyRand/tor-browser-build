@@ -1,0 +1,32 @@
+From 2b79903b41133799bcbe72aed2e9e8d54b278d30 Mon Sep 17 00:00:00 2001
+From: Georg Koppen <gk@torproject.org>
+Date: Wed, 2 Dec 2020 09:26:24 +0000
+Subject: [PATCH 1/2] Bug 40156: viaduct*-workaround
+
+See: https://github.com/mozilla/application-services/issues/3732.
+
+diff --git a/nimbus/Cargo.toml b/nimbus/Cargo.toml
+index 3f118b7..0d0fa9b 100644
+--- a/nimbus/Cargo.toml
++++ b/nimbus/Cargo.toml
+@@ -25,7 +25,7 @@ serde_derive = "1"
+ serde_json = "1"
+ log = "0.4"
+ # Viaduct locked to version same version of app-services as mozilla-central
+-viaduct = { git = "https://github.com/mozilla/application-services", rev = "8a576fbe79199fa8664f64285524017f74ebcc5f"}
++viaduct = { path = "../../../viaduct" }
+ thiserror = "1"
+ url = "2.1"
+ rkv = "0.15"
+@@ -40,7 +40,7 @@ uniffi = "0.5"
+ uniffi_build = { version = "0.5", features = [ "builtin-bindgen" ] }
+ 
+ [dev-dependencies]
+-viaduct-reqwest = { git = "https://github.com/mozilla/application-services", rev = "8a576fbe79199fa8664f64285524017f74ebcc5f"}
++viaduct-reqwest = { path = "../../../support/viaduct-reqwest" }
+ mockito = "0.27"
+ env_logger = "0.7"
+ clap = "2.33.3"
+-- 
+2.29.2
+

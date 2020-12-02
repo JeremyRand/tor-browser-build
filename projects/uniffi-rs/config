@@ -1,0 +1,17 @@
+# vim: filetype=yaml sw=2
+version: 0.5.0
+git_url: https://github.com/mozilla/uniffi-rs
+git_hash: bc4a8570ab8430a4f80c3722ef79ff9a4819969e
+filename: '[% project %]-[% c("version") %]-[% c("var/build_id") %].tar.gz'
+
+var:
+  container:
+    use_container: 1
+
+input_files:
+  - project: container-image
+  - name: rust
+    project: rust
+  # `cargo vendor vendor` in the `uniffi-rs` directory has vendored the sources.
+  - URL: https://people.torproject.org/~gk/mirrors/sources/uniffi-rs-vendor-[% c('version') %].tar.bz2
+    sha256sum: 71d912237208c35a762b3c812afe0a758823792dd745c1253314bcccc1694b7f

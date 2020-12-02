@@ -6,6 +6,10 @@ builddir=/var/tmp/build/[% project %]
 mkdir $distdir
 mkdir /var/tmp/build
 
+tar -C $GRADLE_HOME -xf $rootdir/[% c('input_files_by_name/gradle') %]
+# XXX: Not needed once we are done with moving Gradle out of our toolchain
+# project.
+export PATH=$GRADLE_HOME/gradle/bin:$PATH
 cd /var/tmp/dist
 [% FOREACH arch = ['armv7', 'aarch64', 'x86', 'x86_64'] -%]
   # The host (i.e. Linux) bits should be the same for all four targets. Thus,
@@ -17,7 +21,8 @@ cd /var/tmp/dist
   tar -xf $rootdir/[% c('input_files_by_name/sqlcipher-' _ arch) %]
   mv sqlcipher sqlcipher-[% arch %]
 [% END -%]
-export PATH=/var/tmp/dist/rust/bin:$PATH
+tar -xf $rootdir/[% c('input_files_by_name/uniffi-rs') %]
+export PATH=/var/tmp/dist/rust/bin:/var/tmp/dist/uniffi-rs:$PATH
 cd $rootdir
 
 # application-services uses a newer NDK, 21, than everything else...
@@ -56,6 +61,12 @@ directory = "/var/tmp/build/application-services/vendor"
 offline=true
 EOF
 
+patch -p1 < $rootdir/update-cargo-lock.patch
+cd components/external/nimbus-sdk
+patch -p1 < $rootdir/viaduct-workaround.patch
+patch -p1 < $rootdir/viaduct-workaround2.patch
+cd ../../../
+
 # Move NSS and SQLCipher to the right place
 # XXX: Maybe merge with the loop above.
 archs="armv7 aarch64 x86 x86_64"
@@ -82,13 +93,10 @@ patch -p1 < $rootdir/no-git.patch
 # XXX: We don't build the code for Linux for now as this involves additional
 # complexity. That's needed for running unit tests later on, though.
 patch -p1 < $rootdir/target.patch
-# We need to pick up a newer glean_parser until an updated glean is used by
-# application-services.
-patch -p1 < $rootdir/40085.patch
 [% IF c('var/fetch_gradle_dependencies') %]
   # XXX: `assemble` is still not enough to see all fetched dependencies via
   # Gradle's --debug. See: tor-browser-build#40056.
-  $GRADLE_HOME/gradle-6.3/bin/gradle --debug --no-daemon assemble
+  gradle --debug --no-daemon assemble
 [% ELSE %]
   # Prepare Glean dependencies for offline build
   tar -xjf $rootdir/glean-parser-[% c('var/glean_parser') %].tar.bz2
@@ -98,8 +106,8 @@ patch -p1 < $rootdir/40085.patch
   export LANG=C.UTF-8
   patch -p1 < $rootdir/mavenLocal.patch
   gradle_flags="--offline --no-daemon -Dmaven.repo.local=$gradle_repo"
-  $GRADLE_HOME/gradle-6.3/bin/gradle $gradle_flags assembleRelease
-  $GRADLE_HOME/gradle-6.3/bin/gradle $gradle_flags publish
+  gradle $gradle_flags assembleRelease
+  gradle $gradle_flags publish
 
   cd build
   find maven -regex '.*[0-9].\(aar\|pom\)' -exec cp --parents {} $distdir \;
