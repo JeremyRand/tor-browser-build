@@ -1,6 +1,7 @@
 #!/bin/bash
 [% c("var/set_default_env") -%]
-ext_dir=assets/extensions
+assets_dir=assets
+ext_dir=$assets_dir/extensions
 qa_apk=[% dest_dir %]/[% c('filename') %]/tor-browser-[% c("version") %]-[% c("var/osname") %]-multi-qa.apk
 apk=$rootdir/fenix/app-[% c("var/abi") %]-*.apk
 
@@ -15,8 +16,16 @@ cd /var/tmp/build
 unzip -d $ext_dir/https-everywhere $rootdir/[% c('input_files_by_name/https-everywhere') %]
 mv $rootdir/[% c('input_files_by_name/noscript') %] $ext_dir/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi
 
+[% IF c("var/verify_allowed_addons") %]
+# Check that allowed_addons.json contains the right versions of NoScript and HTTPS Everywhere
+# If so, replace the default allowed_addons.json by ours in the apk assets folder.
+$rootdir/verify_allowed_addons.py "$rootdir/allowed_addons.json" "$ext_dir/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi" "$rootdir/[% c('input_files_by_name/https-everywhere') %]"
+[% END %]
+
+mv $rootdir/allowed_addons.json $assets_dir/allowed_addons.json
+
 [% c('zip', {
-        zip_src => [ '$ext_dir' ],
+        zip_src => [ '$assets_dir' ],
         zip_args => '$apk',
     }) %]
 
