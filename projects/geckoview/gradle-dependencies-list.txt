@@ -65,7 +65,7 @@ c33e67a0807095f02a0e2da139412dd7c4f9cc1a4c054b3e434f96831ba950f4 | https://jcent
 ebe7137b5fbfd050545f9a7f3f339ae55beb0b53755071b4fd62aa024c626d1c | https://jcenter.bintray.com/com/sun/istack/istack-commons-runtime/2.21/istack-commons-runtime-2.21.pom
 c3071277f89b162982606b4e65c92077212efb6cbf1bdc365c51bd0b57ac818c | https://jcenter.bintray.com/com/sun/istack/istack-commons/2.21/istack-commons-2.21.pom
 b25e0693de21cb92b039a2e4608f396590fb8773108f10d6dc9f1465f03b5be9 | https://jcenter.bintray.com/com/sun/xml/bind/jaxb-bom-ext/2.2.11/jaxb-bom-ext-2.2.11.pom
-010b745ee463eb822ceca023089d00708f021811eb3c285fbba72a3b564a0774 | https://jcenter.bintray.com/com/sun/xml/bind/mvn/jaxb-parent/2.2.11/jaxb-parent-2.2.11.pom
+b5301b711c01547e571b615f9a0832ee525d34a4ce3372f53907a87cf20b0480 | https://jcenter.bintray.com/com/sun/xml/bind/mvn/jaxb-parent/2.2.11/jaxb-parent-2.2.11.pom
 21918cb8e4eda67f24251e909a5d81672201d93604c4ffbf33522ad836a58e90 | https://jcenter.bintray.com/com/sun/xml/bind/mvn/jaxb-runtime-parent/2.2.11/jaxb-runtime-parent-2.2.11.pom
 9a398c699a5d3f3b56f1056c68890ede25d94a12d98eabc2a473733e6ab2362c | https://jcenter.bintray.com/com/sun/xml/bind/mvn/jaxb-txw-parent/2.2.11/jaxb-txw-parent-2.2.11.pom
 27a77db909f3c2833c0b1a37c55af1db06045118ad2eed96ce567b6632bce038 | https://jcenter.bintray.com/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13.jar
