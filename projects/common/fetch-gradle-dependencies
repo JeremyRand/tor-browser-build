@@ -10,7 +10,11 @@ m2dir="$(mktemp -d)"
     artifact_filename=$(basename "$artifact_path")
     artifact_dirname=$(dirname "$artifact_path")
     [% GET c("urlget", { filename => 'downloaded_file', URL => artifact.url}); %]
-    echo "[% artifact.sha256sum %]  downloaded_file" | sha256sum -c
+    # .pom files may be modified after a version is published, therefore verify
+    # the hash only if the file name does not end with '.pom'.
+    if ! echo "$artifact_filename" | grep -q '\.pom$'; then
+        echo "[% artifact.sha256sum %]  downloaded_file" | sha256sum -c
+    fi
     mkdir -p "$m2dir/$artifact_dirname"
     mv -f downloaded_file "$m2dir/$artifact_dirname/$artifact_filename"
 [% END -%]
