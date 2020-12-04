@@ -12,12 +12,12 @@
           {
             "id": 13299734,
             "name": "Alexander Shutau",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/13299734/",
+            "url": "https://addons.mozilla.org/en-US/android/user/13299734/",
             "username": "alexanderby",
             "picture_url": "https://addons.cdn.mozilla.net/user-media/userpics/13/13299/13299734.png?modified=1565722641"
           }
         ],
-        "average_daily_users": 455088,
+        "average_daily_users": 521477,
         "categories": {
           "android": [
             "experimental",
@@ -31,7 +31,7 @@
         "contributions_url": "https://opencollective.com/darkreader?utm_content=product-page-contribute&utm_medium=referral&utm_source=addons.mozilla.org",
         "created": "2017-09-19T07:03:00Z",
         "current_version": {
-          "id": 5105134,
+          "id": 5140581,
           "compatibility": {
             "firefox": {
               "min": "54.0",
@@ -42,19 +42,19 @@
               "max": "*"
             }
           },
-          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/darkreader/versions/5105134",
+          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/darkreader/versions/5140581",
           "files": [
             {
-              "id": 3649499,
-              "created": "2020-09-26T04:48:47Z",
-              "hash": "sha256:6b4b9ac88e660028682cb990ff2c2c573b65de72c0bca70564eefaeaf5179ea4",
+              "id": 3684946,
+              "created": "2020-11-26T18:46:09Z",
+              "hash": "sha256:5f2a2449524f5ab05c2e8568d2678c6b25795e87ce77ebc9448e13e8184e3c5f",
               "is_restart_required": false,
               "is_webextension": true,
               "is_mozilla_signed_extension": false,
               "platform": "all",
-              "size": 679032,
+              "size": 511783,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3649499/dark_reader-4.9.21-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3684946/dark_reader-4.9.26-an+fx.xpi",
               "permissions": [
                 "storage",
                 "tabs",
@@ -97,10 +97,10 @@
             "url": "http://www.opensource.org/licenses/mit-license.php"
           },
           "release_notes": {
-            "en-US": "- Fixed wrongly displaying pages where the extension is disabled."
+            "en-US": "- Dynamic mode bug fixes.\n- Users' fixes for websites."
           },
           "reviewed": null,
-          "version": "4.9.21"
+          "version": "4.9.26"
         },
         "default_locale": "en-US",
         "description": {
@@ -118,7 +118,7 @@
           "it": "Questa estensione si prende cura dei tuoi occhi e ti consente di creare al volo un tema scuro in modalità nottura per ogni sito. Dark Reader inverte i colori più luminosi rendendoli ad alto contrato e più semplici da leggere la notte.\n\nPuoi modificare luminosità, contrasto, filtro seppia, modalità notturna, caratteri e lista di siti da ignorare.\n\nDark Reader non mostra pubblicità e non invia i dati dell'utente da nessuna parte. È pienamente open-source <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\nPrima di installare disabilita altre estensioni simili. Buona lettura!",
           "ja": "このアイ・ケアの拡張機能は、オンザフライでウェブサイトのためのダークテーマを作成し、ナイトモードを有効にします。 Dark Readerは鮮やかな色を反転させてコントラストを高め、夜間に読みやすくします。\n\n明るさ、コントラスト、セピアフィルター、ダークモード、フォント設定、無視リストを調整することができます。\n\nDark Readerは広告を表示せず、ユーザーのデータをどこにも送信しません。 それは完全にオープンソースです <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\nインストールする前に、同様の拡張機能を無効にしてください。 ブラウジングをお楽しみください！",
           "ko": "이 눈 건강을 위한 확장 기능은 실시간으로 각 웹사이트에 어두운 테마를 적용해 야간 모드를 가능케 합니다. 다크 리더는 밝은 색상을 반전해 고대비로 만들어 밤에 읽기가 쉽도록 만듭니다.\n\n밝기, 대비, 세피아 필터, 어두운 모드, 폰트와 예외 목록을 설정할 수 있습니다.\n\n다크 리더는 광고를 보여주지 않으며 사용자의 데이터를 어디에도 보내지 않습니다. 완전히 오픈 소스입니다. <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\n설치하기 전에 비슷한 기능을 가진 확장 기능을 사용 해제하시기 바랍니다. 편하게 읽으십시오!",
-          "nl": "Deze oog zorg extensie heeft een nachtstand mogelijkheid waarbij het maken van donkere themas zeer gemakkelijk is. Donkere modus keert lichte kleuren om, zo heb je een makkelijk te lezen hoog contrast.\n\nJe kunt de helderheid, het contrast, een sepia filter, donkere modus, lettertype en een lijst van te negeren websites geheel instellen naar wens.\n\nDark Reader laat nooit advertenties zien en gebruikt nooit je data. Deze extensie is volledig open-source op <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\nVoor de installatie is het aangeraden soortgelijke extensies eerst uit te schakelen. Veel kijkplezier!",
+          "nl": "Deze oogzorgextensie heeft een nachtstand die automatisch donkere thema's maakt voor websites. Donkere modus keert lichte kleuren om voor goede leesbaarheid 's nachts.\n\nJe kunt de helderheid, het contrast, het kleurenfilter, de donkere modus, het lettertype en de lijst van te negeren websites geheel instellen naar wens.\n\nDark Reader laat nooit advertenties zien en gebruikt nooit je gegevens. Deze extensie is volledig open-source op <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\nVoor de installatie is het aangeraden soortgelijke extensies eerst uit te schakelen. Veel kijkplezier!",
           "pl": "To rozszerzenie dbające o zdrowie oczu aktywuje tryb nocny tworząc dynamiczne ciemne motywy dla stron internetowych. Dark Reader odwraca jasność kolorów, nadając im wysokiego kontrastu i ułatwiając czytanie w nocy.\n\nMożesz dopasować jasność, kontrast, filtr sepii, tryb ciemny, ustawienia czcionki i listę ignorowanych stron.\n\nDark reader nie wyświetla reklam ani nie wysyła nigdzie danych użytkowników. Jest oprogramowaniem o w pełni otwartym kodzie źródłowym <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\nPrzed instalacją usuń podobne rozszerzenia. Miłego oglądania!",
           "pt-BR": "Esta extensão ajuda seus olhos a relaxarem ao criar e aplicar o modo escuro aos sites que você visita. O Dark Reader inverte as cores brilhantes, tornando-as de alto contraste e deixando-as fáceis de serem lidas à noite.\n\nVocê pode ajustar o brilho, o contraste, os tons de sépia, o modo escuro, as configurações de fonte e a lista negra.\n\nO Dark Reader não exibe anúncios e não compartilha os dados de seus usuários. O código-fonte é totalmente aberto (open-source) <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\nAntes de instalar esta extensão, desative extensões semelhantes. Divirta-se!",
           "pt-PT": "Esta extensão de cuidados com os olhos ativa o modo noturno criando temas escuros para sites. O Dark Reader inverte as cores brilhantes, tornando-as de alto contraste e fáceis de ler à noite.\n\nVocê pode ajustar o brilho, o contraste, o filtro sépia, o modo escuro, as configurações de fonte e a lista de ignorados.\n\nO Dark Reader não exibe anúncios e não envia dados do usuário em nenhum lugar. É totalmente open-source <a href=\"https://outgoing.prod.mozaws.net/v1/2a8020ee7fe5fea69148ed86ae4a26da4fc907d75110066fa5b5d0416670e666/https%3A//github.com/darkreader/darkreader\" rel=\"nofollow\">https://github.com/darkreader/darkreader</a>\n\nAntes de instalar desativar extensões semelhantes. Visualização agradável!",
@@ -164,7 +164,7 @@
         },
         "is_disabled": false,
         "is_experimental": false,
-        "last_updated": "2020-09-26T05:34:48Z",
+        "last_updated": "2020-11-27T12:36:26Z",
         "name": {
           "ar": "Dark Reader",
           "bn": "Dark Reader",
@@ -237,12 +237,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.5651,
-          "bayesian_average": 4.563324899124615,
-          "count": 2980,
-          "text_count": 986
+          "average": 4.5676,
+          "bayesian_average": 4.56588482927429,
+          "count": 3127,
+          "text_count": 1043
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/darkreader/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/darkreader/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/855413",
         "slug": "darkreader",
@@ -333,8 +333,8 @@
           "theme"
         ],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/darkreader/",
-        "weekly_downloads": 27587
+        "url": "https://addons.mozilla.org/en-US/android/addon/darkreader/",
+        "weekly_downloads": 30806
       },
       "notes": null
     },
@@ -345,12 +345,12 @@
           {
             "id": 5474073,
             "name": "EFF Technologists",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/5474073/",
+            "url": "https://addons.mozilla.org/en-US/android/user/5474073/",
             "username": "eff-technologists",
             "picture_url": "https://addons.cdn.mozilla.net/user-media/userpics/5/5474/5474073.png?modified=1469820907"
           }
         ],
-        "average_daily_users": 717982,
+        "average_daily_users": 734421,
         "categories": {
           "firefox": [
             "privacy-security"
@@ -359,7 +359,7 @@
         "contributions_url": "https://www.paypal.me/SupportEFF?utm_content=product-page-contribute&utm_medium=referral&utm_source=addons.mozilla.org",
         "created": "2010-09-16T15:09:10Z",
         "current_version": {
-          "id": 5081059,
+          "id": 5135114,
           "compatibility": {
             "firefox": {
               "min": "42.0",
@@ -370,19 +370,19 @@
               "max": "*"
             }
           },
-          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/https-everywhere/versions/5081059",
+          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/https-everywhere/versions/5135114",
           "files": [
             {
-              "id": 3625427,
-              "created": "2020-08-13T19:14:09Z",
-              "hash": "sha256:47034cf750c305a328e59de104cf7a5710dbffc9f2dc183283e2f770f2e74241",
+              "id": 3679479,
+              "created": "2020-11-16T23:33:04Z",
+              "hash": "sha256:a6ebcb0a05607e54e7a9fc0b5b3832eda6f13f8dce2ee802164a455919e385c9",
               "is_restart_required": false,
               "is_webextension": true,
               "is_mozilla_signed_extension": false,
               "platform": "all",
-              "size": 1774640,
+              "size": 1745655,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3625427/https_everywhere-2020.8.13-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3679479/https_everywhere-2020.11.17-an+fx.xpi",
               "permissions": [
                 "webNavigation",
                 "webRequest",
@@ -403,13 +403,13 @@
             "name": {
               "en-US": "Multiple"
             },
-            "url": "https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/license/2020.8.13"
+            "url": "https://addons.mozilla.org/en-US/android/addon/https-everywhere/license/2020.11.17"
           },
           "release_notes": {
-            "en-US": "* Fix port based whitelsiting issue #19291\n* Update documentation\n* Update dependencies (NPM and Chromedriver)\n* Minor code fixes in JS"
+            "en-US": "* Copy URL ability in EASE interstitial\n* Dependapot NPM updates\n* CRX distribution scripts for transparency for Edge and Opera\n* Port inclusion on allowlist for EASE\n* UI change to reflect a global setting"
           },
           "reviewed": null,
-          "version": "2020.8.13"
+          "version": "2020.11.17"
         },
         "default_locale": "en-US",
         "description": {
@@ -445,7 +445,7 @@
         },
         "is_disabled": false,
         "is_experimental": false,
-        "last_updated": "2020-08-19T11:57:57Z",
+        "last_updated": "2020-11-17T09:09:47Z",
         "name": {
           "de": "HTTPS Everywhere",
           "en-US": "HTTPS Everywhere",
@@ -480,12 +480,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.6058,
-          "bayesian_average": 4.603224910595648,
-          "count": 2075,
-          "text_count": 542
+          "average": 4.6117,
+          "bayesian_average": 4.6091507279614365,
+          "count": 2127,
+          "text_count": 549
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/https-everywhere/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/229918",
         "slug": "https-everywhere",
@@ -516,7 +516,7 @@
         ],
         "type": "extension",
         "url": "https://www.eff.org/https-everywhere",
-        "weekly_downloads": 17543
+        "weekly_downloads": 15194
       },
       "notes": null
     },
@@ -527,12 +527,12 @@
           {
             "id": 6937656,
             "name": "Thomas Rientjes",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/6937656/",
+            "url": "https://addons.mozilla.org/en-US/android/user/6937656/",
             "username": "Synzvato",
             "picture_url": "https://addons.cdn.mozilla.net/user-media/userpics/6/6937/6937656.png?modified=1550343990"
           }
         ],
-        "average_daily_users": 184911,
+        "average_daily_users": 196011,
         "categories": {
           "android": [
             "security-privacy"
@@ -544,7 +544,7 @@
         "contributions_url": "",
         "created": "2014-06-10T05:46:02Z",
         "current_version": {
-          "id": 4994807,
+          "id": 5128293,
           "compatibility": {
             "firefox": {
               "min": "56.0a1",
@@ -555,19 +555,19 @@
               "max": "*"
             }
           },
-          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/decentraleyes/versions/4994807",
+          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/decentraleyes/versions/5128293",
           "files": [
             {
-              "id": 3539177,
-              "created": "2020-04-01T07:50:52Z",
-              "hash": "sha256:71a55834ee991605d461f304271f989aa1147e1cf772e25787cbada19ab0ba51",
+              "id": 3672658,
+              "created": "2020-11-05T02:52:56Z",
+              "hash": "sha256:2554069168458cc1351e5d37ee995de044e514ec72369829ff0bcbf31d586ddf",
               "is_restart_required": false,
               "is_webextension": true,
               "is_mozilla_signed_extension": false,
               "platform": "all",
-              "size": 6852197,
+              "size": 6857292,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3539177/decentraleyes-2.0.14-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3672658/decentraleyes-2.0.15-an+fx.xpi",
               "permissions": [
                 "*://*/*",
                 "privacy",
@@ -591,26 +591,27 @@
             "url": "http://www.mozilla.org/MPL/2.0/"
           },
           "release_notes": {
-            "en-US": "<i>Enhancements:</i>\n\n- Implemented a wide range of minor usability and accessibility improvements.\n\n<i>Other changes:</i>\n\n- Applied various performance optimizations and stability improvements."
+            "en-US": "<i>New languages:</i>\n\n- Added support for the Ukrainian language.\n- Added support for the Catalan language.\n- Added partial support for the Bengali language.\n- Added support for the Croatian language.\n\n<i>Enhancements:</i>\n\n- Significantly optimized core web request listener-related logic.\n- Improved support for recent mobile versions of Firefox.\n\n<i>Other changes:</i>\n\n- Applied various performance optimizations and stability improvements.\n- Improved and extended various existing localizations."
           },
           "reviewed": null,
-          "version": "2.0.14"
+          "version": "2.0.15"
         },
         "default_locale": "en-US",
         "description": {
           "ar": "بدأت المواقع الإلكترونية تتّكل بشكل متزايد على جهات ثالثة كبيرة لتوصل محتواها للمستخدمين. إلغاء الطلبات لعرض الإعلانات أو طلبات إضافة برامج التعقّب (تراكرز) يمر عادة دون مشكلة. ولكن حجب المحتوى بنفسه قد يعطّل الصفحة، وهذا أمر متوقّع. هدف برنامج الإضافة هذا (آد أون) هو التخلص من الوسيط عند تحسين الخصوصية على النت وذلك عبر توصيل حزمة من الملفات المحلية بسرعة فائقة.\n\n     • يحمي الخصوصية عبر تجنّب شبكات التوصيل الكبيرة التي تدّعي تقديم خدمات مجانية.\n     • يكمل مانع المحتوى المعتاد مثل يو بلوك أوريجين (موصى به)، آدبلوك بلس، و أخرى.\n     • يعمل مباشرة، لا يحتاج لأي شكل من الإعدادات المسبقة.\n\n<i>ملاحظة: ديسنترالايز ليس حلا سحرياً ولكنه يمنع العديد من المواقع من إرسال هذا النوع من الطلبات لك. وأخيراً، يمكنك أيضاً أن تجعل ديسنترالايز يحجب الطلبات لأي موارد شبكات توصيل المحتوى الممقودة.</i>\n\n   &gt; مقدمة أبسط: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>هل أنا محمي حاليا؟</b>\n\nالتالية <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">أداة الفحص</a> تظهر لك إذا كنت محميًا بشكل مناسب. هي الطريقة الموصى بها، وهي الأسرع على الأرجح، لمعرفة إذا كان الآد أون مثبّتاً، مشغّلاً واعداداته صحيحة.\n\n   &gt; الرابط الكامل لأداة الفحص: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>الأسئلة المتكررة</b>\n\n   &gt; الرابط الكامل للأسئلة المتكرّرة: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>معلومات تقنية</b>\n\n- الشبكات المدعومة: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, UpYun Libraries.\n\n- حزمة الموارد: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, Web Font Loader.\n\n<b>الدعم الشخصي</b>\n\nهل سؤالك غير مذكور أعلاه، أو لديك سبب ما للاتصال بي شخصياً؟ بإمكانك التواصل معي على <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. التبليغ عن الأخطاء أو الاقتراحات هي في موضع ترحيب وأنا أجيب على كل إيميل يصلني.\n\nلا تتردّد في استخدام <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">مفتاح ال PGP العمومي هذا</a> للاتصالات المشفرة.\n\n   &gt; عنوان المفتاح العمومي PGP: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>هل تستمتع باستخدام هذا الآد أون؟</b>\n\nديسنترالايز هو مجاني، وسيبقى مجانياً، ولكن يمكنك دعم تطوره المستمر عبر تقديم تبرّع ما، المساهمة على GitLab، أو إخبار الآخرين عنه (وكلام الناس فعّال جدا). أي مساهمة هي في موقع تقدير!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • تبرّع: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "bg": "Сайтовете все повече започват да разчитат на големи трети страни за доставяне на съдържание. Отмяната на заявки за реклами или проследители обикновено минава без проблеми, но блокирането на действителното съдържание, без изненада, чупи страници. Целта на тази добавка е да премахне посредника чрез предоставяне на мълниеносна скорост на доставка на местните (пакетни) файлове за подобряване на неприкосновеността в мрежата.\n\n     • Защитава личните данни, като избягва големи мрежи за доставяне на съдържание, твърдящи, че предлагат безплатни услуги.\n     • Допълва обикновените блокировачи като Юблок Ориджин (препоръчва се), Адблок Плюс и други.\n     • Работи веднага, без нужда от предварителна настройка.\n\n<i>Забележка: Децентралайз не е сребърен куршум, но попречва на сайтовете да ви карат да изпращате такива заявки. В крайна сметка, можете да накарате Децентралайз да блокира и заявки за всякакви липсващи ресурси от МДС.</i>\n\n   &gt; По-просто въведение: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Защитен ли съм в момента?</b>\n\nСледната <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">проверяваща услуга</a> ви показва дали сте правилно защитени. Това е препоръчителният и вероятно най-бързият начин да видите дали добавката е инсталирана, включена и правилно настроена.\n\n   &gt; Пълна връзка към проверяващата услуга: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Често задавани въпроси</b>\n\n   &gt; Пълна връзка към ЧЗВ: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Технически сведения</b>\n\n- Поддържани мрежи: Съхраняваните библиотеки на Гугъл, Аякс МДС на Майкрософт, CDNJS (Клаудфлеър), jQuery МДС (МаксСДН) jsDelivr (МаксСДН), МДС на Яндекс, МДС на Байду, Обществени ресурси Сина и библиотеки ЪпЮн.\n\n- Ресурси в пакета: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, и Мрежов зареждач на шрифтове.\n\n<b>Лична поддръжка</b>\n\nАко въпросът ви го няма в списъка или имате друга причина да се свържете с мен, винаги можете да ме намерите на адрес <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Доклади за грешки или предложения са добре дошли и отговарям на всяко едно писмо.\n\nЧувствайте се свободни да използвате <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">този публичен ПГП ключ</a> за шифровано общуване.\n\n   &gt; Пълна връзка към ключа: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Харесвате ли добавката?</b>\n\nДецентралайз е и винаги ще бъде безплатна, но можете да подкрепите разработката ѝ с дарение, с принос в Гитлаб или като разкажете за добавката (което върши чудеса). Всяка помощ ще бъде високо оценена!\n\n     • Гитлаб: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Даряване: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
+          "bn": "ওয়েবসাইটগুলি কন্টেন্ট বিতরণের জন্য বৃহত্তর তৃতীয় পক্ষের উপর আরও বেশি বেশি নির্ভরশীল হতে শুরু করেছে। বিজ্ঞাপন বা ট্র্যাকারদের জন্য অনুরোধ বাতিল করা সাধারণত সমস্যা ছাড়াই হয়, তবে প্রকৃত সামগ্রীটি, অপ্রত্যাশিতভাবে নয়, পৃষ্ঠাগুলোকে ভেঙ্গে ফেলে। এই অ্যাড-অনের লক্ষ্য হল অনলাইন গোপনীয়তার উন্নতি করতে স্থানীয় (আটিকৃত) ফাইল বিদ্যুতের গতিতে সরবরাহ করে মধ্যস্থতাকে কেটে চলা।\n\n     • বিনামূল্যে পরিষেবা সরবরাহের দাবি করে এমন বড় বিতরণ নেটওয়ার্কগুলি এড়ানোর মাধ্যমে গোপনীয়তা রক্ষা করে।\n     • নিয়মিত ব্লকারগুলি যেমন ইউব্লক অরিজিন (প্রস্তাবিত), অ্যাডব্লক প্লাস, ইত্যাদি এবং সব।\n     • সরাসরি বাক্সের বাইরে কাজ করে; একেবারে কোনও পরিবর্তনের প্রয়োজন নেই।\n\n<i>দ্রষ্টব্য: ডিসেনট্রালআই কোনও রূপালী বুলেট নয়, তবে তোমাকে প্রচুর ওয়েবসাইটকে এই জাতীয় অনুরোধ পাঠাতে বাধা দেয়। শেষ পর্যন্ত, তুমি কোনো হারিয়ে যাওয়া সিডিএন সংস্থানগুলোর জন্যও ডিসেনট্রালআই ব্লকের অনুরোধ করতে পারে।</i>\n\n   &gt; সহজতর ভূমিকা: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>আমি কি সুরক্ষিত?</b>\n\nএই অংশটা <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">পরীক্ষার যন্ত্র</a> দেখায় তুমি ঠিকভাবে সুরক্ষিত কিনা। এটি অ্যাড-অন ইনস্টল করা, সক্ষম করা এবং সঠিকভাবে কনফিগার করা আছে কিনা তা দেখার সবচেয়ে দ্রুত উপায়।\n\n   &gt; পরীক্ষার যন্ত্রের সম্পূর্ণ লিঙ্ক: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>প্রায়শ জিজ্ঞাসিত প্রশ্নসমূহ</b>\n\n   &gt; প্রাজিপ্র- এর সম্পূর্ণ লিঙ্ক: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>প্রযুক্তিগত তথ্য</b>\n\n- সমর্থিত নেটওয়ার্ক: গুগল হোস্টেড লাইব্রেরি, মাইক্রোসফ্ট অ্যাজাক্স সিডিএন, সিডিএনজেএস (ক্লাউডফ্লেয়ার), জেউকিউরি সিডিএন (ম্যাক্সসিডিএন), জেএসডেলিভর (ম্যাক্সসিডিএন), ইয়ানডেক্স সিডিএন, বাইডু সিডিএন, সিনা পাবলিক রিসোর্সেস এবং আপইউন লাইব্রেরি।\n\n- আটিকৃত রিসোর্স: অ্যাঙ্গুলারজেএস, ব্যাকবোন.জেএস, ডোজো, এমবার.জেএস, এক্সট কোর, জেকুয়্যারী, জেকুয়েরি ইউআই, মডার্নিজর, মূটুলস, প্রোটোটাইপ, স্ক্রিপ্টাকুলাস, এসডাব্লুএফজেক্ট, আন্ডারস্কোর.জেএস এবং ওয়েব ফন্ট লোডার।\n\n<b>ব্যাক্তিগত সহায়তা</b>\n\nতোমার প্রশ্নটি কি উপরে তালিকাভুক্ত নয়, বা আমার সাথে ব্যক্তিগতভাবে যোগাযোগ করার কোনও কারণ আছে? তুমি সর্বদা আমাকে পেতে পারো <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. বাগ রিপোর্ট বা পরামর্শগুলোকে স্বাগত জানাই এবং আমি প্রতিটি ইমেইলের জবাব দেব।\n\nস্বাচ্ছন্দ্যে ব্যবহার করো <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">এই জন পিজিপি চাবি</a> এনক্রিপ্টেড যোগাযোগের জন্য।\n\n   &gt; গণ পিজিপি চাবির সম্পূর্ণ লিঙ্ক: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>তুমি কি এই অ্যাড-অন উপভোগ করছো?</b>\n\nডিসেন্ট্রালআই আছে, এবং সর্বদা থাকবে, ফ্রি(মুক্ত) তবে তুমি অনুদান দিয়ে, গিটল্যাবে অবদানের মাধ্যমে বা কথা ছড়িয়ে দিয়ে(যা অসাধারণ কাজ করে) এর মাধ্যমে এর ক্রমাগত বিকাশকে সাহায্য করতে পারো। যেকোনো প্রকার সাহায্যের জন্য ব্যাপকভাবে কৃতজ্ঞতা থাকবে!\n\n     • গিটল্যাব: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • অনুদান: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "cs": "Webové stránky využívají stále více velké služby pro doručování obsahu. Blokování požadavků stahujících reklamy je obvykle bez následků, ale blokování skutečného obsahu fungování stránek rozbíjí. Cíl tohoto doplňků je odstranit prostředníky s využitím rychle dostupných lokálně uložených souborů pro zvýšení vašeho soukromí.\n\n     • Chrání vaše soukromí obcházením velkých sítí pro doručování obsahu, které nabízí \"své služby zdarma\".\n     • Doplňuje běžné blokování obsahu jako doporučovaný uBlock Origin, Adblock Plus a další.\n     • Funguje bez dalšího nastavování.\n\n<i>Poznámka: Decentraleyes není všespásné řešení, ale zabrání mnoho stránkám v zasílání tohoto druhu požadavků. Pomocí Decentraleyes můžete také blokovat požadavky na všechny zdroje z CND, které nemá lokálně dostupné.</i>\n\n   &gt; Jednoduchý úvod: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Jsem nyní chráněn(a)?</b>\n\nNásledující <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">testovací nástroj</a> vám ukáže, zda jste chráněni. Je to doporučovaný a zřejmě nejrychlejší způsob pro ověření, že je doplněk nainstalovaný a správně nastavený.\n\n   &gt; Odkaz na testovací nástroj: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Nejčastější dotazy</b>\n\n   &gt; Odkaz na všechny nejčastější dotazy: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Technické informace</b>\n\n- Podporované sítě: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources a UpYun Libraries.\n\n- Vložené zdroje: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js a Web Font Loader.\n\n<b>Podpora</b>\n\nPokud váš dotaz není výše uveden, nebo mne potřebujete z jiného důvodu kontaktovat, můžete mi vždy napsat na <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Uvítám nahlášení jakékoliv chyby nebo nápady na vylepšení a snažím se odpovědět na každý e-mail.\n\nVolně k použití <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">tento veřejný PGP klíč</a> pro šifrovanou komunikaci.\n\n   &gt; Odkaz na veřejný PGP klíč: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Líbí se vám tento doplněk?</b>\n\nDecentraleyes je a vždy bude zdarma, ale můžete podpořit další vývoj finančním příspěvkem nebo svou pomocí na GitLabu. Nebo doporučením doplňku dalším. Každá pomoc je vítána!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Přispějte: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "da": "Hjemmesider forlader sig i stigende grad på store tredjeparts-leverandører til at levere deres indhold. At annullere anmodninger for reklamer eller sporings-mekanismer sker normalt uden problemer, men at blokere noget af sidens faktiske indhold vil, nok ikke uventet, føre til at siden ikke fungerer. Formålet med denne tilføjelse er at skære mellemmanden ud, ved at levere lokale filer (som er inkluderet i pakken) hvilket både forøger hastigheden på sidevisningen og slører dit online privatliv.\n\n     • Beskytter privatlivets fred ved at undgå store indholdsleverandører som påstår at de tilbyder gratis tjenester.\n     • Supplerer almindelige blokeringstilføjelser såsom uBlock Origin (anbefales), Adblock Plus osv.\n     • Virker lige ud af boksen; behøver overhovedet ingen konfiguration.\n\n<i>Bemærk: Decentraleyes er ingen mirakelkur, men den forhindrer at din brug af hjemmesider lægger spor på indholdsleverandørers systemer. For at komme det helt til livs, kan Decentraleyes også fuldstændigt blokere indholdsanmodninger der ikke findes lokalt.</i>\n\n   &gt; Simpel introduktion: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Er jeg beskyttet lige nu?</b>\n\nDe følgende <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">testværktøj</a> viser om du er behørigt beskyttet. Det er den anbefalede og, måske, den hurtigste måde at verificere om tilføjelsen er installeret, aktiveret og konfigureret korrekt.\n\n   &gt; Fuldt link til testværktøjet: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Ofte Stillede Spørgsmål</b>\n\n   &gt; Fuldt link til Ofte Stillede Spørgsmål: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Teknisk Information</b>\n\n- Understøttede indholdsleverandører: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, og UpYun Libraries.\n\n- Medleverede ressourcer: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, og Web Font Loader.\n\n<b>Personlig Kunderservice</b>\n\nEr dit spørgsmål ikke besvaret ovenfor, eller har du andre grunde til at kontakte mig personligt? Du kan altid kontakte mig på <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Fejlrapporter og forslag er meget velkomne, og jeg besvarer hver eneste mail.\n\nVær velkommen til at bruge <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">denne offentlige PGP-nøgle</a> til krypteret kommunikation.\n\n   &gt; Fuldt link til offentlig PGP-nøgle: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Kan du lide denne tilføjelse?</b>\n\nDecentraleyes er, og vil blive ved at være, gratis, men du kan støtte dens fortsatte udvikling ved at donere, ved at bidrage på GitLab eller bare ved at fortælle om den (hvilket også gør underværker). Enhver hjælpe vil blive værdsat!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Giv et bidrag: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "de": "Heutzutage verwenden Websites zunehmend Fremdbibliotheken zur Darstellung von Inhalten. Das Blockieren von Ads oder Trackern funktioniert in der Regel ohne Probleme. Doch das Blockieren eigentlichen Inhalts führt - nicht gänzlich überraschend - oft zu Problemen. Dieses Add-on vermeidet Anfragen an Dritte, indem es Bibliotheken lokal bereitstellt, um deine Privatsphäre zu schützen.\n\n     • Kappt zum Schutze deiner Privatsphäre Verbindungen zu CDNs, die ihre Dienste nur scheinbar kostenlos anbieten.\n     • Ergänzt schon installierte Blocker wie uBlock Origin (empfohlen) oder Adblock Plus etc.\n     • Vorkonfiguriert und sofort einsatzbereit (kein Neustart notwendig).\n\n<i>Hinweis: Decentraleyes ist kein Patentrezept, aber es schützt bei einer Vielzahl von Websiten vor Tracking. Letztlich kannst du Decentraleyes anweisen, Anfragen für nicht anwesende CDN-Dateien zu blockieren.</i>\n\n   &gt; Einfachere Beschreibung: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Bin ich aktuell geschützt?</b>\n\nDie folgende <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">Testseite</a> zeigt dir, ob du bereits geschützt bist. Dies ist der empfohlene und wahrscheinlich schnellste Weg, um festzustellen, ob dieses Add-on installiert, aktiviert und ordnungsgemäß konfiguriert ist.\n\n   &gt; Kompletter Link zur Testseite: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Häufig gestellte Fragen</b>\n\n   &gt; Kompletter Link zu den Fragen: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Technische Informationen</b>\n\n- Unterstützte Netzwerke: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources und UpYun Libraries.\n\n- Gebündelte Ressourcen: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js und Web Font Loader.\n\n<b>Persönlicher Support</b>\n\nIst Deine Frage oben nicht aufgeführt oder möchtest Du aus anderen Gründen mit mir persönlich Kontakt aufnehmen? Du erreichst mich immer unter <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Fehlerberichte oder Anregungen sind sehr willkommen. Ich antworte auf jede einzelne E-Mail.\n\nNutze doch <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">diesen öffentlichen PGP-Schlüssel</a> zur verschlüsselten Kommunikation.\n\n   &gt; Kompletter Link zu öffentlichem PGP-Schlüssel: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Dir gefällt das Add-on?</b>\n\nDecentraleyes ist kostenlos und wird es immer bleiben. Du kannst die weitere Entwicklung aber durch eine Spende, durch einen Beitrag bei GitLab oder durch deine Weiterempfehlung unterstützen. Ich bin für jede Hilfe dankbar!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Spenden: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "el": "Οι Ιστότοποι εξταρτώνται όλο και περισσότερο από μεγάλες ενδιάμεσες εταιρίες για διανομή περιεχομένου. Η Ακύρωση αιτήσεων για διαφημίσεις ή ιχνηλάτες γίνεται συνήθως χωρίς πρόβλημα, ωστόσο το μπλοκάρισμα πραγματικού περιεχομένου προφανώς σπάει τις ιστοσελίδες. Ο σκοπός αυτού του πρόσθετου είναι η παράκαμψη του μεσάζοντα, με το να παραδίδει με αστραπιαία ταχύτητα τοπικά (συγκεντρωμένα) αρχεία, για τη βελτίωση της προστασίας των προσωπικών δεδομένων.\n\n     • Προστατεύει το απόρρητο του χρήστη παρακάπτωντας τα μεγάλα δίκτυα που ισχυρίζονται ότι προσφέρουν δωρεάν υπηρεσίες.\n     • Συμπληρώνει τους συνήθεις αποκλειστές (blockers) όπως τον uBlock Origin (προτείνεται), τον Adblock Plus, κλπ.\n     • Λειτουργεί αυτόματα, χωρίς να απαιτείται κάποια παραπάνω ρύθμιση.\n\n<i>Σημείωση: Το Decentraleyes δεν αποτελεί πανάκεια, αλλά αποτρέπει πολλές ιστοσελίδες από το να σας αναγκάζουν να αποστέλετε τέτοιες αιτήσεις. Τέλος, μπορείτε να ρυθμίσετε το Decentraleyes να μπλοκάρει κλήσεις προς τυχόν CDN πόρους που απουσιάζουν.</i>\n\n   &gt; Απλή Εισαγωγή: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Ποιά είναι η τωρινή μου κατάσταση προστασίας;</b>\n\nΗ παρακάτω <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">δοκιμαστική εφαρμογή</a> δείχνει την τρέχουσα κατάσταση προστασίας σας. Αποτελεί τον προτεινόμενο και πιθανώς, τον πιό γρήγορο τρόπο, για να διαπιστώσετε αν το πρόσθετο είναι εγκατεστημένο, ενεργοποιημένο και έχει ρυθμιστεί σωστά.\n\n   &gt; Πλήρης σύνδεσμος προς την δοκιμαστική εφαρμογή: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Συχνές ερωτήσεις</b>\n\n   &gt; Πλήρης σύνδεσμος προς τις Συχνές Ερωτήσεις: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Τεχνικές Πληροφορίες</b>\n\n- Υποστηριζόμενα δίκτυα: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources και UpYun Libraries.\n\n- Συσσωρευμένοι πόροι: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js και Web Font Loader.\n\n<b>Προσωπική υποστήριξη</b>\n\nΗ Ερώτηση σας δεν αναφέρεται παραπάνω, ή έχετε οποιοδήποτε άλλο λόγο, να επικοινωνήσετε μαζί μου προσωπικά; Μπορείτε πάντα να με βρείτε στο <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Αναφορές σφαλμάτων ή προτάσεις είναι ιδιαίτερα ευπρόσδεκτες και απαντώ σε κάθε e-mail.\n\nΧρησιμοποιείστε ελεύθερα <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">αυτό το δημόσιο κλειδί PGP</a> για κρυπτογραφημένη επικοινωνία.\n\n   &gt; Πλήρης σύνδεσμος προς το δημόσιο κλειδί PGP: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Είστε ικανοποιημένοι με το πρόσθετο;</b>\n\nΤο Decentraleyes είναι, και πάντα θα είναι, δωρεάν, αλλά μπορείτε να υποστηρίξετε τη συνεχή ανάπτυξή του κάνοντας μια δωρεά, με συμβολή στο GitLab ή με το να συμβάλλετε προσωπικά στη διάδοση του (η οποία κάνει θαύματα). Οποιαδήποτε βοήθεια θα εκτιμηθεί ιδιαίτερα!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Δωρεά: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
-          "en-GB": "Websites have increasingly begun to rely much more on large third-parties for content delivery. Cancelling requests for ads or trackers is usually without issue, however blocking actual content, not unexpectedly, breaks pages. The aim of this add-on is to cut out the middleman by providing lightning speed delivery of local (bundled) files to improve online privacy.\n\n     • Protects privacy by evading large delivery networks that claim to offer free services.\n     • Complements regular blockers such as uBlock Origin (recommended), Adblock Plus, et al.\n     • Works directly out of the box; absolutely no prior configuration required.\n\n<i>Note: Decentraleyes is no silver bullet, but it does prevent a lot of websites from making you send these kinds of requests. Ultimately, you can make Decentraleyes block requests for any missing CDN resources, too.</i>\n\n   &gt; Simpler introduction: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Am I Currently Protected?</b>\n\nThe following <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">testing utility</a> shows you if you are properly protected. It's the recommended and, probably, fastest way to see if this add-on is installed, enabled, and correctly configured.\n\n   &gt; Full link to testing utility: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Frequently Asked Questions</b>\n\n   &gt; Full link to FAQ: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Technical Information</b>\n\n- Supported Networks: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, and UpYun Libraries.\n\n- Bundled Resources: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, and Web Font Loader.\n\n<b>Personal Support</b>\n\nIs your question not listed above, or do you have any other reason to contact me personally? You can always reach me at <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Bug reports or suggestions are highly welcome and I reply to every single email.\n\nFeel free to use <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">this public PGP key</a> for encrypted communication.\n\n   &gt; Full link to public PGP key: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Are You Enjoying this Add-on?</b>\n\nDecentraleyes is, and will always be, free, but you can support its continued development by making a donation, by contributing on GitLab, or by spreading the word (which does wonders). Any help would be greatly appreciated!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Donate: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "en-US": "Websites have increasingly begun to rely much more on large third-parties for content delivery. Canceling requests for ads or trackers is usually without issue, however blocking actual content, not unexpectedly, breaks pages. The aim of this add-on is to cut out the middleman by providing lightning speed delivery of local (bundled) files to improve online privacy.\n\n     • Protects privacy by evading large delivery networks that claim to offer free services.\n     • Complements regular blockers such as uBlock Origin (recommended), Adblock Plus, et al.\n     • Works directly out of the box; absolutely no prior configuration required.\n\n<i>Note: Decentraleyes is no silver bullet, but it does prevent a lot of websites from making you send these kinds of requests. Ultimately, you can make Decentraleyes block requests for any missing CDN resources, too.</i>\n\n   &gt; Simpler introduction: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Am I Currently Protected?</b>\n\nThe following <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">testing utility</a> shows you if you are properly protected. It's the recommended and, probably, fastest way to see if this add-on is installed, enabled, and correctly configured.\n\n   &gt; Full link to testing utility: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Frequently Asked Questions</b>\n\n   &gt; Full link to FAQ: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Technical Information</b>\n\n- Supported Networks: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, and UpYun Libraries.\n\n- Bundled Resources: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, and Web Font Loader.\n\n<b>Personal Support</b>\n\nIs your question not listed above, or do you have any other reason to contact me personally? You can always reach me at <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Bug reports or suggestions are highly welcome and I reply to every single email.\n\nFeel free to use <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">this public PGP key</a> for encrypted communication.\n\n   &gt; Full link to public PGP key: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Are You Enjoying this Add-on?</b>\n\nDecentraleyes is, and will always be, free, but you can support its continued development by making a donation, by contributing on GitLab, or by spreading the word (which does wonders). Any help would be greatly appreciated!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Donate: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "es": "Los sitios web dependen cada vez más en software de terceros para la entrega de datos. Cancelar una petición de publicidad o de trackers no suele conllevar ningún problema; sin embargo, bloquear contenido implícito distorsiona o daña las paginas. La finalidad de este complemento es eliminar el intermediario entre estas peticiones, para así proporcionar una entrega de archivos locales (empaquetados) a velocidades exorbitantes y mejorar la privacidad en linea.\n\n     • Protege la privacidad al evadir una larga red de entrega que dice ofrecer sus servicios gratuitamente.\n     • Complementa las aplicaciones de bloqueo regulares tales como uBlock Origin (recomendada), Adblock Plus, y otros.\n     • Funciona directamente al ser instalado; Absolutamente ninguna configuración previamente requerida.\n\n<i>Nota: Decentraleyes no es una bala de plata, pero sí previene que muchos sitios web envíen este tipo de peticiones. Así también, Decentraleyes puede bloquear peticiones para cualquier recurso CDN que no se pueda encontrar.</i>\n\n   &gt; Introducción más simple: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>¿Estoy protegido en este momento?</b>\n\nLa siguiente <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">utilidad de prueba</a> le muestra si esta apropiadamente protegido. Es la manera recomendada, y probablemente, la más rápida para saber si este complemento esta instalado y configurado correctamente.\n\n   &gt; Enlace completo para la utilidad de prueba: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Preguntas frecuentes</b>\n\n   &gt; Enlace completo para las preguntas: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Información técnica</b>\n\n- Redes soportadas: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, y UpYun Libraries.\n\n- Paquete de recursos: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, y Web Font Loader.\n\n<b>Soporte individual</b>\n\n¿No encuentra su pregunta arriba, o tiene alguna razón para contactarme personalmente? Puede encontrarme siempre en <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Los reportes de fallas o sugerencias son bienvenidos y respondo a cada email recibido.\n\nSiéntete libre de usar <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">esta llave pública PGP</a> para comunicación encriptada.\n\n   &gt; Enlace completo para la llave pública PGP: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>¿Te gusta este complemento?</b>\n\nDecentraleyes es y será siempre gratis, pero puedes apoyar su continuo desarrollo mediante una donación, contribuyendo en GitLab o corriendo la voz (Lo cual hace maravillas). ¡Cualquier tipo de ayuda será muy apreciada!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Donar: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "et": "Veebilehed on hakanud üha rohkem tuginema sisu edastamiseks kolmandatele osapooltele. Taotluste tühistamine reklaamide või jälgijate puhul ei tekita tavaliselt probleeme, ent tegeliku sisu blokeerimine ilmselgelt lõhub saite. Selle laienduse eesmärk on vältida vahendajat, pakkudes ülikiiret kohalike (köidetud) failide kasutamist, et parandada Internetiprivaatsust.\n\n     • Kaitseb privaatsust, vältides suuri sisuedastusvõrke mis väidavad pakkuvat tasuta teenuseid.\n     • Täiendab tavalisi blokeerijaid nagu uBlock Origin (soovitatud), Adblock Plus ja teised.\n     • Töötab koheselt peale installimist, ei vaja eelnevaid seadistusi.\n\n<i>Märkus: Decentraleyes ei ole kõikvõimas, ent väldib paljude veebisaitide poolt tehtavaid sarnaseid taotlusi sinu brauserile. Lõpptulemusena võid panna Decentraleyes'i ka blokeerima mistahes sisuedastusvõrkude puuduvate ressursside taotlusi.</i>\n\n   &gt; Lihtsam tutvustus: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Kas ma olen hetkel kaitstud?</b>\n\nJärgnev <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">testimise tööriist</a> näitab, kas oled korralikult kaitstud. See on soovitatav ja tõenäoliselt kiireim viis teada saamaks, kas see laiendus on installeeritud, lubatud ja korralikult seadistatud.\n\n   &gt; Testimistööriista aadress: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Korduma kippuvad küsimused</b>\n\n   &gt; KKK aadress: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Tehniline info</b>\n\n- Toetatud võrgustikud: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources ja UpYun Libraries.\n\n- Köidetud ressursid: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js ja Web Font Loader.\n\n<b>Isiklik tugi</b>\n\nKas sinu küsimus pole ülalpool välja toodud või on mõni muu põhjus minuga isiklikult kontakteerumiseks? Sa saad mind alati kätte aadressiga <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Veateated või soovitused on väga teretulnud ning ma vastan igale e-kirjale.\n\nVõid vabalt kasutada <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">seda avalikku PGP-võtit</a> krüpteeritud suhtluse jaoks.\n\n   &gt; Avaliku PGP-võtme aadress: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Kas sa naudid seda laiendust?</b>\n\nDecentraleyes on ja jääb alati tasuta kättesaadavaks, kuid sa võid toetada jätkuvat arendust, tehes annetuse, kaastööd GitLabis või levitades seda teistele (mis teeb imesid). Igasugune abi oleks väga teretulnud!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Anneta: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "fi": "Sivustot käyttävät nykyään yhä enemmän isoja kolmannen osapuolen jakeluverkkoja sisällön näyttämiseen. Mainosten ja seurantaevästeiden estäminen ei yleensä aiheuta ongelmia. Varsinaisen sisällön estäminen kuitenkin saattaa yllättäen rikkoa sivustoja. Tämän lisäosan tavoite on poistaa välikäsi ja tarjota salamannopeasti korvaavia paikallisia (mukana toimitettuja) tiedostoja yksityisyyden parantamiseksi.\n\n     • Suojaa yksityisyyttä välttämällä isoja jakeluverkkoja jotka väittävät tarjoavansa ilmaisia palveluita.\n     • Täydentää muita lisäosia kuten uBlock Origin (suositeltu), Adblock Plus jne.\n     • Toimii suoraan asennuksen jälkeen, ilman tarvetta lisäsäädöille.\n\n<i>Huomautus: Decentraleyes ei ratkaise kaikkea, mutta se suojaa monilta nettisivujen tekemiltä sisältöpyynnöiltä. Halutessasi Decentraleyes estää kaikki pyynnöt joille ei ole tarjolla korvaavaa sisältöä.</i>\n\n   &gt; Yksinkertainen esittely: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Olenko tällä hetkellä suojattu?</b>\n\nSeuraava <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">testisivu</a> kertoo oletko asianmukaisesti suojattu. Se on suositeltu ja luultavasti nopein tapa nähdä toimiiko Decentraleyes oikein.\n\n   &gt; Linkki testisivulle: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Usein Kysytyt Kysymykset</b>\n\n   &gt; Linkki UKK: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Tekniset tiedot</b>\n\n- Tuetut jakeluverkot: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources ja UpYun Libraries.\n\n- Käytetyt resurssit: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js ja Web Font Loader.\n\n<b>Henkilökohtainen tuki</b>\n\nHaluatko kysyä jotain muuta tai onko sinulla tarve ottaa minuun yhteyttä henkilökohtaisesti? Minuun saa yhteyden <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Virheraportit ja ehdotukset ovat erittäin tervetulleita. Vastaan jokaiseen viestiin.\n\nVoit käyttää halutessasi <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">tätä julkista PGP avainta</a> suojattuun yhteydenpitoon.\n\n   &gt; Linkki julkiseen PGP avaimeen: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Pidätkö tästä lisäosasta?</b>\n\nDecentraleyes on ja tulee aina olemaan ilmainen, mutta voit tukea sen kehitystä tekemällä lahjoituksen GitLabin kautta tai levittämällä sanaa (joka tekee ihmeitä). Kaikki apu on erittäin tervetullutta!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Tee lahjoitus: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "fr": "Les sites web dépendent de plus en plus de bibliothèques tierces pour proposer du contenu. En général, annuler les requêtes pour les publicités ou traqueurs ne pose pas de problèmes. Cependant, bloquer le véritable contenu casse évidemment les pages. L'objectif de cet add-on est de supprimer l'intermédiaire en proposant à la vitesse de l'éclair la livraison de fichiers (regroupés) en local afin d'améliorer la protection des données personnelles en ligne.\n\n     • Protège la confidentialité en contournant les diffuseurs de contenus prétendant offrir des services gratuits.\n     • Complète les bloqueurs connus tels que uBlock origin (recommandé), Adblock Plus et autres.\n     • Fonctionne directement tel quel ne nécessitant aucune configuration préalable.\n\n<i>Remarque: Decentraleyes n'est pas une panacée mais il empêche de nombreux sites de vous contraindre à l'envoi de telles requêtes. Il est possible aussi d'indiquer à Decentraleyes de bloquer les requêtes manquantes.</i>\n\n   &gt; Présentation plus simple: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Suis-je actuellement protégé ?</b>\n\nUn <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">vérificateur</a> indique si vous êtes correctement protégé. C'est la méthode conseillée et la plus rapide pour savoir si l'add-on est installé, activé et correctement configuré.\n\n   &gt; Lien vers ce vérificateur: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Questions fréquemment posées</b>\n\n   &gt; Lien vers toutes les questions: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Informations techniques</b>\n\n- Réseaux pris en charge: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, et UpYun Libraries.\n\n- Ressources approvisionnées: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, et Web Font Loader.\n\n<b>Support personnalisé</b>\n\nAvez-vous une autre question, ou une autre raison pour vouloir me contacter personnellement ? Je suis toujours joignable à <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Signaler un bug ainsi que toute suggestion sont bienvenus, je réponds à tout e-mail.\n\nN'hésitez pas à employer <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">cette clé publique PGP</a> pour une communication chiffrée.\n\n   &gt; Adresse de la clé publique PGP: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Cet add-on vous plaît-il ?</b>\n\nDecentraleyes est, sera toujours gratuit, mais vous pouvez soutenir son développement continu via une donation, une contribution sur GitLab, ou en faisant passer le mot (qui fait des merveilles). Toute aide serait grandement appréciée !\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Faire un don: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "he": "אתרי אינטרנט החלו יותר ויותר להסתמך על צד שלישי עבור העברת התוכן (CDN). בדרך כלל, חסימת בקשות של האתר לפרסומות או טראקרים (שעוקבים אחרי פעילותיך ברשת) לא מהוות בעיה. חסימת תוכן אתר, באופן לא מפתיע, יכולה להפריע בהצגת האתר. מטרת ה-add on הזה היא חתיכת \"המתווך\" - ה-CDN - דרך שליחת קבצים מקומיים, במקום שליחתם דרך ה CDN. כך Decentraleyes מגביר בצורה משמעותית את זמן הטעינה של אתרים, ומשפר את פרטיותך ברשת.\n\n     • ההרחבה מגינה על פרטיותך על ידי עקיפת רשתות העברות-תוכן גדולת (CDN) המספקות את התכנים לאתר בחינם.\n     • היא תואמת לחלוטין ומשלימה חסמי-פרסומות נפוצים כמו uBlock Origin (מומלץ), Adblock Plus, וכו'.\n     • ההרחבה הזאת עובדת ישר - אין צורך כלשהו בהתאמה או שינוי תצורה מוקדמים.\n\n<i>שים לב: Decentraleyes היא לא תוכנת קסמים, אבל היא תמנע מהרבה אתרים לשלוח בקשות כאלו בשמך. Decentraleyes מאפשר לך לחסום בקשות גם לתכני CDN שהאתר בו אתה מבקר לא מוצא.</i>\n\n   &gt; היכרות מהירה עם התוספת: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>האם Decentraleyes מגנת עלי כרגע?</b>\n\nהבא <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">תכנת מבחן</a> מראה אם Decentraleyes מגנת עליך. הדרך המומלצת וכנראה גם המהירה ביותר לראות עם ה-add on הזה מותקן, מופעל, ומוגדר בצורה נכונה.\n\n   &gt; קישור לתכנת המבחן: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>שאלות נפוצות</b>\n\n   &gt; קישור לשאלות ותשובות נפוצות: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>מידע טכני</b>\n\n- רשתות העברת-תוכן בהן התוספת תומכת: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, ו UpYun Libraries.\n\n- ספריות שמגיעות עם התוספת: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, ו Web Font Loader.\n\n<b>תמיכת משתמש-קצה</b>\n\nאם יש לך שאלה שלא כלולה כאן, או אם תרצה ליצור קשר עם מפתח התוספת באופן ישיר, אנא צור קשר ב <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. דיווחים על שגיאות בתוספת או הצות לשיפור תמיד מתקבלות בברכה. מפתח התוספת בדרך כלל עונה על כל מייל באופן ישיר.\n\nאנא צרו קשר ב <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">מפתח ה- הציבורי הוא</a> ליצירת קשר בתקשורת מוצפנת.\n\n   &gt; מפתח ה-PGP הציבורי של מפתח התוספת: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>האם התוספת משמעותית לך?</b>\n\nDecentraleyes היא חינמית, ותשאר חינמית לעד. אפשר לעזור בשיפור ובתמיכת התוספת על ידי תרומה, שיפור הקוד דרך GitLab, או פשוט בלספר לארחים על התוספת הזאת (דרך מעולה לעזור). אני מעריך מאוד כל סוג של עזרה!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • לתרום: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
+          "hr": "Web-stranice se sve više oslanjaju na velike tvrtke treće strane za dostavu sadržaja. Blokiranje zahtjeva za oglase i pratitelje većinom prolazi bez problema, no blokiranje sadržaja očekivano može slomiti stranice. Cilj ovog dodatka je da pruža munjevito brzu dostavu lokalnih datoteka za poboljšanu privatnost na mreži.\n\n     • Štiti privatnost tako što zaobiđe velike mreže za dostavu sadržaja koje navodno pružaju besplatne usluge.\n     • Upotpunjuje uobičajene blokatore, kao što su uBlock Origin (preporučen), Adblock Plus, itd.\n     • Radi bez potrebe za postavljanjem; nije potrebna nikakva inicijalna konfiguracija.\n\n<i>Napomena: Decentraleyes nije savršen, ali sprječava takvu vrstu zahtjeva na mnogim web-stranicama. Na kraju, možete postaviti i da Decentraleyes blokira zahtjeve i za nedostajuće resurse iz CDN-ova.</i>\n\n   &gt; Jednostavniji uvod: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Jesam li trenutno zaštićen(a)?</b>\n\nSljedeći <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">alat za testiranje</a> prikazuje jeste li pravilno zaštićeni. To je preporučeni i vjerojatno najbrži način da vidite je li ovaj dodatak instaliran, omogućen i točno konfiguriran.\n\n   &gt; Puna poveznica na alat za testiranje: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Često postavljana pitanja</b>\n\n   &gt; Puna poveznica na ČPP: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Tehničke informacije</b>\n\n- Podržane mreže: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources i UpYun Libraries.\n\n- Uključeni resursi: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js i Web Font Loader.\n\n<b>Osobna podrška</b>\n\nImate neko pitanje koje se ne nalazi gore ili bilo koji drugi razlog da me osobno kontaktirate? Uvijek me možete kontaktirati na <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Prijave grešaka i prijedlozi su veoma dobro došli i odgovaram na svaki email.\n\nSlobodno koristite <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">ovaj javni PGP ključ</a> za šifriranu komunikaciju.\n\n   &gt; Puna poveznica na javni PGP ključ: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Sviđa li Vam se ovaj dodatak?</b>\n\nDecentraleyes je i uvijek će biti besplatan, ali možete podržati njegov razvoj donacijom, doprinosom na GitLabu ili širenjem riječi o njemu (što čini čuda). Svaka pomoć veoma je cijenjena!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Doniraj: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "hu": "Egyre inkább elterjed, hogy a weboldalak harmadik fél által üzemeltetett tartalomszolgáltató szerverekre támaszkodnak. A hirdetések és trackerek kérelmeinek elutasítása általában hibátlanul működik, azonban nem meglepő, hogy konkrét tartalmak blokkolása után hibásan működnek a weblapok. Ennek a kiegészítőnek a célja, hogy helyi (csomagolt) fájlok gyors beszúrásával megkerüljük a harmadik feleket, ezzel elősegítve az internetes adatvédelmet.\n\n     • A nagy és ingyenes tartalomszolgáltató hálózatok megkerülésével megvédi az adataidat.\n     • Jól kiegészíti a hagyományos blokkolókat, mint például a uBlock Origin (ajánlott), Adblock Plus, stb.\n     • Telepítés után azonnal működőképes, nem igényel külön beállítást.\n\n<i>Megjegyzés: A Decentraleyes nem csodafegyver, azonban még így is sok weblapot megakadályoz abban, hogy kérelmeket küldjön. A Decentraleyes segítségével a hiányzó tartalmakra irányuló kéréseket is elutasíthatod.</i>\n\n   &gt; Egyszerű leírás: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Védve vagyok?</b>\n\nA következő <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">tesztelő eszköz</a> segítségével megtudhatod, hogy védve vagy-e. Ez az ajánlott, és talán a leggyorsabb módja annak, hogy megbizonyosodj arról, hogy a kiegészítő telepítve van, engedélyezted és rendesen be van állítva.\n\n   &gt; Teljes link a tesztelő szolgáltatáshoz: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Gyakran Ismételt Kérdések</b>\n\n   &gt; Teljes linka GyIK-hez: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Technikai Információk</b>\n\n- Támogatott hálózatok: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources és UpYun Libraries.\n\n- Csomagolt könyvtárak: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, és Web Font Loader.\n\n<b>Személyes Segítség</b>\n\nA kérdésed nem lett megválaszolva, vagy más okból szeretnéd személyesen felvenni a kapcsolatot velem? Itt bármikor elérhetsz <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Hibajelentéseket vagy ajánlásokat nagyon várjuk, és minden e-mailra válaszolok.\n\nNyugodtan használd <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">ezt a PGP kulcsot</a> a titkosított kommunikációhoz.\n\n   &gt; Link a publikus PGP kulcshoz: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Tetszik ez a kiegészítő?</b>\n\nA Decentraleyes, akár most a jelenben, a jövőben is ingyenes lesz, azonban támogathatod a fejlesztést Bitcoinnal, GitLabon, vagy azzal, hogy mások körében népszerűsíted (ami csodákra képes). Minden segítségért hálásak vagyunk!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Adományozás: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "id": "Situs web semakin mengandalkan layanan pihak ketiga untuk pengiriman konten. Membatalkan permintaan untuk iklan atau pelacak biasanya tanpa masalah, namun memblokir konten yang sebenarnya, sengaja atau tidak, membuat halaman situs rusak. Tujuan dari pengaya ini adalah untuk menghilangkan perantara dengan menyediakan pengiriman berkas (paket) super cepat secara lokal untuk meningkatkan privasi daring.\n\n     • Melindungi privasi dengan menghindari jaringan distribusi pihak ketiga yang mengklaim menyediakan layanan gratis.\n     • Pelengkap pemblokir iklan umum seperti uBlock Origin (disarankan), Adblock Plus, dsb.\n     • Bekerja secara instan; tidak perlu lagi menyetel konfigurasi.\n\n<i>Catatan: Decentraleyes bukan segalanya, tetapi Decentraleyes benar-benar mencegah Anda mengirimkan permintaan semacam ini ke banyak situs. Pada akhirnya, Anda juga bisa membuat Decentraleyes memblokir permintaan untuk semua sumber daya CDN yang hilang.</i>\n\n   &gt; Introduksi singkat: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Apakah Saat Ini Saya Dilindungi?</b>\n\nBerikut ini <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">utilitas uji coba</a> menunjukkan kepada Anda jika Anda benar-benar dilindungi. Hal tersebut disarankan dan, mungkin, cara paling cepat untuk mengetahui jika pengaya ini terpasang, diaktifkan dan dikonfigurasikan dengan benar.\n\n   &gt; Tautan penuh ke utilitas uji coba: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Pertanyaan yang Sering Ditanyakan</b>\n\n   &gt; Tautan penuh ke FAQ: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Informasi Teknis</b>\n\n- Jaringan yang Didukung: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, Sina Public Resources, dan UpYun Libraries.\n\n- Paket Sumber Daya: AngularJS, Backbone.js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js, dan Web Font Loader.\n\n<b>Dukungan Personal</b>\n\nApakah pertanyaan Anda tidak tercantum di atas, atau apakah Anda memiliki alasan lain untuk menghubungi secara personal? Anda selalu bisa menghubungi saya di <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Pelaporan bug atau saran sangat diharapkan dan Saya akan balas semua surel yang Saya terima.\n\nJangan ragu untuk menggunakan <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">kunci publik PGP ini</a> untuk komunikasi terenkripsi.\n\n   &gt; Tautan penuh ke kunci PGP publik: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Apakah Anda Menyukai Pengaya ini?</b>\n\nDecentraleyes tetap, dan akan selalu gratis, tetapi Anda bisa mendukung pengembangan yang lebih lanjut dengan donasi, kontribusi di GitLab, atau dengan menyebarkan-luaskannya. Bantuan apapun akan sangat Saya hargai!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Donasi: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
           "it": "I siti web hanno cominciato ad affidarsi sempre più su grandi terze parti per la distribuzione dei contenuti. Annullare le richieste da parte di annunci o tracciatori di solito non ha conseguenze, tuttavia bloccare il contenuto effettivo, come si può immaginare, interrompe le pagine. Lo scopo di questo componente aggiuntivo è di estromettere l'intermediario fornendo una distribuzione fulminea di file locali (in dotazione) per migliorare la privacy online.\n\n     • Protegge la privacy eludendo le grandi CDN che pretendono di offrire servizi gratuiti.\n     • Integra i normali bloccanti come uBlock Origin (consigliato), Adblock Plus, e altri.\n     • Direttamente pronto all'uso; non è assolutamente richiesta alcuna configurazione iniziale.\n\n<i>Nota: Decentraleyes non è una soluzione miracolosa, ma impedisce ad un sacco di siti Web di inviare questi tipi di richieste. In definitiva, si possono anche bloccare tramite Decentraleyes le richieste per le risorse CDN mancanti.</i>\n\n   &gt; Introduzione semplificata: <a href=\"https://outgoing.prod.mozaws.net/v1/d22d502c3b43fb2f96a0310a4f001f4745aba6cf82e0ad5b78c2145db00476fd/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Simple-Introduction</a>\n\n<b>Sono attualmente protetto?</b>\n\nLa seguente <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">utilità di test</a> consente di visualizzare se si è adeguatamente protetti. È il modo raccomandato e, probabilmente, più veloce per vedere se questo componente aggiuntivo è installato, abilitato e configurato correttamente.\n\n   &gt; Link completo utilità di test: <a href=\"https://outgoing.prod.mozaws.net/v1/221301c720e1488012efd45e7bd7ec2124fb4e20da13ace29eb848f4de2d6215/https%3A//decentraleyes.org/test\" rel=\"nofollow\">https://decentraleyes.org/test</a>\n\n<b>Domande e risposte frequenti</b>\n\n   &gt; Link completo alla FAQ: <a href=\"https://outgoing.prod.mozaws.net/v1/1a6f38b165b3e86d666a5f770656e66788a71b67f6b5038eea4884aded90ec25/https%3A//git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes/wikis/Frequently-Asked-Questions</a>\n\n<b>Informazioni tecniche</b>\n\n- Reti supportate: Google Hosted Libraries, Microsoft Ajax CDN, CDNJS (Cloudflare), jQuery CDN (MaxCDN), jsDelivr (MaxCDN), Yandex CDN, Baidu CDN, risorse pubbliche Sina e librerie di UpYun.\n\n- Risorse in dotazione: AngularJS, Backbone. js, Dojo, Ember.js, Ext Core, jQuery, jQuery UI, Modernizr, MooTools, Prototype, Scriptaculous, SWFObject, Underscore.js e Web Font Loader.\n\n<b>Supporto personale</b>\n\nLa propria domanda non è elencata sopra, o c'è qualsiasi altra ragione per contattarmi personalmente? Posso essere sempre contattato tramite <a href=\"/\" rel=\"nofollow\">decentraleyes@protonmail.com</a>. Le segnalazioni di bug o i suggerimenti sono davvero benvenuti e rispondo a ogni singola email.\n\nSentitevi liberi di usare <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">questa chiave PGP pubblica</a> per le comunicazioni crittografate.\n\n   &gt; Link completo alla chiave PGP pubblica: <a href=\"https://outgoing.prod.mozaws.net/v1/33b2d4ef799a5e03c5dcb380ecb55c3760afe28f50debb8e19627d7e824b814b/https%3A//decentraleyes.org/3f774aff6d/public-key.txt\" rel=\"nofollow\">https://decentraleyes.org/3f774aff6d/public-key.txt</a>\n\n<b>Vi piace questo componente aggiuntivo?</b>\n\nDecentraleyes è, e sarà sempre, libero, ma si può supportare il suo continuo sviluppo con una donazione, contribuendo su GitLab o col passa parola (che fa miracoli). Qualsiasi aiuto sarebbe molto apprezzato!\n\n     • GitLab: <a href=\"https://outgoing.prod.mozaws.net/v1/26434c016cfe12000d62fedab907c037c0263b2e24b6351ccf2f6343cf5759b9/https%3A//git.synz.io/Synzvato/decentraleyes\" rel=\"nofollow\">https://git.synz.io/Synzvato/decentraleyes</a>\n     • Fai una donazione: <a href=\"https://outgoing.prod.mozaws.net/v1/d41865bc77319d73d03fa7198c7d0a8a9effcbd09b31c9f48af1c75b3f23f8a6/https%3A//decentraleyes.org/donate\" rel=\"nofollow\">https://decentraleyes.org/donate</a>",
@@ -667,21 +668,22 @@
         },
         "is_disabled": false,
         "is_experimental": false,
-        "last_updated": "2020-04-01T13:01:54Z",
+        "last_updated": "2020-11-05T10:28:48Z",
         "name": {
           "ar": "Decentraleyes",
           "bg": "Decentraleyes",
+          "bn": "Decentraleyes",
           "cs": "Decentraleyes",
           "da": "Decentraleyes",
           "de": "Decentraleyes",
           "el": "Decentraleyes",
-          "en-GB": "Decentraleyes",
           "en-US": "Decentraleyes",
           "es": "Decentraleyes",
           "et": "Decentraleyes",
           "fi": "Decentraleyes",
           "fr": "Decentraleyes",
           "he": "Decentraleyes",
+          "hr": "Decentraleyes",
           "hu": "Decentraleyes",
           "id": "Decentraleyes",
           "it": "Decentraleyes",
@@ -741,12 +743,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.7966,
-          "bayesian_average": 4.7917791518717365,
-          "count": 1160,
-          "text_count": 306
+          "average": 4.8022,
+          "bayesian_average": 4.797399621962154,
+          "count": 1183,
+          "text_count": 304
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/decentraleyes/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/521554",
         "slug": "decentraleyes",
@@ -754,17 +756,18 @@
         "summary": {
           "ar": "يحميك من التتبع المرتبط بالوصول للمحتوى \"مجاني\"، مركزية. فهو يمنع الكثير من طلبات الشبكات من الوصول مثل المكتبات المستضافة غوغل و أخرى، ويقدم ملفات محلية للتخفيف على المواقع. يكمل مانع المحتوى المعتاد.",
           "bg": "Защитава ви от следене чрез свободна, централизирана доставка на съдържание. Спира достигането на много заявки към мрежи за доставка на съдържание и подава местни файлове, за да не се счупват сайтовете. Допълва обикновените блокировачи на съдържание.",
+          "bn": "\"ফ্রি\", কেন্দ্রীয় কন্টেন্ট ডেলিভারি থেকে তোমাকে রক্ষা করে। এটি গুগল হোস্টেড লাইব্রেরিগুলির মতো নেটওয়ার্কগুলিতে পৌঁছানো থেকে অনেকগুলি অনুরোধকে রোধ করে এবং সাইটগুলি ভাঙ্গা থেকে রক্ষা করতে স্থানীয় ফাইলগুলি সরবরাহ করে। সাধারণ ব্লকারদের পরিপূর্ণ করে।",
           "cs": "Chrání před sledováním skrze centrálně doručovaný obsah. Brání stahování knihoven ze serverů Googlu a místo nich používá jejich lokálně uložené kopie, takže webové stránky budou nadále fungovat. Vhodné doplnění k běžnému blokování obsahu.",
           "da": "Beskytter dig imod sporing af \"gratis\", centraliserede indholdsleverandører. Forhindrer trafik til tjenester såsom Google Hosted Libraries, og leverer i stedet lokale filer så hjemmesider stadig fungerer. Et supplement til blokerings-tilføjelser.",
           "de": "Schützt vor Tracking durch \"gratis\", zentralisiertes Abliefern von Content. Es sorgt dafür, dass Anfragen Netzwerke wie \"Google Hosted Libraries\" nicht erreichen, aber imitiert sie, sodass die Seiten intakt bleiben. Ergänzt reguläre Contentsperren.",
           "el": "Προστατεύει από παρακολούθηση μέσω \"δωρεάν\" διανομής περιεχόμενου. Αποτρέπει κλήσεις προς εξωτερικά δίκτυα όπως οι βιβλιοθήκες της Google και σερβίρει τοπικά αρχεία για σωστή προβολή ιστοσελίδων. Συμπληρώνει συνήθη πρόθετα αποκλεισμού.",
-          "en-GB": "Protects you against tracking through \"free\", centralised, content delivery. It prevents a lot of requests from reaching networks like Google Hosted Libraries, and serves local files to keep sites from breaking. Complements regular content blockers.",
           "en-US": "Protects you against tracking through \"free\", centralized, content delivery. It prevents a lot of requests from reaching networks like Google Hosted Libraries, and serves local files to keep sites from breaking. Complements regular content blockers.",
           "es": "Protege contra el rastreo con la entrega centralizada y «gratuita» de contenido. Previene interferencia de redes como Google Hosted Libraries, sirve archivos locales para prevenir que sitios se rompan. Complementa bloqueadores regulares.",
           "et": "Kaitseb sind \"tasuta\", tsentraliseeritud sisu edastamisest tuleneva jälitamise vastu. Keelab taotlused võrgustikesse nagu Google Hosted Libraries, asendades need kohalike failidega, et saidid jätkuvalt töötaksid. Täiendab tavalisi sisublokeerijaid.",
           "fi": "Suojaa sinua \"ilmaisten\" keskitettyjen sisällön jakeluverkkojen jäljitykseltä. Estää sisältöpyyntöjä moniin jakeluverkkoihin ja korvaa ne paikallisilla tiedostoilla estäkseen sivujen hajoamisen. Täydentää muita sisällön suodatuksen lisäosia.",
           "fr": "Protège du pistage lié aux diffuseurs de contenus « gratuits », centralisés. Accélère de nombreuses requêtes (Google Hosted Libraries et autres) en les servant localement, allégeant la charge des sites. Complète les bloqueurs de contenus habituels.",
           "he": "מגן עליך מפני מעקב המבוצע דרך רשתות אספקת תוכן ריכוזיות ו\"חינמיות\". מונע מבקשות מלהגיע לרשתות כמו Google Hosted Libraries, ומשתמש בקבצים מקומיים כדי למנוע שיבושים. משלים חוסמי תוכן רגילים.",
+          "hr": "Štiti Vas od praćenja kroz \"besplatnu\", centraliziranu dostavu sadržaja. Blokira mnoge zahtjeve prema mrežama kao što su Google Hosted Libraries i učitava lokalne datoteke kako se stranice ne bi slomile. Upotpunjuje uobičajene blokatore sadržaja.",
           "hu": "Véd attól, hogy az „ingyenes”, centralizált tartalomszolgáltatók kövessenek. Blokkolja a kéréseket a Google Hosted Libraries és efféle hálózatok elérésében, az oldalak betörését helyi fájlokkal akadályozza meg.",
           "id": "Melindungi dari pelacakan melalui distribusi konten yang bebas dan terpusat. Mencegah permintaan ke jaringan seperti Google Hosted Libraries, dan menyediakan berkas lokal pengganti agar situs tetap bekerja baik. Pelengkap pemblokir konten umum.",
           "it": "Protegge dal tracciamento tramite CDN centralizzato \"gratis\". Impedisce a molte richieste di raggiungere reti come Google Hosted Libraries e fornisce file locali per impedire malfunzionamenti dei siti. È complementare ai normali content blockers.",
@@ -786,17 +789,18 @@
         "support_url": {
           "ar": "https://decentraleyes.org",
           "bg": "https://decentraleyes.org",
+          "bn": "https://decentraleyes.org",
           "cs": "https://decentraleyes.org",
           "da": "https://decentraleyes.org",
           "de": "https://decentraleyes.org",
           "el": "https://decentraleyes.org",
-          "en-GB": "https://decentraleyes.org",
           "en-US": "https://decentraleyes.org",
           "es": "https://decentraleyes.org",
           "et": "https://decentraleyes.org",
           "fi": "https://decentraleyes.org",
           "fr": "https://decentraleyes.org",
           "he": "https://decentraleyes.org",
+          "hr": "https://decentraleyes.org",
           "hu": "https://decentraleyes.org",
           "id": "https://decentraleyes.org",
           "it": "https://decentraleyes.org",
@@ -834,8 +838,8 @@
           "tracking"
         ],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/",
-        "weekly_downloads": 5470
+        "url": "https://addons.mozilla.org/en-US/android/addon/decentraleyes/",
+        "weekly_downloads": 5188
       },
       "notes": null
     },
@@ -846,12 +850,12 @@
           {
             "id": 5474073,
             "name": "EFF Technologists",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/5474073/",
+            "url": "https://addons.mozilla.org/en-US/android/user/5474073/",
             "username": "eff-technologists",
             "picture_url": "https://addons.cdn.mozilla.net/user-media/userpics/5/5474/5474073.png?modified=1469820907"
           }
         ],
-        "average_daily_users": 939051,
+        "average_daily_users": 949941,
         "categories": {
           "android": [
             "security-privacy"
@@ -886,7 +890,7 @@
               "platform": "all",
               "size": 1240482,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3656444/privacy_badger-2020.10.7-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3656444/privacy_badger-2020.10.7-an+fx.xpi",
               "permissions": [
                 "tabs",
                 "http://*/*",
@@ -1395,12 +1399,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.789,
-          "bayesian_average": 4.785571867473681,
-          "count": 1630,
-          "text_count": 393
+          "average": 4.7833,
+          "bayesian_average": 4.779969556227804,
+          "count": 1698,
+          "text_count": 407
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/privacy-badger17/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/506646",
         "slug": "privacy-badger17",
@@ -1416,8 +1420,8 @@
         },
         "tags": [],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/",
-        "weekly_downloads": 16895
+        "url": "https://addons.mozilla.org/en-US/android/addon/privacy-badger17/",
+        "weekly_downloads": 15820
       },
       "notes": null
     },
@@ -1428,12 +1432,12 @@
           {
             "id": 11423598,
             "name": "Raymond Hill",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/11423598/",
+            "url": "https://addons.mozilla.org/en-US/android/user/11423598/",
             "username": "gorhill",
             "picture_url": null
           }
         ],
-        "average_daily_users": 4689051,
+        "average_daily_users": 4885561,
         "categories": {
           "android": [
             "security-privacy"
@@ -1445,7 +1449,7 @@
         "contributions_url": "",
         "created": "2015-04-25T07:26:22Z",
         "current_version": {
-          "id": 5119123,
+          "id": 5135389,
           "compatibility": {
             "firefox": {
               "min": "55.0",
@@ -1456,19 +1460,19 @@
               "max": "*"
             }
           },
-          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/ublock-origin/versions/5119123",
+          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/ublock-origin/versions/5135389",
           "files": [
             {
-              "id": 3663488,
-              "created": "2020-10-20T09:53:20Z",
-              "hash": "sha256:500ecb79d9e65ff1c4d7cb3a34763c1dc2edc2b5a3f56b6c8ca225494a4535d6",
+              "id": 3679754,
+              "created": "2020-11-17T13:08:46Z",
+              "hash": "sha256:d9eef701b99866565708fe69b5855c1634187630e9e223e810f10e482545e6c0",
               "is_restart_required": false,
               "is_webextension": true,
               "is_mozilla_signed_extension": false,
               "platform": "all",
-              "size": 2784234,
+              "size": 2801972,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3663488/ublock_origin-1.30.6-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3679754/ublock_origin-1.31.0-an+fx.xpi",
               "permissions": [
                 "dns",
                 "menus",
@@ -1524,10 +1528,10 @@
             "url": "http://www.gnu.org/licenses/gpl-3.0.html"
           },
           "release_notes": {
-            "en-US": "See <a href=\"https://outgoing.prod.mozaws.net/v1/21cb37bfdb753638e00ea9432df15d983c6b4254e89653c53db0d20cdc823075/https%3A//github.com/gorhill/uBlock/releases/tag/1.30.6\" rel=\"nofollow\">release notes</a>.\n\n## Fixed:\n\n<a href=\"https://outgoing.prod.mozaws.net/v1/701f672e160eb5492111e24e18fd248a3e2c4786d6550b4b4072480a92ee2cfe/https%3A//github.com/gorhill/uBlock/commit/2b262b24e2c4a38957f0be3544dcf28cf60f9e7d\" rel=\"nofollow\">Prevent set-constant from trapping non-configurable properties</a> [regression]\n\n<a href=\"https://outgoing.prod.mozaws.net/v1/3a9d04cf0392dd69a0cbd364e14c053ef521e79cc6f443d5cc313f6eed1ee937/https%3A//github.com/gorhill/uBlock/compare/1.30.4...1.30.6\" rel=\"nofollow\">Commits history since 1.30.4</a>."
+            "en-US": "See <a href=\"https://outgoing.prod.mozaws.net/v1/ad6e491ded735345270ee88f63016f80b30a14a1e1f38bb05f1e63a112d6ecb8/https%3A//github.com/gorhill/uBlock/releases/tag/1.31.0\" rel=\"nofollow\">release notes</a>.\n\n<b>New:</b>\n\n<b>Click-to-load</b>\n\nSupport to replace embedded frames with a click-to-load widget. Examples of usage:\n\n<code>||<a href=\"https://outgoing.prod.mozaws.net/v1/6f77a09441a6af61d6a5a78db00417d7f6fa5eade30c9ccdc0ca28c7a21d0146/http%3A//youtube.com/embed/%243p%2Cframe%2Credirect=click2load.html\" rel=\"nofollow\">youtube.com/embed/$3p,frame,redirect=click2load.html</a>\n||<a href=\"https://outgoing.prod.mozaws.net/v1/5d656ee5ac41d8489285a0dc824f318ad24771561065baefba09a6703181b6ba/http%3A//scribd.com/embeds/%243p%2Cframe%2Credirect=click2load.html\" rel=\"nofollow\">scribd.com/embeds/$3p,frame,redirect=click2load.html</a>\n||<a href=\"https://outgoing.prod.mozaws.net/v1/c21551ebf05dc74e4faf00f50497b02fb52b8c860355bf66d776224e675fc72b/http%3A//player.vimeo.com/video/%243p%2Cframe%2Credirect=click2load.html\" rel=\"nofollow\">player.vimeo.com/video/$3p,frame,redirect=click2load.html</a></code>\n\nUsers of medium mode can experiment with a redirect rule to reveal embedded frames in a page:\n\n<code>*$3p,frame,redirect-rule=click2load.html</code>\n\nOr if you want to have click-to-load only for embedded widgets from specific origins being blocked (reminder: <a href=\"https://outgoing.prod.mozaws.net/v1/82e9714a02fcaa78100672185283fe1c7cbdb5ff5ede9dfd95be0f66d0202075/https%3A//github.com/gorhill/uBlock/wiki/Static-filter-syntax%23redirect-rule\" rel=\"nofollow\"><code>redirect-rule</code></a> does not create a block filter):\n\n<code> ||<a href=\"https://outgoing.prod.mozaws.net/v1/ada5d641241ba08f41ca8e2e95aebee8f706b1e658a0f63afb0327ee843252c8/http%3A//youtube.com/embed/%243p%2Cframe%2Credirect-rule=click2load.html\" rel=\"nofollow\">youtube.com/embed/$3p,frame,redirect-rule=click2load.html</a></code>\n\n<b>Changes:</b>\n\nResources redirected to local, neutered versions will no longer be collapsed as would occur if those resources were only blocked. This change is to enable implementation of the new click-to-load feature.\n\nCloud storage compression is now enabled by default.\n\n<b>Closed as fixed:</b>\n\n<ul><li><a href=\"https://outgoing.prod.mozaws.net/v1/d9f510b2fb029955173d9be41f90545747de3591b9be114e7ce1274be62b0e1b/https%3A//github.com/uBlockOrigin/uBlock-issues/issues/1304\" rel=\"nofollow\">Unable to scroll down to the last line in My Filters pane on Firefox for Android</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/d700dd030a4e03713d042957c88336b36bd6ba0f73e409daeac24f29b661f6bd/https%3A//github.com/uBlockOrigin/uBlock-issues/issues/1345\" rel=\"nofollow\">\"Home\" button on Strict blocking page works incorrectly in some cases</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/84c6f75ee567b34cd4aa3aec1a6f31cddf583f0867426b0b8e9ad5452abaf514/https%3A//github.com/uBlockOrigin/uBlock-issues/issues/1281\" rel=\"nofollow\">Implement a version of \"{{origin}}\" that uses the whole URL and not just the domain</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/62d1c11a39a31be9bc951a6d4aaa723368205a3d54489e9edb7dedbf743e4ad2/https%3A//github.com/uBlockOrigin/uBlock-issues/issues/1280\" rel=\"nofollow\">cosmetic filter <code>## selector</code> is valid in element picker only</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/818f69764248823cab44bd9117c37f456562a8cf1c67b8ba92c8b23b7226c59e/https%3A//github.com/uBlockOrigin/uBlock-issues/issues/760\" rel=\"nofollow\">Implement <code>$queryprune</code> parameter</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/c79eb691e9a7fc0a59d72e00e29b986bf686c8926255150d320d8e060601f516/https%3A//github.com/uBlockOrigin/uAssets/pull/4115\" rel=\"nofollow\">Calling callback if provided for google analytics mock</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/5e6a994e0da5171446cff1a75b87aefb329f7d82397537a3fdd0a94ac5590717/https%3A//github.com/gorhill/uBlock/issues/3590\" rel=\"nofollow\">Redirection syntax issue</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/5d2e7632a8795a7c45baab376148f651eec9b2a5a250e708fcc99ee5712852b5/https%3A//github.com/gorhill/uBlock/issues/2848\" rel=\"nofollow\">Use user styles to collapse the placeholder of blocked resources</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/b07e12c0e3d2f25d7675fa413bfe53d87e212450bffaee5b3f6d31497c5b8680/https%3A//github.com/gorhill/uBlock/issues/1390\" rel=\"nofollow\">Make load-on-demand smarter for blocked large media elements</a></li></ul>\n<b>Notable commits with no entry in issue tracker:</b>\n\n<ul><li><a href=\"https://outgoing.prod.mozaws.net/v1/f7a3990dd4ed5c5e5108863ab916d03ebf59def4ce817135178a51c9e5c1be2d/https%3A//github.com/gorhill/uBlock/commit/a223031b9851874db04b4c6ccb469586f8bb9556\" rel=\"nofollow\">Work around Firefox's <code>data:</code> favIconUrl leak</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/6d652733de4a3b67966235794851835c0738a1308643241b3870b8572a31e017/https%3A//github.com/gorhill/uBlock/commit/13f92756befaa9a8d3ba1615bd7abc7075758c67\" rel=\"nofollow\">Make json-prune scriptlet also trap Response.json() calls</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/3e21e48016cc0cc59127b5ba039722b18a8bedbe657b7b139d66c721439e48e4/https%3A//github.com/gorhill/uBlock/commit/efea83a825bad1fff5f506ecd9f57e0579249410\" rel=\"nofollow\">Incrementally improve static filtering parser</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/300d566bae935dfe7caa7f26a6f449120fc0d16f6ccc0a7ea458fc47dfe5f82c/https%3A//github.com/gorhill/uBlock/commit/b265f2644d7c5eb353b5fc123e67f9419f1c998d\" rel=\"nofollow\">Coallesce origin hit filters into their own bucket</a><ul><li><a href=\"https://outgoing.prod.mozaws.net/v1/90c37955cca74165527bf305c54e5df68b4a18003207a8ebbcf2f340ec5f0025/https%3A//github.com/gorhill/uBlock/commit/4afb3dc149e70577509eb9bba5b1737223d42329\" rel=\"nofollow\">Allow <code>domain=</code> with entity values into pre-test buckets</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/7108e88d163783823d57170458f542c706c7e83f50fb4dd029731d8eee4fe01f/https%3A//github.com/gorhill/uBlock/commit/1d679143d23a24d6bdaab14614f8118a167c57d3\" rel=\"nofollow\">Enable origin-hit coalescing optimisation for modifier filters</a></li></ul></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/475c486ecbde642be209825abb7fd6fe36366ce77a5a1cac3385a23204e27e83/https%3A//github.com/gorhill/uBlock/commit/157cef6034a8ec926c1e59c7e77f0a1fcbef473c\" rel=\"nofollow\">Re-classify <code>redirect=</code> option as a modifier option</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/ef8c8465e5abf4f11c31c8a4c92ec262be7e889b6476e6f0dda22cdae1c9907c/https%3A//github.com/gorhill/uBlock/commit/0bbf5b52abfa58fbd0cb505063011b57409aada1\" rel=\"nofollow\">Improve token extraction from regex-based filters</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/6d598749fe7ac25e19168f52d44d4e984f8f7ce9b4f116cdb995ad1a8fa86e02/https%3A//github.com/gorhill/uBlock/commit/4c5197322f7f4c74412f01747e7e0c5e2a023677\" rel=\"nofollow\">Improve specificity slider in element picker</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/c794932ff392735e9a64897732e68373cf9a3346ddeaeb9b34e4f1b2dd9ab0c8/https%3A//github.com/gorhill/uBlock/commit/a095b8325046e725c7d3e58943660ac3848d910a\" rel=\"nofollow\">Use a CodeMirror editor instance in element picker</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/54ee032bd2c27f255a30badca5c689591784376b49f1e8339b8fdde1829f4781/https%3A//github.com/gorhill/uBlock/commit/59169209850c54c31d94990f0c956281fe43eb03\" rel=\"nofollow\">Add support for click-to-load of embedded frames</a></li><li><a href=\"https://outgoing.prod.mozaws.net/v1/ae0b4b1e1056107154420d9e267976afc4c3b4d0689c0abddbcc563ffc6ea730/https%3A//github.com/gorhill/uBlock/commit/fef375a5942402591671f1b6c3052a407b9802af\" rel=\"nofollow\">Minor improvements to syntax highlight of static filters</a></li></ul>\n<a href=\"https://outgoing.prod.mozaws.net/v1/e68ac420535993cfc64cadf07cb49eb66dcce1451edc73f462ff7fb2b10c5266/https%3A//github.com/gorhill/uBlock/compare/1.30.6...1.31.0\" rel=\"nofollow\">Commits history since 1.30.6</a>."
           },
           "reviewed": null,
-          "version": "1.30.6"
+          "version": "1.31.0"
         },
         "default_locale": "en-US",
         "description": {
@@ -1617,7 +1621,7 @@
         },
         "is_disabled": false,
         "is_experimental": false,
-        "last_updated": "2020-10-22T13:50:10Z",
+        "last_updated": "2020-12-03T15:15:17Z",
         "name": {
           "ar": "uBlock Origin",
           "bg": "uBlock Origin",
@@ -1762,12 +1766,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.7309,
-          "bayesian_average": 4.730465077117736,
-          "count": 12678,
-          "text_count": 4288
+          "average": 4.7303,
+          "bayesian_average": 4.729868519012073,
+          "count": 12948,
+          "text_count": 4351
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/ublock-origin/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/607454",
         "slug": "ublock-origin",
@@ -1818,8 +1822,8 @@
         },
         "tags": [],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/",
-        "weekly_downloads": 121102
+        "url": "https://addons.mozilla.org/en-US/android/addon/ublock-origin/",
+        "weekly_downloads": 119642
       },
       "notes": null
     },
@@ -1830,12 +1834,12 @@
           {
             "id": 11797710,
             "name": "JanH",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/11797710/",
+            "url": "https://addons.mozilla.org/en-US/android/user/11797710/",
             "username": "JanH",
             "picture_url": null
           }
         ],
-        "average_daily_users": 4963,
+        "average_daily_users": 42795,
         "categories": {
           "android": [
             "photos-media"
@@ -1866,7 +1870,7 @@
               "platform": "all",
               "size": 11927,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3630185/videowiedergabe_im_hintergrund-1.5.1-an.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3630185/videowiedergabe_im_hintergrund-1.5.1-an.xpi",
               "permissions": [
                 "*://*.youtube.com/*",
                 "*://*.youtube-nocookie.com/*",
@@ -1948,12 +1952,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.5122,
-          "bayesian_average": 4.506682711353834,
-          "count": 945,
-          "text_count": 351
+          "average": 4.5119,
+          "bayesian_average": 4.506437410633741,
+          "count": 967,
+          "text_count": 367
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/811592",
         "slug": "video-background-play-fix",
@@ -1975,8 +1979,8 @@
           "youtube"
         ],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/",
-        "weekly_downloads": 22
+        "url": "https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/",
+        "weekly_downloads": 19
       },
       "notes": null
     },
@@ -1987,12 +1991,12 @@
           {
             "id": 12808157,
             "name": "cowlicks",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/12808157/",
+            "url": "https://addons.mozilla.org/en-US/android/user/12808157/",
             "username": "cowlicks",
             "picture_url": null
           }
         ],
-        "average_daily_users": 93474,
+        "average_daily_users": 97224,
         "categories": {
           "android": [
             "experimental",
@@ -2028,7 +2032,7 @@
               "platform": "all",
               "size": 284724,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3360398/privacy_possum-2019.7.18-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3360398/privacy_possum-2019.7.18-an+fx.xpi",
               "permissions": [
                 "tabs",
                 "http://*/*",
@@ -2131,12 +2135,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.5037,
-          "bayesian_average": 4.484640159908518,
-          "count": 272,
-          "text_count": 74
+          "average": 4.4947,
+          "bayesian_average": 4.476326419473352,
+          "count": 285,
+          "text_count": 82
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/privacy-possum/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/953945",
         "slug": "privacy-possum",
@@ -2158,8 +2162,8 @@
           "tracking"
         ],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-possum/",
-        "weekly_downloads": 1539
+        "url": "https://addons.mozilla.org/en-US/android/addon/privacy-possum/",
+        "weekly_downloads": 1324
       },
       "notes": null
     },
@@ -2170,12 +2174,12 @@
           {
             "id": 12929064,
             "name": "Armin Sebastian",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/12929064/",
+            "url": "https://addons.mozilla.org/en-US/android/user/12929064/",
             "username": "dessant",
             "picture_url": "https://addons.cdn.mozilla.net/user-media/userpics/12/12929/12929064.png?modified=1557684554"
           }
         ],
-        "average_daily_users": 122790,
+        "average_daily_users": 148830,
         "categories": {
           "android": [
             "photos-media",
@@ -2189,7 +2193,7 @@
         "contributions_url": "https://www.paypal.me/ArminSebastian/5?utm_content=product-page-contribute&utm_medium=referral&utm_source=addons.mozilla.org",
         "created": "2017-06-17T15:23:33Z",
         "current_version": {
-          "id": 5097417,
+          "id": 5139038,
           "compatibility": {
             "firefox": {
               "min": "68.0",
@@ -2200,19 +2204,19 @@
               "max": "*"
             }
           },
-          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/search_by_image/versions/5097417",
+          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/search_by_image/versions/5139038",
           "files": [
             {
-              "id": 3641782,
-              "created": "2020-09-11T19:40:05Z",
-              "hash": "sha256:68fb0fc2670c4cebe9bf949dab2060b40f7fcbc612f3d9eaa4b52e6c3c1969a4",
+              "id": 3683403,
+              "created": "2020-11-23T23:04:18Z",
+              "hash": "sha256:6f40dcf20b9f384b52237b881bfadf427b343bb85b8272e6b2bdb3227214ccaa",
               "is_restart_required": false,
               "is_webextension": true,
               "is_mozilla_signed_extension": false,
               "platform": "all",
-              "size": 1412269,
+              "size": 637845,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3641782/search_by_image-3.1.0-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3683403/search_by_image-3.4.1-an+fx.xpi",
               "permissions": [
                 "contextMenus",
                 "storage",
@@ -2259,11 +2263,9 @@
             },
             "url": "http://www.gnu.org/licenses/gpl-3.0.html"
           },
-          "release_notes": {
-            "en-US": "Fixed:\n- Shutterstock, PimEyes and Madrid Monitor have been updated\n- set correct browser action height on Firefox for Android\n- show correct max image size in error message"
-          },
+          "release_notes": null,
           "reviewed": null,
-          "version": "3.1.0"
+          "version": "3.4.1"
         },
         "default_locale": "en-US",
         "description": {
@@ -2285,7 +2287,7 @@
         },
         "is_disabled": false,
         "is_experimental": false,
-        "last_updated": "2020-09-14T08:25:54Z",
+        "last_updated": "2020-11-24T09:35:35Z",
         "name": {
           "en-US": "Search by Image"
         },
@@ -2397,12 +2399,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.668,
-          "bayesian_average": 4.6605342038468205,
-          "count": 726,
-          "text_count": 150
+          "average": 4.6579,
+          "bayesian_average": 4.650725822022641,
+          "count": 763,
+          "text_count": 160
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/search_by_image/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/search_by_image/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/824288",
         "slug": "search_by_image",
@@ -2434,8 +2436,8 @@
           "yandex"
         ],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/search_by_image/",
-        "weekly_downloads": 8054
+        "url": "https://addons.mozilla.org/en-US/android/addon/search_by_image/",
+        "weekly_downloads": 6148
       },
       "notes": null
     },
@@ -2446,19 +2448,19 @@
           {
             "id": 13394925,
             "name": "Thomas Wisniewski",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/13394925/",
+            "url": "https://addons.mozilla.org/en-US/android/user/13394925/",
             "username": "wisniewskit",
             "picture_url": null
           },
           {
             "id": 6084813,
             "name": "Rob W",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/6084813/",
+            "url": "https://addons.mozilla.org/en-US/android/user/6084813/",
             "username": "RobW",
             "picture_url": null
           }
         ],
-        "average_daily_users": 2915,
+        "average_daily_users": 24275,
         "categories": {
           "android": [
             "other"
@@ -2489,7 +2491,7 @@
               "platform": "all",
               "size": 13786,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3655036/google_search_fixer-1.6-an.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3655036/google_search_fixer-1.6-an.xpi",
               "permissions": [
                 "webRequest",
                 "webRequestBlocking",
@@ -2740,12 +2742,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.4626,
-          "bayesian_average": 4.456849155319968,
-          "count": 895,
-          "text_count": 236
+          "average": 4.4625,
+          "bayesian_average": 4.4568308713700695,
+          "count": 919,
+          "text_count": 248
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/google-search-fixer/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/google-search-fixer/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/869140",
         "slug": "google-search-fixer",
@@ -2761,8 +2763,8 @@
         },
         "tags": [],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/google-search-fixer/",
-        "weekly_downloads": 45
+        "url": "https://addons.mozilla.org/en-US/android/addon/google-search-fixer/",
+        "weekly_downloads": 51
       },
       "notes": null
     },
@@ -2773,12 +2775,12 @@
           {
             "id": 143,
             "name": "Giorgio Maone",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/143/",
+            "url": "https://addons.mozilla.org/en-US/android/user/143/",
             "username": "giorgio-maone",
             "picture_url": "https://addons.cdn.mozilla.net/user-media/userpics/0/0/143.png?modified=1506804587"
           }
         ],
-        "average_daily_users": 403527,
+        "average_daily_users": 409954,
         "categories": {
           "android": [
             "performance",
@@ -2792,7 +2794,7 @@
         "contributions_url": "https://www.paypal.me/NoScript?utm_content=product-page-contribute&utm_medium=referral&utm_source=addons.mozilla.org",
         "created": "2005-05-13T10:51:32Z",
         "current_version": {
-          "id": 5113339,
+          "id": 5129181,
           "compatibility": {
             "firefox": {
               "min": "59.0",
@@ -2803,19 +2805,19 @@
               "max": "*"
             }
           },
-          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/noscript/versions/5113339",
+          "edit_url": "https://addons.mozilla.org/en-US/developers/addon/noscript/versions/5129181",
           "files": [
             {
-              "id": 3657704,
-              "created": "2020-10-09T10:52:21Z",
-              "hash": "sha256:08543e4a03e0becacd10c3cdbf5eaab1ff35a1648babe6f1522ae335e21de7d4",
+              "id": 3673546,
+              "created": "2020-11-06T11:27:47Z",
+              "hash": "sha256:04ca69c90502f3b66cd18a4f832cb915b789b147ffd946b48f1dfb1215eb5398",
               "is_restart_required": false,
               "is_webextension": true,
               "is_mozilla_signed_extension": false,
               "platform": "all",
-              "size": 601205,
+              "size": 601882,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3657704/noscript_security_suite-11.1.3-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3673546/noscript_security_suite-11.1.5-an+fx.xpi",
               "permissions": [
                 "contextMenus",
                 "storage",
@@ -2862,10 +2864,10 @@
             "url": "http://www.gnu.org/licenses/gpl-2.0.html"
           },
           "release_notes": {
-            "en-US": "v 11.1.3 (bump from 11.1.2 due to AMO versioning issues)\n============================================================\nx Fixed regression: document media and font restrictions\nalways cascaded (thanks BrainDedd for report)\nx Remove domPolicy logging when debugging is off\nx Trivial reordering from Mozilla source\nx Updated TLDs"
+            "en-US": "v 11.1.5\n============================================================\nx Updated TLD\nx Fixed potential infinite loop via DOMContentLoaded\nx Work-around for Firefox 82 media redirection bug (thanks\n  ppxxbu and skriptimaahinen)\nx Updated TLDs"
           },
           "reviewed": null,
-          "version": "11.1.3"
+          "version": "11.1.5"
         },
         "default_locale": "en-US",
         "description": {
@@ -2915,7 +2917,7 @@
         },
         "is_disabled": false,
         "is_experimental": false,
-        "last_updated": "2020-10-12T10:19:34Z",
+        "last_updated": "2020-12-02T22:15:18Z",
         "name": {
           "de": "NoScript",
           "el": "NoScript",
@@ -3003,12 +3005,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.5282,
-          "bayesian_average": 4.526654549689467,
-          "count": 3391,
-          "text_count": 2367
+          "average": 4.5336,
+          "bayesian_average": 4.5320416775586825,
+          "count": 3409,
+          "text_count": 2369
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/noscript/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/noscript/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/722",
         "slug": "noscript",
@@ -3061,8 +3063,8 @@
           "xss"
         ],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/noscript/",
-        "weekly_downloads": 10615
+        "url": "https://addons.mozilla.org/en-US/android/addon/noscript/",
+        "weekly_downloads": 10564
       },
       "notes": null
     },
@@ -3073,12 +3075,12 @@
           {
             "id": 4010195,
             "name": "Baris Derin",
-            "url": "https://addons.mozilla.org/en-US/firefox/user/4010195/",
+            "url": "https://addons.mozilla.org/en-US/android/user/4010195/",
             "username": "baris-derin",
             "picture_url": null
           }
         ],
-        "average_daily_users": 120634,
+        "average_daily_users": 128201,
         "categories": {
           "android": [
             "performance",
@@ -3115,7 +3117,7 @@
               "platform": "all",
               "size": 234528,
               "status": "public",
-              "url": "https://addons.mozilla.org/firefox/downloads/file/3635763/youtube_high_definition-80.0.0-an+fx.xpi",
+              "url": "https://addons.mozilla.org/android/downloads/file/3635763/youtube_high_definition-80.0.0-an+fx.xpi",
               "permissions": [
                 "tabs",
                 "storage",
@@ -3217,12 +3219,12 @@
           "category": "recommended"
         },
         "ratings": {
-          "average": 4.1305,
-          "bayesian_average": 4.126266281461298,
-          "count": 1111,
-          "text_count": 535
+          "average": 4.114,
+          "bayesian_average": 4.109818477103514,
+          "count": 1132,
+          "text_count": 543
         },
-        "ratings_url": "https://addons.mozilla.org/en-US/firefox/addon/youtube-high-definition/reviews/",
+        "ratings_url": "https://addons.mozilla.org/en-US/android/addon/youtube-high-definition/reviews/",
         "requires_payment": false,
         "review_url": "https://addons.mozilla.org/en-US/reviewers/review/328839",
         "slug": "youtube-high-definition",
@@ -3257,8 +3259,8 @@
           "youtube hd"
         ],
         "type": "extension",
-        "url": "https://addons.mozilla.org/en-US/firefox/addon/youtube-high-definition/",
-        "weekly_downloads": 2231
+        "url": "https://addons.mozilla.org/en-US/android/addon/youtube-high-definition/",
+        "weekly_downloads": 1964
       },
       "notes": null
     }
