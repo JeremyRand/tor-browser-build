@@ -1,3 +1,26 @@
+Tor Browser 10.5a5 -- December 7 2020
+ * Android
+   * Update Fenix to 84.0.0-beta.2
+   * Update HTTPS Everywhere to 2020.11.17
+   * Update Tor to 0.4.5.2-alpha
+   * Translations update
+   * Bug 40159: Update snowflake to ece43cbf [tor-browser-build]
+   * Bug 40236: Rebase tor-browser patches to 84.0b1 [tor-browser]
+   * Bug 40258: Rebase tor-browser patches to 84.0b7 [tor-browser]
+   * Bug 40119: Rebase Fenix patches to Fenix 84 beta 2 [fenix]
+   * Bug 40027: Rebase android-components patches for Fenix 84 beta 2 builds [android-components]
+ * Build System
+   * Android
+     * Bug 40081: Build Mozilla code with --enable-rust-simd [tor-browser-build]
+     * Bug 40128: Allow updating Fenix allowed_addons.json [tor-browser-build]
+     * Bug 40140: Create own Gradle project [tor-browser-build]
+     * Bug 40147: Remove RANLIB workaround once we pick up 0.4.5.2-alpha [tor-browser-build]
+     * Bug 40155: Update toolchain for Fenix 84 [tor-browser-build]
+     * Bug 40156: Update Fenix and dependencies to 84.0.0-beta2 [tor-browser-build]
+     * Bug 40161: Pick up Go 1.15.5 [tor-browser-build]
+     * Bug 40163: Bug 40163: Avoid checking hash of .pom files [tor-browser-build]
+     * Bug 40166: Update apt cache before calling pre_pkginst in container-image config [tor-browser-build]
+
 Tor Browser 10.5a4 -- November 17 2020
  * All Platforms
    * Update Tor to 0.4.5.1-alpha
