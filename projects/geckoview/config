@@ -8,7 +8,7 @@ git_submodule: 1
 gpg_keyring: torbutton.gpg
 
 var:
-  geckoview_version: 84.0b1
+  geckoview_version: 84.0b7
   torbrowser_branch: 10.5
   copyright_year: '[% exec("git show -s --format=%ci").remove("-.*") %]'
   deps:
