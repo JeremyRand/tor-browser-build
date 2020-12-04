@@ -21,11 +21,22 @@ Tor Browser 10.5a4 -- November 17 2020
      * Bug 40126: Bump Node to 10.22.1 for mozilla83 [tor-browser-build]
      * Bug 40127: Update components for switch to mozilla83-based Fenix [tor-browser-build]
 
-Tor Browser 10.0.5 -- November 17 2020
- * Windows + OS X + Linux
-   * Update Firefox to 78.5.0esr
+Tor Browser 10.0.5 -- November 27 2020
+ * All Platforms
    * Update Tor to 0.4.4.6
    * Bug 40212: Add new default obfs4 bridge [tor-browser]
+ * Windows + OS X + Linux
+   * Update Firefox to 78.5.0esr
+ * Android
+   * Update Fenix to 83.1.0
+   * Translations update
+ * Build System
+   * Android
+     * Bug 40126: Update toolchains for Fenix 83 [tor-browser-build]
+     * Bug 40126: Bump Node to 10.22.1 for mozilla83 [tor-browser-build]
+     * Bug 40127: Update GeckoView to 83, android-components to 63.0.1, and Fenix to 83.0.0b2 [tor-browser-build]
+     * Bug 40160: Update Fenix to 83.1.0, and android-components to 63.0.9 [tor-browser-build]
+     * Bug 40211: Lower required build-tools version to 29.0.2 [tor-browser]
 
 Tor Browser 10.5a3 -- November 10 2020
  * All Platforms
