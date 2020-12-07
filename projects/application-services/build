@@ -21,7 +21,9 @@ cd /var/tmp/dist
   tar -xf $rootdir/[% c('input_files_by_name/sqlcipher-' _ arch) %]
   mv sqlcipher sqlcipher-[% arch %]
 [% END -%]
-tar -xf $rootdir/[% c('input_files_by_name/uniffi-rs') %]
+# We pick the armv7 flavor, but it actually does not matter which one we choose
+# as `uniffi-bindgen` is a host tool. See: tor-browser-build#40171.
+tar -xf $rootdir/[% c('input_files_by_name/uniffi-rs-armv7') %]
 export PATH=/var/tmp/dist/rust/bin:/var/tmp/dist/uniffi-rs:$PATH
 cd $rootdir
 

@@ -26,7 +26,8 @@ input_files:
     name: '[% c("var/compiler") %]'
   - project: gradle
     name: gradle
-  # We need the torbrowser-* targets for Rust, see: #40094.
+  # We need the torbrowser-* targets for Rust and Rust-dependent projects, see:
+  # #40094.
   - project: rust
     name: rust-armv7
     target_prepend:
@@ -41,6 +42,25 @@ input_files:
       - torbrowser-android-x86
   - project: rust
     name: rust-x86_64
+    target_prepend:
+      - torbrowser-android-x86_64
+  # `uniffi-rs` provides us with a host tool, yet we still need to include
+  # artifacts for all architectures to avoid unnecessary rebuilding later on.
+  # See: tor-browser-build#40171.
+  - project: uniffi-rs
+    name: uniffi-rs-armv7
+    target_prepend:
+      - torbrowser-android-armv7
+  - project: uniffi-rs
+    name: uniffi-rs-aarch64
+    target_prepend:
+      - torbrowser-android-aarch64
+  - project: uniffi-rs
+    name: uniffi-rs-x86
+    target_prepend:
+      - torbrowser-android-x86
+  - project: uniffi-rs
+    name: uniffi-rs-x86_64
     target_prepend:
       - torbrowser-android-x86_64
   - project: nss
@@ -75,8 +95,6 @@ input_files:
     name: sqlcipher-x86_64
     target_prepend:
       - android-x86_64
-  - name: uniffi-rs
-    project: uniffi-rs
   - name: python
     project: python
     enable: '[% !c("var/fetch_gradle_dependencies") %]'
