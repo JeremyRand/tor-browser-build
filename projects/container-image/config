@@ -27,9 +27,14 @@ pre: |
   # [% c('var/container/suite') %]
   set -e
   export DEBIAN_FRONTEND=noninteractive
+  # Update the package cache so the container installs the most recent
+  # version of required packages.
   apt-get update -y -q
   [% IF pc(c('origin_project'), 'var/pre_pkginst') -%]
   [% pc(c('origin_project'), 'var/pre_pkginst') %]
+  # Update the package cache again because `pre_pkginst` may change the
+  # package manager configuration.
+  apt-get update -y -q
   [% END -%]
   apt-get upgrade -y -q
   [%
