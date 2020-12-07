@@ -20,6 +20,7 @@ Tor Browser 10.5a5 -- December 7 2020
      * Bug 40161: Pick up Go 1.15.5 [tor-browser-build]
      * Bug 40163: Bug 40163: Avoid checking hash of .pom files [tor-browser-build]
      * Bug 40166: Update apt cache before calling pre_pkginst in container-image config [tor-browser-build]
+     * Bug 40171: Include all uniffi-rs artifacts into application-services [tor-browser-build]
 
 Tor Browser 10.5a4 -- November 17 2020
  * All Platforms
