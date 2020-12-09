@@ -14,5 +14,5 @@ publish_dirs:
 nss_db_dir: nssdb
 nss_certname: nightly-marsigner
 gpg_keyring: keyring/torbrowser-nightly.gpg
-rsync_dest: nightly-publish:nightly-updates/
-post_rsync_cmd: ssh nightly-publish-static-update true
+rsync_dest: /srv/tbb-nightlies-master.torproject.org/htdocs/nightly-updates/
+post_rsync_cmd: static-update-component nightlies.tbb.torproject.org
