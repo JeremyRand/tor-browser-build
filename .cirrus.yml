@@ -1,6 +1,7 @@
 docker_builder:
   timeout_in: 120m
-  cpu: 8
+  container:
+    cpu: 8
   build_script:
     - "cat /etc/*-release"
     - "df -h"
