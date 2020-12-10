@@ -1,15 +1,14 @@
 docker_builder:
   timeout_in: 120m
-  container:
-    cpu: 8
   build_script:
     - "cat /etc/*-release"
     - "df -h"
     - "lscpu"
     - "free -m"
     - "apt-get install -y libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl libio-all-perl libio-captureoutput-perl libjson-perl libpath-tiny-perl libstring-shellquote-perl libsort-versions-perl libdigest-sha-perl libdata-uuid-perl libdata-dump-perl libfile-copy-recursive-perl libfile-slurp-perl git runc"
+    - "./rbm/rbm build gcc --target release --target torbrowser-linux-x86_64"
     #- "make release-linux-x86_64"
     # Might try bumping the time limit if there's a timeout issue.
-    # Might try bumping the CPU count if there's a timeout issue.
+    # Might try bumping the CPU count if there's a timeout issue.  Blocked by cirrus-ci-docs issue #741.
     # What is the CPU count limit?  "Linux Containers" docs say 8.0 CPU and 24 GB RAM; "FAQ" says 16.0 CPU.
     # Might try just building firefox by itself if there's a timeout issue.
