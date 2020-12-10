@@ -6,6 +6,7 @@ docker_builder:
     - "lscpu"
     - "free -m"
     - "apt-get install -y libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl libio-all-perl libio-captureoutput-perl libjson-perl libpath-tiny-perl libstring-shellquote-perl libsort-versions-perl libdigest-sha-perl libdata-uuid-perl libdata-dump-perl libfile-copy-recursive-perl libfile-slurp-perl git runc"
+    - "make submodule-update"
     - "./rbm/rbm build gcc --target release --target torbrowser-linux-x86_64"
     #- "make release-linux-x86_64"
     # Might try bumping the time limit if there's a timeout issue.
