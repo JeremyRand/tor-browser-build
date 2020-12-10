@@ -195,7 +195,7 @@ sub sign_version {
           unless system('signmar', '-d', $nss_db_dir, '-n',
                         $config->{nss_certname}, '-s', $marfile,
                         "$marfile-signed") == 0;
-          move("$marfile-signed", $marfile);
+        move("$marfile-signed", $marfile);
     }
 }
 
