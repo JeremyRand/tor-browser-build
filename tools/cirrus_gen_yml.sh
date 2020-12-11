@@ -7,7 +7,7 @@ shopt -s nullglob globstar
 for CHANNEL in nightly; do
     OS=linux
     ARCH=x86_64
-    for PROJECT in gcc firefox; do
+    for PROJECT in gcc rust firefox; do
         echo "${CHANNEL}_${OS}_${ARCH}_${PROJECT}_docker_builder:
   timeout_in: 120m
   out_${CHANNEL}_${OS}_${ARCH}_cache:
@@ -24,9 +24,13 @@ for CHANNEL in nightly; do
       - \"mkdir -p git_clones\"
   build_script:
     - \"./tools/cirrus_build_project.sh ${PROJECT} ${CHANNEL} ${OS} ${ARCH}\""
-        if [[ "$PROJECT" == "firefox" ]]; then
+        if [[ "$PROJECT" == "rust" ]]; then
             echo "  depends_on:
     - \"${CHANNEL}_${OS}_${ARCH}_gcc\""
+        fi
+        if [[ "$PROJECT" == "firefox" ]]; then
+            echo "  depends_on:
+    - \"${CHANNEL}_${OS}_${ARCH}_rust\""
         fi
         echo ""
     done
