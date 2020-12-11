@@ -41,6 +41,8 @@ echo "Building project..."
 ./rbm/rbm build "$PROJECT" --target "$CHANNEL" --target torbrowser-"$OS"-"$ARCH"
 
 # The cache has a size limit, so we need to clean useless data from it.  The
-# runc images are very large and seem to be fairly harmless to remove.
+# container-images are very large and seem to be fairly harmless to remove.
+# Maybe later if we have more pressure to shrink, we could remove the
+# debootstrap-images too.
 echo "Cleaning cache..."
-rm -rfv out/container-image out/debootstrap-image
+rm -rfv out/container-image
