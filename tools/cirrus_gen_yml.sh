@@ -9,8 +9,8 @@ for CHANNEL in nightly; do
     OS=linux
     ARCH=x86_64
 
-    # TODO: rust firefox release (blocked by figuring out how to avoid a timeout in rust)
-    for PROJECT in gcc cmake https-everywhere fonts obfs4 snowflake; do
+    # TODO: rust firefox tor release (blocked by figuring out how to avoid a timeout in rust)
+    for PROJECT in gcc cmake https-everywhere fonts obfs4 snowflake node nasm clang tor-launcher openssl libevent; do
         echo "${CHANNEL}_${OS}_${ARCH}_${PROJECT}_docker_builder:
   timeout_in: 120m
   out_${CHANNEL}_${OS}_${ARCH}_cache:
