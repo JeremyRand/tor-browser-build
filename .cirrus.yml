@@ -4,12 +4,14 @@ nightly_linux_x86_64_gcc_docker_builder:
     folder: out
     fingerprint_script:
       - "echo out_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p out"
   git_nightly_linux_x86_64_cache:
     folder: git_clones
     fingerprint_script:
       - "echo git_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p git_clones"
   build_script:
@@ -21,12 +23,14 @@ nightly_linux_x86_64_cmake_docker_builder:
     folder: out
     fingerprint_script:
       - "echo out_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p out"
   git_nightly_linux_x86_64_cache:
     folder: git_clones
     fingerprint_script:
       - "echo git_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p git_clones"
   build_script:
@@ -40,12 +44,14 @@ nightly_linux_x86_64_rust_docker_builder:
     folder: out
     fingerprint_script:
       - "echo out_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p out"
   git_nightly_linux_x86_64_cache:
     folder: git_clones
     fingerprint_script:
       - "echo git_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p git_clones"
   build_script:
@@ -59,12 +65,14 @@ nightly_linux_x86_64_firefox_docker_builder:
     folder: out
     fingerprint_script:
       - "echo out_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p out"
   git_nightly_linux_x86_64_cache:
     folder: git_clones
     fingerprint_script:
       - "echo git_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p git_clones"
   build_script:
@@ -78,12 +86,14 @@ nightly_linux_x86_64_release_docker_builder:
     folder: out
     fingerprint_script:
       - "echo out_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p out"
   git_nightly_linux_x86_64_cache:
     folder: git_clones
     fingerprint_script:
       - "echo git_nightly_linux_x86_64"
+    reupload_on_changes: true
     populate_script:
       - "mkdir -p git_clones"
   build_script:

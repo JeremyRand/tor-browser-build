@@ -15,12 +15,14 @@ for CHANNEL in nightly; do
     folder: out
     fingerprint_script:
       - \"echo out_${CHANNEL}_${OS}_${ARCH}\"
+    reupload_on_changes: true
     populate_script:
       - \"mkdir -p out\"
   git_${CHANNEL}_${OS}_${ARCH}_cache:
     folder: git_clones
     fingerprint_script:
       - \"echo git_${CHANNEL}_${OS}_${ARCH}\"
+    reupload_on_changes: true
     populate_script:
       - \"mkdir -p git_clones\"
   build_script:
