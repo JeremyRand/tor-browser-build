@@ -15,6 +15,25 @@ nightly_linux_x86_64_gcc_docker_builder:
   build_script:
     - "./tools/cirrus_build_project.sh gcc nightly linux x86_64"
 
+nightly_linux_x86_64_cmake_docker_builder:
+  timeout_in: 120m
+  out_nightly_linux_x86_64_cache:
+    folder: out
+    fingerprint_script:
+      - "echo out_nightly_linux_x86_64"
+    populate_script:
+      - "mkdir -p out"
+  git_nightly_linux_x86_64_cache:
+    folder: git_clones
+    fingerprint_script:
+      - "echo git_nightly_linux_x86_64"
+    populate_script:
+      - "mkdir -p git_clones"
+  build_script:
+    - "./tools/cirrus_build_project.sh cmake nightly linux x86_64"
+  depends_on:
+    - "nightly_linux_x86_64_gcc"
+
 nightly_linux_x86_64_rust_docker_builder:
   timeout_in: 120m
   out_nightly_linux_x86_64_cache:
@@ -32,7 +51,7 @@ nightly_linux_x86_64_rust_docker_builder:
   build_script:
     - "./tools/cirrus_build_project.sh rust nightly linux x86_64"
   depends_on:
-    - "nightly_linux_x86_64_gcc"
+    - "nightly_linux_x86_64_cmake"
 
 nightly_linux_x86_64_firefox_docker_builder:
   timeout_in: 120m
