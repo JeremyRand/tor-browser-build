@@ -1,7 +1,7 @@
 release_linux_x86_64_gcc_docker_builder:
   timeout_in: 120m
   release_linux_x86_64_cache:
-    folder: output
+    folder: out
     fingerprint_script:
       - "echo release_linux_x86_64"
     populate_script:
@@ -23,7 +23,7 @@ release_linux_x86_64_gcc_docker_builder:
 release_linux_x86_64_firefox_docker_builder:
   timeout_in: 120m
   release_linux_x86_64_cache:
-    folder: output
+    folder: out
     fingerprint_script:
       - "echo release_linux_x86_64"
     populate_script:
