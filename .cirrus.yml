@@ -5,7 +5,7 @@ release_linux_x86_64_gcc_docker_builder:
     fingerprint_script:
       - "echo release_linux_x86_64"
     populate_script:
-      - "mkdir -p output"
+      - "mkdir -p out"
   build_script:
     - "cat /etc/*-release"
     - "df -h"
@@ -27,7 +27,7 @@ release_linux_x86_64_firefox_docker_builder:
     fingerprint_script:
       - "echo release_linux_x86_64"
     populate_script:
-      - "mkdir -p output"
+      - "mkdir -p out"
   depends_on:
     - "release_linux_x86_64_gcc"
   build_script:
