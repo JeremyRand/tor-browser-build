@@ -27,6 +27,13 @@ for CHANNEL in nightly; do
     reupload_on_changes: true
     populate_script:
       - \"mkdir -p git_clones\"
+  git_${CHANNEL}_${OS}_${ARCH}_fonts_cache:
+    folder: fonts
+    fingerprint_script:
+      - \"echo git_${CHANNEL}_${OS}_${ARCH}_fonts\"
+    reupload_on_changes: true
+    populate_script:
+      - \"mkdir -p fonts\"
   build_script:
     - \"./tools/cirrus_build_project.sh ${PROJECT} ${CHANNEL} ${OS} ${ARCH}\""
 

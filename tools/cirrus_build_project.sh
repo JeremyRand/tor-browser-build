@@ -20,6 +20,9 @@ apt-get install -y libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl 
 echo "Pulling rbm..."
 make submodule-update
 
+echo "Moving caches..."
+mv fonts git_clones/
+
 echo "Checking if project is cached..."
 OUTDIR="$(./rbm/rbm showconf $PROJECT output_dir --target $CHANNEL --target torbrowser-$OS-$ARCH)"
 OUTFILE="$(./rbm/rbm showconf $PROJECT filename --target $CHANNEL --target torbrowser-$OS-$ARCH)"
@@ -39,6 +42,9 @@ fi
 
 echo "Building project..."
 ./rbm/rbm build "$PROJECT" --target "$CHANNEL" --target torbrowser-"$OS"-"$ARCH"
+
+echo "Moving caches..."
+mv git_clones/fonts ./
 
 # The cache has a size limit, so we need to clean useless data from it.  The
 # container-images are very large and seem to be fairly harmless to remove.
