@@ -220,6 +220,34 @@ nightly_linux_x86_64_nasm_docker_builder:
   depends_on:
     - "nightly_linux_x86_64_node"
 
+nightly_linux_x86_64_clang-source_docker_builder:
+  timeout_in: 120m
+  out_nightly_linux_x86_64_cache:
+    folder: out
+    fingerprint_script:
+      - "echo out_nightly_linux_x86_64"
+    reupload_on_changes: true
+    populate_script:
+      - "mkdir -p out"
+  git_nightly_linux_x86_64_cache:
+    folder: git_clones
+    fingerprint_script:
+      - "echo git_nightly_linux_x86_64"
+    reupload_on_changes: true
+    populate_script:
+      - "mkdir -p git_clones"
+  git_nightly_linux_x86_64_fonts_cache:
+    folder: fonts
+    fingerprint_script:
+      - "echo git_nightly_linux_x86_64_fonts"
+    reupload_on_changes: true
+    populate_script:
+      - "mkdir -p fonts"
+  build_script:
+    - "./tools/cirrus_build_project.sh clang-source nightly linux x86_64"
+  depends_on:
+    - "nightly_linux_x86_64_nasm"
+
 nightly_linux_x86_64_clang_docker_builder:
   timeout_in: 120m
   out_nightly_linux_x86_64_cache:
@@ -246,7 +274,7 @@ nightly_linux_x86_64_clang_docker_builder:
   build_script:
     - "./tools/cirrus_build_project.sh clang nightly linux x86_64"
   depends_on:
-    - "nightly_linux_x86_64_nasm"
+    - "nightly_linux_x86_64_clang-source"
 
 nightly_linux_x86_64_tor-launcher_docker_builder:
   timeout_in: 120m
