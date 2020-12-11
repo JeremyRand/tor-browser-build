@@ -1,36 +1,36 @@
-release_linux_x86_64_gcc_docker_builder:
+nightly_linux_x86_64_gcc_docker_builder:
   timeout_in: 120m
-  out_release_linux_x86_64_cache:
+  out_nightly_linux_x86_64_cache:
     folder: out
     fingerprint_script:
-      - "echo out_release_linux_x86_64"
+      - "echo out_nightly_linux_x86_64"
     populate_script:
       - "mkdir -p out"
-  git_release_linux_x86_64_cache:
+  git_nightly_linux_x86_64_cache:
     folder: git_clones
     fingerprint_script:
-      - "echo git_release_linux_x86_64"
+      - "echo git_nightly_linux_x86_64"
     populate_script:
       - "mkdir -p git_clones"
   build_script:
-    - "./tools/cirrus_build_project.sh gcc release linux x86_64"
+    - "./tools/cirrus_build_project.sh gcc nightly linux x86_64"
 
-release_linux_x86_64_firefox_docker_builder:
+nightly_linux_x86_64_firefox_docker_builder:
   timeout_in: 120m
-  out_release_linux_x86_64_cache:
+  out_nightly_linux_x86_64_cache:
     folder: out
     fingerprint_script:
-      - "echo out_release_linux_x86_64"
+      - "echo out_nightly_linux_x86_64"
     populate_script:
       - "mkdir -p out"
-  git_release_linux_x86_64_cache:
+  git_nightly_linux_x86_64_cache:
     folder: git_clones
     fingerprint_script:
-      - "echo git_release_linux_x86_64"
+      - "echo git_nightly_linux_x86_64"
     populate_script:
       - "mkdir -p git_clones"
   build_script:
-    - "./tools/cirrus_build_project.sh firefox release linux x86_64"
+    - "./tools/cirrus_build_project.sh firefox nightly linux x86_64"
   depends_on:
-    - "release_linux_x86_64_gcc"
+    - "nightly_linux_x86_64_gcc"
 
