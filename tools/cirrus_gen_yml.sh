@@ -25,22 +25,14 @@ for CHANNEL in nightly; do
       - \"mkdir -p git_clones\"
   build_script:
     - \"./tools/cirrus_build_project.sh ${PROJECT} ${CHANNEL} ${OS} ${ARCH}\""
-        if [[ "$PROJECT" == "cmake" ]]; then
+
+        # Depend on previous project
+        if [[ "$PROJECT" != "gcc" ]]; then
             echo "  depends_on:
-    - \"${CHANNEL}_${OS}_${ARCH}_gcc\""
+    - \"${CHANNEL}_${OS}_${ARCH}_${PREV_PROJECT}\""
         fi
-        if [[ "$PROJECT" == "rust" ]]; then
-            echo "  depends_on:
-    - \"${CHANNEL}_${OS}_${ARCH}_cmake\""
-        fi
-        if [[ "$PROJECT" == "firefox" ]]; then
-            echo "  depends_on:
-    - \"${CHANNEL}_${OS}_${ARCH}_rust\""
-        fi
-        if [[ "$PROJECT" == "release" ]]; then
-            echo "  depends_on:
-    - \"${CHANNEL}_${OS}_${ARCH}_firefox\""
-        fi
+
+        PREV_PROJECT="$PROJECT"
         echo ""
     done
 done
