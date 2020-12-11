@@ -40,7 +40,8 @@ for CHANNEL in nightly; do
 done
 ) > .cirrus.yml
 
-#- "make release-linux-x86_64"
-# Might try bumping the CPU count if there's a timeout issue.  Blocked by cirrus-ci-docs issue #741.
-# What is the CPU count limit?  "Linux Containers" docs say 8.0 CPU and 24 GB RAM; "FAQ" says 16.0 CPU.
-# Might try just building firefox by itself if there's a timeout issue.
+# Timeout issues?
+# Might want to increase the timeout -- but we're already using the 2 hour max.
+# Might want to bump the CPU count -- but that's blocked by cirrus-ci-docs issue #741.
+# Might want to split into smaller project sets.
+# What is the CPU count limit?  "Linux Containers" docs say 8.0 CPU and 24 GB RAM; "FAQ" says 16.0 CPU.  docker_builder VM's are really 4.0 CPU and 15 GB RAM (12 GB of which is unused by the OS).
