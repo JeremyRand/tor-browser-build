@@ -1,9 +1,9 @@
-linux_64_gcc_docker_builder:
+release_linux_x86_64_gcc_docker_builder:
   timeout_in: 120m
-  linux_64_cache:
+  release_linux_x86_64_cache:
     folder: output
     fingerprint_script:
-      - "echo linux_64"
+      - "echo release_linux_x86_64"
     populate_script:
       - "mkdir -p output"
   build_script:
@@ -20,16 +20,16 @@ linux_64_gcc_docker_builder:
     # What is the CPU count limit?  "Linux Containers" docs say 8.0 CPU and 24 GB RAM; "FAQ" says 16.0 CPU.
     # Might try just building firefox by itself if there's a timeout issue.
 
-linux_64_firefox_docker_builder:
+release_linux_x86_64_firefox_docker_builder:
   timeout_in: 120m
-  linux_64_cache:
+  release_linux_x86_64_cache:
     folder: output
     fingerprint_script:
-      - "echo linux_64"
+      - "echo release_linux_x86_64"
     populate_script:
       - "mkdir -p output"
   depends_on:
-    - "linux_64_gcc"
+    - "release_linux_x86_64_gcc"
   build_script:
     - "cat /etc/*-release"
     - "df -h"
