@@ -8,7 +8,9 @@ shopt -s nullglob globstar
 for CHANNEL in nightly; do
     OS=linux
     ARCH=x86_64
-    for PROJECT in gcc cmake rust firefox release; do
+
+    # TODO: rust firefox release (blocked by figuring out how to avoid a timeout in rust)
+    for PROJECT in gcc cmake https-everywhere fonts obfs4 snowflake; do
         echo "${CHANNEL}_${OS}_${ARCH}_${PROJECT}_docker_builder:
   timeout_in: 120m
   out_${CHANNEL}_${OS}_${ARCH}_cache:
