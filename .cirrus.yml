@@ -1,5 +1,11 @@
-docker_builder:
+linux_64_gcc_docker_builder:
   timeout_in: 120m
+  linux_64_cache:
+    folder: output
+    fingerprint_script:
+      - "echo linux_64"
+    populate_script:
+      - "mkdir -p output"
   build_script:
     - "cat /etc/*-release"
     - "df -h"
@@ -13,3 +19,23 @@ docker_builder:
     # Might try bumping the CPU count if there's a timeout issue.  Blocked by cirrus-ci-docs issue #741.
     # What is the CPU count limit?  "Linux Containers" docs say 8.0 CPU and 24 GB RAM; "FAQ" says 16.0 CPU.
     # Might try just building firefox by itself if there's a timeout issue.
+
+linux_64_firefox_docker_builder:
+  timeout_in: 120m
+  linux_64_cache:
+    folder: output
+    fingerprint_script:
+      - "echo linux_64"
+    populate_script:
+      - "mkdir -p output"
+  depends_on:
+    - "linux_64_gcc"
+  build_script:
+    - "cat /etc/*-release"
+    - "df -h"
+    - "lscpu"
+    - "free -m"
+    - "apt-get install -y libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl libio-all-perl libio-captureoutput-perl libjson-perl libpath-tiny-perl libstring-shellquote-perl libsort-versions-perl libdigest-sha-perl libdata-uuid-perl libdata-dump-perl libfile-copy-recursive-perl libfile-slurp-perl git runc"
+    - "make submodule-update"
+    - "./rbm/rbm build firefox --target release --target torbrowser-linux-x86_64"
+
