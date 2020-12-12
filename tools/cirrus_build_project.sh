@@ -27,8 +27,9 @@ if [[ -e "./fonts/.git" ]]; then
     mv ./fonts ./git_clones/fonts
 else
     echo "git_clones/fonts was not cached."
-    rm -rf ./fonts
+    rm -rf ./fonts ./git_clones/fonts
 fi
+ls ./git_clones
 
 echo "Checking if project is cached..."
 OUTDIR="$(./rbm/rbm showconf $PROJECT output_dir --target $CHANNEL --target torbrowser-$OS-$ARCH)"
