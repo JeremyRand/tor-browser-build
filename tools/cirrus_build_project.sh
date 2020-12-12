@@ -7,6 +7,7 @@ PROJECT=$1
 CHANNEL=$2
 OS=$3
 ARCH=$4
+SHOULD_BUILD=$5
 
 echo "Checking VM specs..."
 cat /etc/*-release
@@ -21,11 +22,12 @@ echo "Pulling rbm..."
 make submodule-update
 
 echo "Moving caches..."
-if [[ -e "fonts/.git" ]]; then
+if [[ -e "./fonts/.git" ]]; then
     echo "git_clones/fonts was cached, moving it to the right place..."
-    mv fonts git_clones/fonts
+    mv ./fonts ./git_clones/fonts
 else
     echo "git_clones/fonts was not cached."
+    rm -rf ./fonts
 fi
 
 echo "Checking if project is cached..."
@@ -33,7 +35,7 @@ OUTDIR="$(./rbm/rbm showconf $PROJECT output_dir --target $CHANNEL --target torb
 OUTFILE="$(./rbm/rbm showconf $PROJECT filename --target $CHANNEL --target torbrowser-$OS-$ARCH)"
 if [[ -e "$OUTDIR/$OUTFILE" ]]; then
     echo "Project cache hit, skipping build."
-    exit 0
+    SHOULD_BUILD=0
 else
     echo "Project cache miss, proceeding with build."
 fi
@@ -45,11 +47,16 @@ fi
 #mount -t tmpfs -o size=8G,nr_inodes=40k,mode=1777 tmpfs ./tmp
 #df -h
 
-echo "Building project..."
-./rbm/rbm build "$PROJECT" --target "$CHANNEL" --target torbrowser-"$OS"-"$ARCH"
+if [[ "$SHOULD_BUILD" -eq 1 ]]; then
+    echo "Building project..."
+    ./rbm/rbm build "$PROJECT" --target "$CHANNEL" --target torbrowser-"$OS"-"$ARCH"
+else
+    #echo "This is a cache-only task, skipping build."
+    echo "Skipping build."
+fi
 
 echo "Moving caches..."
-if [[ -e "git_clones/fonts/.git" ]]; then
+if [[ -e "git_clones/fonts" ]]; then
     echo "git_clones/fonts is ready to be cached, moving it to the right place..."
     mv git_clones/fonts ./
 else

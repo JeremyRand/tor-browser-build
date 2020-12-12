@@ -9,6 +9,34 @@ for CHANNEL in nightly; do
     OS=linux
     ARCH=x86_64
 
+    # Pre-download tarballs and Git repos
+    echo "${CHANNEL}_${OS}_${ARCH}_download_docker_builder:
+  timeout_in: 120m
+  out_${CHANNEL}_${OS}_${ARCH}_cache:
+    folder: out
+    fingerprint_script:
+      - \"echo out_${CHANNEL}_${OS}_${ARCH}\"
+    reupload_on_changes: true
+    populate_script:
+      - \"mkdir -p out\"
+  git_${CHANNEL}_${OS}_${ARCH}_cache:
+    folder: git_clones
+    fingerprint_script:
+      - \"echo git_${CHANNEL}_${OS}_${ARCH}\"
+    reupload_on_changes: true
+    populate_script:
+      - \"mkdir -p git_clones\"
+  git_${CHANNEL}_${OS}_${ARCH}_fonts_cache:
+    folder: fonts
+    fingerprint_script:
+      - \"echo git_${CHANNEL}_${OS}_${ARCH}_fonts\"
+    reupload_on_changes: true
+    populate_script:
+      - \"mkdir -p fonts\"
+  build_script:
+    - \"./tools/cirrus_build_project.sh release ${CHANNEL} ${OS} ${ARCH} 0\""
+    echo ""
+
     # TODO: rust firefox tor release (blocked by figuring out how to avoid a timeout in rust)
     for PROJECT in gcc cmake https-everywhere fonts obfs4 snowflake node nasm clang-source clang tor-launcher openssl libevent; do
         echo "${CHANNEL}_${OS}_${ARCH}_${PROJECT}_docker_builder:
@@ -35,10 +63,13 @@ for CHANNEL in nightly; do
     populate_script:
       - \"mkdir -p fonts\"
   build_script:
-    - \"./tools/cirrus_build_project.sh ${PROJECT} ${CHANNEL} ${OS} ${ARCH}\""
+    - \"./tools/cirrus_build_project.sh ${PROJECT} ${CHANNEL} ${OS} ${ARCH} 1\""
 
         # Depend on previous project
-        if [[ "$PROJECT" != "gcc" ]]; then
+        if [[ "$PROJECT" == "gcc" ]]; then
+            echo "  depends_on:
+    - \"${CHANNEL}_${OS}_${ARCH}_download\""
+        else
             echo "  depends_on:
     - \"${CHANNEL}_${OS}_${ARCH}_${PREV_PROJECT}\""
         fi
