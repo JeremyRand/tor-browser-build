@@ -34,7 +34,7 @@ for CHANNEL in nightly; do
     populate_script:
       - \"mkdir -p fonts\"
   build_script:
-    - \"./tools/cirrus_build_project.sh release ${CHANNEL} ${OS} ${ARCH} 0\""
+    - \"./tools/cirrus_build_project.sh tor-browser ${CHANNEL} ${OS} ${ARCH} 0\""
     echo ""
 
     # TODO: rust firefox tor release (blocked by figuring out how to avoid a timeout in rust)
