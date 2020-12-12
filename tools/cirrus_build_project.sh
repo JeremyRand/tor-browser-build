@@ -21,7 +21,12 @@ echo "Pulling rbm..."
 make submodule-update
 
 echo "Moving caches..."
-mv fonts git_clones/
+if [[ -e "fonts/.git" ]]; then
+    echo "git_clones/fonts was cached, moving it to the right place..."
+    mv fonts git_clones/fonts
+else
+    echo "git_clones/fonts was not cached."
+fi
 
 echo "Checking if project is cached..."
 OUTDIR="$(./rbm/rbm showconf $PROJECT output_dir --target $CHANNEL --target torbrowser-$OS-$ARCH)"
@@ -44,7 +49,13 @@ echo "Building project..."
 ./rbm/rbm build "$PROJECT" --target "$CHANNEL" --target torbrowser-"$OS"-"$ARCH"
 
 echo "Moving caches..."
-mv git_clones/fonts ./
+if [[ -e "git_clones/fonts/.git" ]]; then
+    echo "git_clones/fonts is ready to be cached, moving it to the right place..."
+    mv git_clones/fonts ./
+else
+    echo "git_clones/fonts is not ready to be not cached."
+    mkdir -p ./fonts
+fi
 
 # The cache has a size limit, so we need to clean useless data from it.  The
 # container-images are very large and seem to be fairly harmless to remove.
