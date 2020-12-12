@@ -22,7 +22,7 @@ nightly_linux_x86_64_download_docker_builder:
     populate_script:
       - "mkdir -p fonts"
   build_script:
-    - "./tools/cirrus_build_project.sh release nightly linux x86_64 0"
+    - "./tools/cirrus_build_project.sh tor-browser nightly linux x86_64 0"
 
 nightly_linux_x86_64_gcc_docker_builder:
   timeout_in: 120m
