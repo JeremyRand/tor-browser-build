@@ -47,6 +47,9 @@ nightly_linux_x86_64_gcc_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh gcc nightly linux x86_64 1"
   depends_on:
@@ -75,6 +78,9 @@ nightly_linux_x86_64_cmake_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh cmake nightly linux x86_64 1"
   depends_on:
@@ -103,6 +109,9 @@ nightly_linux_x86_64_https-everywhere_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh https-everywhere nightly linux x86_64 1"
   depends_on:
@@ -131,6 +140,9 @@ nightly_linux_x86_64_fonts_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh fonts nightly linux x86_64 1"
   depends_on:
@@ -159,6 +171,9 @@ nightly_linux_x86_64_obfs4_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh obfs4 nightly linux x86_64 1"
   depends_on:
@@ -187,6 +202,9 @@ nightly_linux_x86_64_snowflake_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh snowflake nightly linux x86_64 1"
   depends_on:
@@ -215,6 +233,9 @@ nightly_linux_x86_64_node_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh node nightly linux x86_64 1"
   depends_on:
@@ -243,6 +264,9 @@ nightly_linux_x86_64_nasm_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh nasm nightly linux x86_64 1"
   depends_on:
@@ -271,6 +295,9 @@ nightly_linux_x86_64_clang-source_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh clang-source nightly linux x86_64 1"
   depends_on:
@@ -299,6 +326,9 @@ nightly_linux_x86_64_clang_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh clang nightly linux x86_64 1"
   depends_on:
@@ -327,6 +357,9 @@ nightly_linux_x86_64_tor-launcher_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh tor-launcher nightly linux x86_64 1"
   depends_on:
@@ -355,6 +388,9 @@ nightly_linux_x86_64_openssl_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh openssl nightly linux x86_64 1"
   depends_on:
@@ -383,6 +419,9 @@ nightly_linux_x86_64_libevent_docker_builder:
     reupload_on_changes: true
     populate_script:
       - "mkdir -p fonts"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - "./tools/cirrus_build_project.sh libevent nightly linux x86_64 1"
   depends_on:

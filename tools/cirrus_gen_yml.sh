@@ -62,6 +62,9 @@ for CHANNEL in nightly; do
     reupload_on_changes: true
     populate_script:
       - \"mkdir -p fonts\"
+  checkpoint_background_script:
+    - sleep 10m
+    - ./tools/checkpoint.sh
   build_script:
     - \"./tools/cirrus_build_project.sh ${PROJECT} ${CHANNEL} ${OS} ${ARCH} 1\""
 
