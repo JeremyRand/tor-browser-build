@@ -16,6 +16,8 @@ lscpu
 free -m
 
 echo "Installing rbm deps..."
+add-apt-repository ppa:criu/ppa
+apt-get update
 apt-get install -y libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl libio-all-perl libio-captureoutput-perl libjson-perl libpath-tiny-perl libstring-shellquote-perl libsort-versions-perl libdigest-sha-perl libdata-uuid-perl libdata-dump-perl libfile-copy-recursive-perl libfile-slurp-perl git runc criu
 
 echo "Pulling rbm..."
